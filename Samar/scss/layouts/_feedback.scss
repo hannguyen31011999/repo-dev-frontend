@@ -1,0 +1,173 @@
+.feedback {
+    background-image: url('../../img/bg17.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: $mr-4;
+    .feedback__content {
+        .feedback__title {
+            text-align: center;
+            h4 {
+                @include styleText($fs-0 + 8,$color-h4,$mr-2,$fw-bold-3);
+            }
+            h1 {
+                @include styleText($fs-3 + 5 ,$color-h1,$mr-4,$fw-bold-5);
+                letter-spacing: 1px;
+            }
+        }
+        .feedback__item {
+            text-align: center;
+            .feedback__image {
+                width: 25%;
+                margin: 0 auto;
+                margin-bottom: $mr-3;
+                img {
+                    padding: $pd-0;
+                    border-radius: 50%;
+                    background-color: $color-h4;
+                    width: 40%;
+                    margin: 0 auto;
+                }
+            }
+            .feedback__caption {
+                width: 60%;
+                position: relative;
+                padding: $pd-2;
+                margin: 0 auto;
+                border-radius: $bd-radius-1;
+                background-color: $bg-color;
+                box-shadow: 0px 1px 40px 0px rgba(141, 138, 138, 0.3);
+                h3 {
+                    @include styleText($fs-0 + 8,$color-h1,$mr-2,$fw-bold-5);
+                    letter-spacing: 1px;
+                    font-style: italic;
+                }
+                h5 {
+                    @include styleText($fs-0,$color-h4,$mr-2,$fw-bold-4);
+                }
+                p {
+                    @include styleText($fs-0 + 2,$color-li,$mr-2,$fw-bold-1);
+                    font-style: italic;
+                }
+                &::before {
+                    content: "\f00c";
+                    font-family: "Line Awesome Free";
+                    font-size: $fs-2;
+                    width: 50px;
+                    height: 50px;
+                    background: #000;
+                    text-align: center;
+                    line-height: 45px;
+                    color: #fff;
+                    font-weight: 900;
+                    background-size: 200%;
+                    position: absolute;
+                    left: 3%;
+                    top: 20%;
+                    transform: translateY(-50%);
+                    background-color: #fff;
+                    color: #f55f8d;
+                }
+            }
+        }
+        .slick-dots {
+            position: static;
+            li{
+                button::before {
+                    color: #f66993;
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
+}
+
+
+@include responsive('extra-large')
+{
+    .feedback {
+        .feedback__content {
+            .feedback__title {
+                h4 {
+                    @include styleText($fs-0 + 5,$color-h4,$mr-2,$fw-bold-3);
+                }
+                h1 {
+                    @include styleText($fs-2,$color-h1,$mr-4,$fw-bold-5);
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+
+@include responsive('large')
+{
+    .feedback {
+        .feedback__content {
+            .feedback__item {
+                .feedback__image {
+                    img {
+                        padding: $pd-0;
+                        border-radius: 50%;
+                        background-color: $color-h4;
+                        width: 60%;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include responsive('medium')
+{
+    .feedback {
+        .feedback__content {
+            .feedback__item {
+                .feedback__image {
+                    img {
+                        padding: $pd-0;
+                        border-radius: 50%;
+                        background-color: $color-h4;
+                        width: 80%;
+                        margin: 0 auto;
+                    }
+                }
+                .feedback__caption {
+                    width: 100%;
+                    box-shadow: 0px 1px 40px 0px rgba(141, 138, 138, 0.2);
+                    h3 {
+                        @include styleText($fs-0 + 8,$color-h1,$mr-2,$fw-bold-5);
+                        letter-spacing: 1px;
+                        font-style: italic;
+                    }
+                    h5 {
+                        @include styleText($fs-0,$color-h4,$mr-2,$fw-bold-4);
+                    }
+                    p {
+                        @include styleText($fs-0,$color-li,$mr-2,$fw-bold-1);
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive('medium')
+{
+    .feedback {
+        .feedback__content {
+            .feedback__title {
+                h4 {
+                    @include styleText($fs-0 + 2,$color-h4,$mr-2,$fw-bold-3);
+                }
+                h1 {
+                    @include styleText($fs-1,$color-h1,$mr-4,$fw-bold-5);
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,235 @@
+.plans {
+    background-image: url('../../img/bg16.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: $pd-3;
+    .plans__content {
+        .plans__title {
+            text-align: center;
+            h4 {
+                @include styleText($fs-0 + 8,$color-h4,0,$fw-bold-3);
+            }
+            h1 {
+                @include styleText($fs-3,$color-h1,$mr-2,$fw-bold-5);
+                letter-spacing: 1px;
+            }
+            .plans__btn {
+                background: $bg-gradient;
+                width: 20%;
+                margin: 0 auto;
+                padding: $pd-0 0;
+                border-radius: $bd-radius-1;
+                .timer {
+                    padding: $pd-0 + 5 0;
+                    display: inline-block;
+                    width: 100px;
+                    text-transform: uppercase;
+                    @include styleText($fs-0 - 1,$color-btn,0,$fw-bold-2);
+                    cursor: pointer;
+                }
+                .active {
+                    background-color: $bg-color;
+                    color: $color-h1;
+                    border-radius: $bd-radius-1 - 2;
+                    transition: all 1s;
+                }
+            }
+        }
+        .plans__item {
+            padding: $pd-4;
+            text-align: center;
+            background-color: $bg-color;
+            border-radius: $bd-radius-1 + 2;
+            box-shadow: 0px 1px 40px 0px rgba(141, 138, 138, 0.3);
+            img {
+                width: 50%;
+            }
+            h3 {
+                @include styleText($fs-2 - 10,$color-h1,$mr-2,$fw-bold-5);
+            }
+            ul {
+                list-style: none;
+                text-align: left;
+                li {
+                    padding-left: $pd-3;
+                    position: relative;
+                    @include styleText($fs-0 + 3,$color-h1,$mr-2,$fw-bold-1);
+                    &::before {
+                        content: "\f00c";
+                        font-family: "Line Awesome Free";
+                        font-size: 1.1rem;
+                        width: 25px;
+                        height: 25px;
+                        background: #000;
+                        text-align: center;
+                        line-height: 25px;
+                        color: $color-h4;
+                        background-color: #FEEFF3;
+                        border-radius: 35px;
+                        font-weight: 900;
+                        background-size: 200%;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+            .plans__item--btn {
+                width: 70%;
+                margin: $mr-3 + 5 auto;
+                &:hover {background: $bg-gradient-hover;}
+            }
+        }
+        .show {
+            border: 3px dashed orange;
+        }
+    }
+}
+
+
+@include responsive('extra-large')
+{
+    .plans {
+        padding-top: $pd-3;
+        .plans__content {
+            .plans__title {
+                text-align: center;
+                h4 {
+                    @include styleText($fs-0 + 5,$color-h4,0,$fw-bold-3);
+                }
+                h1 {
+                    @include styleText($fs-2 + 5,$color-h1,$mr-2,$fw-bold-5);
+                    letter-spacing: 1px;
+                }
+                .plans__btn {
+                    width: 23%;
+                    .timer {
+                        padding: $pd-0 0;
+                        display: inline-block;
+                        width: 100px;
+                        text-transform: uppercase;
+                        @include styleText($fs-0 - 1,$color-btn,0,$fw-bold-2);
+                        cursor: pointer;
+                    }
+                    .active {
+                        background-color: $bg-color;
+                        color: $color-h1;
+                        border-radius: $bd-radius-1 - 2;
+                        transition: all 1s;
+                    }
+                }
+            }
+            .plans__item {
+                padding: $pd-2;
+                h3 {
+                    margin-top: $mr-3;
+                }
+                .plans__item--btn {
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@include responsive('large')
+{
+    .plans {
+        padding-top: $pd-3;
+        .plans__content {
+            .plans__title {
+                .plans__btn {
+                    width: 32%;
+                }
+            }
+            .plans__item {
+                padding: $pd-2;
+                h3 {
+                    @include styleText($fs-1 - 4,$color-h1,$mr-2,$fw-bold-5);
+                    margin-top: $mr-3;
+                }
+                .plans__item--btn {
+                    width: 55%;
+                }
+            }
+        }
+    }
+}
+
+@include responsive('medium')
+{
+    .plans {
+        padding-top: $pd-3;
+        .plans__content {
+            .plans__title {
+                .plans__btn {
+                    width: 42%;
+                }
+            }
+        }
+    }
+}
+
+@include responsive('small')
+{
+    .plans {
+        padding-top: $pd-3;
+        .plans__content {
+            .plans__title {
+                h4 {
+                    @include styleText($fs-0 + 2,$color-h4,0,$fw-bold-3);
+                }
+                h1 {
+                    @include styleText($fs-1 + 5,$color-h1,$mr-2,$fw-bold-5);
+                    letter-spacing: 1px;
+                }
+                .plans__btn {
+                    width: 50%;
+                }
+            }
+            .plans__item {
+                padding: $pd-2;
+                h3 {
+                    @include styleText($fs-1 - 4,$color-h1,$mr-2,$fw-bold-5);
+                    margin-top: $mr-3;
+                }
+                .plans__item--btn {
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@include responsive('mobile')
+{
+    .plans {
+        padding-top: $pd-3;
+        .plans__content {
+            .plans__title {
+                h4 {
+                    @include styleText($fs-0 + 2,$color-h4,0,$fw-bold-3);
+                }
+                h1 {
+                    @include styleText($fs-1 + 5,$color-h1,$mr-2,$fw-bold-5);
+                    letter-spacing: 1px;
+                }
+                .plans__btn {
+                    width: 70%;
+                }
+            }
+            .plans__item {
+                padding: $pd-2;
+                h3 {
+                    @include styleText($fs-1 - 4,$color-h1,$mr-2,$fw-bold-5);
+                    margin-top: $mr-3;
+                }
+                .plans__item--btn {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+@mixin responsive($screen) {
+    @if (map-has-key($map: $breakpoints, $key: $screen))
+    {
+        $value : map-get($map: $breakpoints, $key: $screen);
+        @media screen and (max-width: $value){
+            @content;
+        }
+    }
+    @else 
+    {
+        @error 'Screen does not exist';
+    }
+}
+
+@mixin styleButton($py,$px) {
+    padding: $py $x;
+    font-size: 11px;
+    width: 120px;
+}
+
+
+@mixin styleText($fs,$color,$mr,$fw) {
+    font-size: $fs;
+    color: $color;
+    margin-bottom: $mr;
+    font-weight: $fw;
+}
+
+@mixin animationImage() {
+    @keyframes moveImage {
+        0% {
+            transform: skewX(2deg);
+        }
+        25% {
+            transform: skewX(-2deg);
+        }
+        50% {
+            transform: skewX(2deg);
+        }
+        75% {
+            transform: skewX(-2deg);
+        }
+        100% {
+            transform: skewX(2deg);
+        }
+    }
+    animation: moveImage 12s infinite;
+}

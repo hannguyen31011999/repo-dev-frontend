@@ -1,0 +1,156 @@
+.banner {
+    position: relative;
+    background-image: url('../../img/pic2.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 180px;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    .banner__left {
+        padding-top: 55px;
+        h4 {
+            @include styleText($fs-0 + 8,$color-h4,$mr-2,$fw-bold-3);
+        }
+        h1 {
+            @include styleText($fs-3 + 5 ,$color-h1,$mr-3,$fw-bold-5);
+            letter-spacing: 1px;
+        }
+        p {
+            @include styleText($fs-0 + 3 ,$color-gray,$mr-3,$fw-bold-1);
+        }
+        ul {
+            list-style: none;
+            margin-bottom: $mr-4;
+            li {
+                position: relative;
+                padding-left: $pd-3 + 10;
+                @include styleText($fs-0 + 5 ,$color-li,$mr-3,$fw-bold-1);
+                &::before {
+                    content: "\f00c";
+                    font-family: "Line Awesome Free";
+                    font-size: 1.6rem;
+                    width: 35px;
+                    height: 35px;
+                    background: #000;
+                    text-align: center;
+                    line-height: 35px;
+                    color: #fff;
+                    border-radius: 35px;
+                    font-weight: 900;
+                    background-image: linear-gradient(
+                        to right,
+                        #f55f8d 0,
+                        #f8ae56 51%,
+                        #f55f8d 100%
+                    );
+                    background-size: 200%;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .banner__btn {
+            width: 160px;
+            &:hover {
+                background: $bg-gradient-hover;
+            }
+        }
+    }
+    .banner__right {
+        .banner__image {
+            position: relative;
+            padding-top: $pd-4;
+            img {
+                width: 100%;
+            }
+        }
+        .banner__overlay {
+            position: absolute;
+            top: 30%;
+            left: 0;
+            @include animationImage;
+            img {
+                width: 100%;
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+
+@include responsive('medium') {
+    .banner {
+        .banner__left {
+            h4 {
+                @include styleText($fs-0 + 5,$color-h4,$mr-2,$fw-bold-3);
+            }
+            h1 {
+                @include styleText($fs-2 + 5,$color-h1,$mr-2,$fw-bold-3);
+            }
+            p {
+                @include styleText($fs-0 + 3,$color-gray,$mr-2,$fw-bold-1);
+            }
+            ul {
+                li::before {
+                    font-size: $fs-0;
+                    width: 25px;
+                    height: 25px;
+                    line-height: 25px;
+                }
+            }
+        }
+        .banner__right {
+            .banner__image {
+                position: relative;
+                padding-top: $pd-4;
+                img {
+                    width: 100%;
+                }
+            }
+            .banner__overlay {
+                position: absolute;
+                top: 30%;
+                left: 0;
+                @include animationImage;
+                img {
+                    width: 100%;
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}
+
+@include responsive('small') {
+    .banner {
+        padding-top: 80px;
+        .banner__left {
+            h4 {
+                @include styleText($fs-0,$color-h4,$mr-2,$fw-bold-3);
+            }
+            h1 {
+                @include styleText($fs-2 - 5,$color-h1,$mr-2,$fw-bold-3);
+            }
+            p {
+                @include styleText($fs-0 - 3,$color-gray,$mr-2,$fw-bold-1);
+            }
+            ul {
+                li {
+                    font-size: $fs-0;
+                    padding-left: $pd-3 - 5;
+                    li::before {
+                        font-size: $fs-0 - 2;
+                        width: 25px;
+                        height: 25px;
+                        line-height: 25px;
+                    }
+                }
+                
+            }
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.services {
+    background-image: url('../../img/bg2.png');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: $pd-4 + 30;
+    .services__title {
+        margin-bottom: $mr-4;
+        text-align: center;
+        h1 {
+            @include styleText($fs-3 + 10,$color-h1,$mr-1,$fw-bold);
+        }
+        h4 {
+            @include styleText($fs-0 + 8,$color-h4,$mr-3,$fw-bold-2);
+        }
+    }
+    .services__content {
+        .row {
+            .services__item {
+                padding: $pd-2;
+                transform: translateY(0);
+                background-color: $bg-color;
+                transition: all 0.8s;
+                margin-bottom: $mr-3 + 4;
+                box-shadow: 0px 1px 40px 0px rgba(141, 138, 138, 0.3);
+                .services__image {
+                    padding: 40px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .services__text {
+                    text-align: center;
+                    h3 {
+                        @include styleText($fs-1 - 6,$color-h1,$mr-2,$fw-bold-4);
+                    }
+                    p {
+                        @include styleText($fs-0 + 1,$color-li,0,$fw-bold-1);
+                        line-height: $line-height-1;
+                    }
+                }
+                &:hover {
+                    transform: translateY(-15px);
+                }
+            }
+        }
+    }
+}
+
+@include responsive('extra-large')
+{
+    .services {
+        .services__title {
+            margin-bottom: $mr-4;
+            text-align: center;
+            h1 {
+                @include styleText($fs-2 - 5,$color-h1,$mr-1,$fw-bold);
+            }
+            h4 {
+                @include styleText($fs-0 + 5,$color-h4,$mr-3,$fw-bold-2);
+            }
+        }
+        .services__content {
+            .row {
+                .services__item {
+                    .services__text {
+                        padding: 10px;
+                        text-align: center;
+                        h3 {
+                            @include styleText($fs-1 - 8,$color-h1,$mr-2,$fw-bold-4);
+                        }
+                        p {
+                            @include styleText($fs-0 + 1,$color-li,0,$fw-bold-1);
+                            line-height: $line-height-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive('small')
+{
+    .services {
+        .services__title {
+            margin-bottom: $mr-4;
+            text-align: center;
+            h1 {
+                @include styleText($fs-2 - 10,$color-h1,$mr-1,$fw-bold);
+            }
+            h4 {
+                @include styleText($fs-1 - 8,$color-h4,$mr-3,$fw-bold-2);
+            }
+        }
+    }
+}

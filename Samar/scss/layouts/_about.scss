@@ -1,0 +1,152 @@
+.about {
+    padding: 60px 0 0 0;
+    overflow: hidden;
+    .about__left {
+        padding-top: $pd-3;
+        padding-left: $pd-1 + 5;
+        position: relative;
+        img {
+            width: 100%;
+            border-radius: 0 40px 40px 0;
+            height: 80%;
+            object-fit: cover;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            height: 80%;
+            background-color: #fef2f6;
+            top: 10%;
+            width: 100%;
+            z-index: -1;
+            border-radius: 0 100px 100px 0;
+            transform: rotate(8deg);
+            left: 5%;
+        }
+    }
+    .about__right {
+        padding-left: $pd-3 + 10;
+        .about__text {
+            .about__btn {
+                width: 160px;
+                &:hover {
+                    background: $bg-gradient-hover;
+                }
+            }
+            h4 {
+                @include styleText($fs-0 + 8,$color-h4,$mr-2,$fw-bold-3);
+            }
+            h1 {
+                @include styleText($fs-3 + 3,$color-h1,$mr-3,$fw-bold-5);
+            }
+            p {
+                @include styleText($fs-0,$color-li,$mr-2,$fw-bold-1);
+                line-height: $line-height-1;
+            }
+            ul {
+                list-style: none;
+                margin-bottom: $mr-4;
+                li {
+                    position: relative;
+                    padding-left: $pd-3;
+                    @include styleText($fs-0 - 1,$color-li,$mr-2,$fw-bold-1);
+                    &::before {
+                        content: "\f00c";
+                        font-family: "Line Awesome Free";
+                        font-size: 1.2rem;
+                        width: 25px;
+                        height: 25px;
+                        background: #000;
+                        text-align: center;
+                        line-height: 20px;
+                        color: $color-h4;
+                        background-color: $bg-color;
+                        border: 2px solid $color-h4;
+                        border-radius: 35px;
+                        font-weight: 900;
+                        background-size: 200%;
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive('extra-large') {
+    .about {
+        .about__right {
+            padding-top: $pd-2;
+            padding-left: $pd-1 + 5;
+            .about__text {
+                h4 {
+                    @include styleText($fs-0 + 3,$color-h4,0,$fw-bold-3);
+                }
+                h1 {
+                    @include styleText($fs-2,$color-h1,$mr-3,$fw-bold-5);
+                }
+                p {
+                    @include styleText($fs-0,$color-li,$mr-3,$fw-bold-1);
+                    line-height: $line-height-1;
+                }
+            }
+        }
+        .about__left {
+            padding-left: $pd-1 + 5;
+            &::after {
+                height: 65%;
+            }
+        }
+    }
+}
+
+@include responsive('large') {
+    .about {
+        .about__right {
+            padding-top: $pd-2;
+            padding-left: $pd-1 + 5;
+            .about__text {
+                h4 {
+                    @include styleText($fs-0 + 3,$color-h4,0,$fw-bold-3);
+                }
+                h1 {
+                    @include styleText($fs-2 + 5,$color-h1,$mr-3,$fw-bold-5);
+                }
+                p {
+                    @include styleText($fs-0,$color-li,$mr-3,$fw-bold-1);
+                    line-height: $line-height-1;
+                }
+            }
+        }
+        .about__left {
+            padding-left: $pd-1 + 5;
+        }
+    }
+}
+
+@include responsive('small') {
+    .about {
+        .about__right {
+            padding-top: 0;
+            padding-left: $pd-1 + 5;
+            .about__text {
+                h4 {
+                    @include styleText($fs-0 + 2,$color-h4,0,$fw-bold-3);
+                }
+                h1 {
+                    @include styleText($fs-1,$color-h1,$mr-3,$fw-bold-5);
+                }
+                p {
+                    @include styleText($fs-0,$color-li,$mr-3,$fw-bold-1);
+                    line-height: $line-height-1;
+                }
+            }
+        }
+        .about__left {
+            padding-left: $pd-1 + 5;
+        }
+    }
+}

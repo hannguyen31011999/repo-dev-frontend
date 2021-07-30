@@ -1,0 +1,48 @@
+.button {
+    background: $bg-gradient;
+    cursor: pointer;
+    border-radius: $bd-radius-3;
+    .link--button {
+        padding: $pd-1+8 $pd-2+14;
+        display: inline-block;
+        width: 100%;
+        color: $color-btn;
+        text-transform: uppercase;
+        font-size: $fs-0 - 1;
+        font-weight: $fw-bold-2;
+        text-decoration: none;
+    }
+}
+
+
+.button1 {
+    background: $bg-gradient;
+    cursor: pointer;
+    border-radius: $bd-radius-3;
+    margin-right: $mr-1;
+    .link--button1 {
+        padding: $pd-1 $pd-2;
+        display: inline-block;
+        width: 100%;
+        color: $color-btn;
+        text-transform: uppercase;
+        font-size: $fs-0 - 4;
+        font-weight: $fw-bold-2;
+        text-decoration: none;
+    }
+}
+
+.sroll__top {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 99;
+    height: 50px;
+    width: 50px;
+    background-color: $color-h4;
+    border-radius: $bd-radius-1;
+    border: none;
+    i {
+        color: $bg-color;
+    }
+}
