@@ -19,3 +19,7 @@
 <h4>Build by Html,Css,Vanila Js,Boostrap 4</h4>
 <p>Responsive device mobile -> tablet -> desktop </p>
 <p>Link demo: https://intruction-demo.surge.sh </p>
+
+<h3>5.App playlist</h3>
+<h4>Build by Html,Css,Boostrap 4,React JS</h4>
+<p>Link demo: https://react-playplist-app.herokuapp.com </p>
