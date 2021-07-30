@@ -16,6 +16,6 @@
 <p>Link demo: https://samar-demo.surge.sh </p>
 
 <h3>4.Template intruction</h3>
-<h4>Build by Html,Css,Vanila Js,Scss,Boostrap 4</h4>
+<h4>Build by Html,Css,Vanila Js,Boostrap 4</h4>
 <p>Responsive device mobile -> tablet -> desktop </p>
 <p>Link demo: https://intruction-demo.surge.sh </p>
