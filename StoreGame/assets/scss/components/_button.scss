@@ -1,0 +1,45 @@
+.btn-orange {
+    border: none;
+        padding: $pd-0 + 3 $pd-2;
+        background-color: $color-price-0;
+        text-transform: uppercase;
+        @include styleText($fs-0 - 1,$color-default,0,$mg-0,$fw-normal);
+        border-radius: $bd-radius-0 - 2;
+        transition: all .3s;
+        i {
+            padding-left: $pd-0;
+            opacity: 0.6;
+        }
+        &:hover {
+            color: $color-white;
+        }
+}
+
+.scrollTop {
+    position: fixed;
+    bottom: 15%;
+    right: 3%;
+    padding: $pd-2 - 3;
+    border: none;
+    transition: all .6s;
+    border-radius: $bd-radius-0 - 2;
+    opacity: 0;
+    i {
+        font-size: $fs-1;
+        color: $color-text;
+        transition: all .6s;
+    }
+    &:hover {
+        background-color: $color-text;
+    }
+    &:hover i{
+        color: $color-white;
+    }
+}
+
+@include responsive('medium')
+{
+    .scrollTop {
+        display: none;
+    }
+}

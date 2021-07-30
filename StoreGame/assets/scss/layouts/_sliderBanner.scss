@@ -1,0 +1,90 @@
+.carousel__banner {
+    .carousel__banner--list {
+        .carousel__banner--item {
+            position: relative;
+            padding: $pd-1 + 5 $pd-1;
+            cursor: pointer;
+            img {
+                width: 100%;
+            }
+            .carousel__banner--text {
+                h4 {
+                    @include styleText($fs-0,$color-price,0,$mg-0,$fw-2);
+                }
+                p {
+                    @include styleText($fs-0 - 1,$color-price,0,$mg-1,$fw-2);
+                }
+                .carousel__banner--image {
+                    width: 175px;
+                    height: 51px;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .right {
+                @include textSlider(10%,15%,'right');
+            }
+            .left {
+                @include textSlider(10%,15%,'left');
+                h3 {
+                    @include styleText($fs-2,$color-white,0,$mg-0,$fw-2);
+                    text-transform: none;
+                }
+                h4 {
+                    @include styleText($fs-0,$color-price,0,$mg-0,$fw-2);
+                }
+                p {
+                    @include styleText($fs-2,$color-default,0,$mg-0,$fw-2);
+                }
+            }
+            .custom {
+                @include textSlider(10%,30%,'left');
+            }
+        }
+    }
+}
+
+@include responsive('small')
+{
+    .carousel__banner {
+        .carousel__banner--list {
+            .carousel__banner--item {
+                padding: $pd-2;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 330px) {
+    .carousel__banner {
+        .carousel__banner--list {
+            .carousel__banner--item {
+                img {
+                    height: 210px;
+                }
+                .carousel__banner--text {
+                    img {
+                        height: auto;
+                    }
+                }
+                .right {
+                    @include textSlider(10%,15%,'right');
+                }
+                .left {
+                    @include textSlider(10%,15%,'left');
+                    h3 {
+                        @include styleText($fs-0 + 2,$color-white,0,$mg-0,$fw-2);
+                        text-transform: none;
+                    }
+                    h4 {
+                        @include styleText($fs-0,$color-price,0,$mg-0,$fw-2);
+                    }
+                    p {
+                        @include styleText($fs-0 + 2,$color-default,0,$mg-0,$fw-2);
+                    }
+                }
+            }
+        }
+    }
+}

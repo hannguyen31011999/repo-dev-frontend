@@ -1,0 +1,9 @@
+.discount {
+    @include styleText($fs-0 - 7,$color-white,0,0,$fw-2);
+    padding: 2px 4px;
+    background-color: #EF837B;
+    position: absolute;
+    top: -25%;
+    right: -50%;
+    transform: translateX(-50%);
+}

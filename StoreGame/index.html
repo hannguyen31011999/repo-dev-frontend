@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game - Molla</title>
+    <!-- Logo -->
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32-1.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+    <div class="main__page">
+        <div class="page__wrapper container-fluid">
+            <header id="header">
+                <div class="container">
+                    <div class="header__top ">
+                        <div class="header__contact">
+                            <a href="#">
+                                <i class="fas fa-phone-alt"></i>
+                                <span>&nbsp;Call:&nbsp;+0123 456 789</span>
+                            </a>
+                        </div>
+                        <div class="header__translate">
+                            <ul>
+                                <li class="header__top--item">
+                                    <a href="#" class="header__top--navlink">USD<i class="fa fa-angle-down"></i></a>
+                                    <ul class="header__top--menu">
+                                        <li class="header__top--item1"><a href="#" class="header__top--navlink1">Eur</a>
+                                        </li>
+                                        <li class="header__top--item1"><a href="#" class="header__top--navlink1">Usd</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__top--item">
+                                    <a href="#" class="header__top--navlink">English<i class="fa fa-angle-down"></i></a>
+                                    <ul class="header__top--menu">
+                                        <li class="header__top--item1"><a href="#"
+                                                class="header__top--navlink1">English</a>
+                                        </li>
+                                        <li class="header__top--item1"><a href="#"
+                                                class="header__top--navlink1">French</a>
+                                        </li>
+                                        <li class="header__top--item1"><a href="#"
+                                                class="header__top--navlink1">Spanish</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__top--item">
+                                    <a href="#" class="header__top--navlink">
+                                        <span>Sign In / Sign Up</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__center row">
+                        <div class="col-6 col-lg-3 header__center--left">
+                            <button id="showMenu"><i class="fa fa-bars"></i></button>
+                            <a href="#">
+                                <img src="./assets/img/retina_logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 header__center--seach">
+                            <div class="input-group">
+                                <button class="btn btn-outline-secondary header__top--btn" type="button"><i
+                                        class="fa fa-search"></i></button>
+                                <input type="text" class="form-control header__top--input" placeholder="Seach">
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 header__center--right">
+                            <div class="header__top--itemIcon">
+                                <a href="#">
+                                    <div class="header__top--icon">
+                                        <i class="fa fa-user"></i>
+                                    </div>
+                                    <div class="header__top--label">
+                                        <span>Account</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="header__top--itemIcon wish">
+                                <a href="#">
+                                    <div class="header__top--icon">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+                                    <div class="header__top--label">
+                                        <span>Wish</span>
+                                    </div>
+                                </a>
+                                <div class="header__top--count">
+                                    <span>0</span>
+                                </div>
+                            </div>
+                            <div class="header__top--itemIcon cart">
+                                <a href="#">
+                                    <div class="header__top--icon">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="header__top--label">
+                                        <span>Cart</span>
+                                    </div>
+                                </a>
+                                <div class="header__top--cart">
+                                    <div class="cart__item">
+                                        <div class="cart__item--title">
+                                            <a href="#">
+                                                Borderlands: The Handsome Collection
+                                            </a>
+                                            <p>1 x $59.99</p>
+                                        </div>
+                                        <div class="cart__item--image">
+                                            <a href="#">
+                                                <img src="./assets/img/product-1.jpg" alt="">
+                                            </a>
+                                            <a href="#">
+                                                <i class="fa fa-times"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cart__total">
+                                        <div class="cart__total--title">
+                                            <h4>total</h4>
+                                            <p>59.99$</p>
+                                        </div>
+                                        <div class="cart__total--btn">
+                                            <button class="cart__btn--viewCart">View Cart</button>
+                                            <button class="cart__btn--checkOut">
+                                                Checkout
+                                                <i class="fa fa-arrow-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header__top--count">
+                                    <span>1</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bot" id="header__bot">
+                    <div class="header__bot--content container">
+                        <ul class="header__bot--menu">
+                            <li class="header__bot--item active"><a href="#" class="header__bot--navlink">home<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="header__bot--pages">
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/1.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            01 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/2.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            02 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/3.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            03 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/4.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            04 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/5.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            05 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/6.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            06 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/7.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            07 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/8.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            08 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/9.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            09 - furniture store
+                                        </figcaption>
+                                    </li>
+                                    <li class="header__bot--pageItem">
+                                        <figure>
+                                            <img src="./assets/img/10.jpg" alt="">
+
+                                        </figure>
+                                        <figcaption>
+                                            10 - furniture store
+                                        </figcaption>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__bot--item"><a href="#" class="header__bot--navlink">shop<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="header__bot--products">
+                                    <li class="header__bot--productItem">
+                                        <ul class="header__bot--productChild">
+                                            <li>
+                                                <h4><a href="#">Shop Layouts</a></h4>
+                                            </li>
+                                            <li><a href="#">Shop List</a></li>
+                                            <li><a href="#">Shop Grid 01 Column</a></li>
+                                            <li><a href="#">Shop Grid 02 Column</a></li>
+                                            <li><a href="#">Shop Grid 03 Column</a></li>
+                                            <li><a href="#">Shop Grid 04 Column</a></li>
+                                            <li><a href="#">Shop Grid 05 Column</a></li>
+                                            <li><a href="#">Shop Grid 06 Column</a></li>
+                                            <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                        class="discount">hot</span></a>
+                                            </li>
+                                            <li>
+                                                <h4><a href="#">Shop Slider</a></h4>
+                                            </li>
+                                            <li><a href="#">With Left Slider</a></li>
+                                            <li><a href="#">With Right Slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__bot--productItem">
+                                        <ul class="header__bot--productChild">
+                                            <li>
+                                                <h4><a href="#">Shop Layouts</a></h4>
+                                            </li>
+                                            <li><a href="#">Shop List</a></li>
+                                            <li><a href="#">Shop Grid 01 Column</a></li>
+                                            <li><a href="#">Shop Grid 02 Column</a></li>
+                                            <li><a href="#">Shop Grid 03 Column</a></li>
+                                            <li><a href="#">Shop Grid 04 Column</a></li>
+                                            <li><a href="#">Shop Grid 05 Column</a></li>
+                                            <li><a href="#">Shop Grid 06 Column</a></li>
+                                            <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                        class="discount">new</span></a>
+                                            </li>
+                                            <li>
+                                                <h4><a href="#">Shop Slider</a></h4>
+                                            </li>
+                                            <li><a href="#">With Left Slider</a></li>
+                                            <li><a href="#">With Right Slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__bot--productItem">
+                                        <img src="./assets/img/menu-img-1.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__bot--item"><a href="#" class="header__bot--navlink">product<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="header__bot--products">
+                                    <li class="header__bot--productItem">
+                                        <ul class="header__bot--productChild">
+                                            <li>
+                                                <h4><a href="#">Shop Layouts</a></h4>
+                                            </li>
+                                            <li><a href="#">Shop List</a></li>
+                                            <li><a href="#">Shop Grid 01 Column</a></li>
+                                            <li><a href="#">Shop Grid 02 Column</a></li>
+                                            <li><a href="#">Shop Grid 03 Column</a></li>
+                                            <li><a href="#">Shop Grid 04 Column</a></li>
+                                            <li><a href="#">Shop Grid 05 Column</a></li>
+                                            <li><a href="#">Shop Grid 06 Column</a></li>
+                                            <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                        class="discount">hot</span></a>
+                                            </li>
+                                            <li>
+                                                <h4><a href="#">Shop Slider</a></h4>
+                                            </li>
+                                            <li><a href="#">With Left Slider</a></li>
+                                            <li><a href="#">With Right Slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__bot--productItem">
+                                        <ul class="header__bot--productChild">
+                                            <li>
+                                                <h4><a href="#">Shop Layouts</a></h4>
+                                            </li>
+                                            <li><a href="#">Shop List</a></li>
+                                            <li><a href="#">Shop Grid 01 Column</a></li>
+                                            <li><a href="#">Shop Grid 02 Column</a></li>
+                                            <li><a href="#">Shop Grid 03 Column</a></li>
+                                            <li><a href="#">Shop Grid 04 Column</a></li>
+                                            <li><a href="#">Shop Grid 05 Column</a></li>
+                                            <li><a href="#">Shop Grid 06 Column</a></li>
+                                            <li><a href="#" class="header__bot--productDeal">Shop Market<span
+                                                        class="discount">new</span></a>
+                                            </li>
+                                            <li>
+                                                <h4><a href="#">Shop Slider</a></h4>
+                                            </li>
+                                            <li><a href="#">With Left Slider</a></li>
+                                            <li><a href="#">With Right Slider</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__bot--productItem">
+                                        <img src="./assets/img/menu-img-2.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__bot--item"><a href="#" class="header__bot--navlink">pages<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="header__bot--submenu">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Login</a></li>
+                                    <li><a href="#">Error</a></li>
+                                    <li><a href="#">Coming soon</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__bot--item"><a href="#" class="header__bot--navlink">element<i
+                                        class="fa fa-angle-down"></i></a>
+                                <ul class="header__bot--submenu">
+                                    <li><a href="#">Element 01</a></li>
+                                    <li><a href="#">Element 02</a></li>
+                                    <li><a href="#">Element 03</a></li>
+                                    <li><a href="#">Element 04</a></li>
+                                    <li><a href="#">Element 05</a></li>
+                                    <li><a href="#">Element 06</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__bot--item"><a href="#" class="header__bot--navlink">buy molla <span
+                                        class="discount">hot</span> </a></li>
+                        </ul>
+                        <div class="header__bot--info">
+                            <i class="fab fa-medapps"></i>
+                            <span>CLEARANCE UP TO 30% OFF</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <section class="categories container">
+                <div class="categories__top">
+                    <div class="row">
+                        <div class="col-lg-3 categories__top--left">
+                            <ul>
+                                <li class="categories__top--navItem categories__top--btn">
+                                    <a href="#" class="categories__top--navlink">
+                                        <i class="fa fa-bars"></i>
+                                        Browse Categories
+                                    </a>
+                                </li>
+                                <li class="categories__top--navItem">
+                                    <a href="#" class="categories__top--navlink">
+                                        Playstation
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul class="categories__top--menu menu-col-6">
+                                        <li class="categories__top--col6">
+                                            <ul class="categories__top--submenu">
+                                                <li class="categories__top--heading5">
+                                                    <h5><a href="#">Games Software</a></h5>
+                                                </li>
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                                <li><a href="#">Sports</a></li>
+                                                <li><a href="#">Strategy</a></li>
+                                                <li><a href="#">Role-playing Game</a></li>
+                                                <li><a href="#">Action Adventure</a></li>
+                                                <li><a href="#">Stealth</a></li>
+                                                <li><a href="#">Shooter</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="categories__top--col6">
+                                            <img src="./assets/img/banner-2.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="categories__top--navItem">
+                                    <a href="#" class="categories__top--navlink">
+                                        XBOX
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                    <ul class="categories__top--menu menu-col-12">
+                                        <li class="categories__top--col4">
+                                            <ul class="categories__top--submenu">
+                                                <li class="categories__top--heading5">
+                                                    <h5><a href="#">Games Software</a></h5>
+                                                </li>
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                                <li><a href="#">Sports</a></li>
+                                                <li><a href="#">Strategy</a></li>
+                                                <li><a href="#">Role-playing Game</a></li>
+                                                <li><a href="#">Action Adventure</a></li>
+                                                <li><a href="#">Stealth</a></li>
+                                                <li><a href="#">Shooter</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="categories__top--col4">
+                                            <ul class="categories__top--submenu">
+                                                <li class="categories__top--heading5">
+                                                    <h5><a href="#">Games Software</a></h5>
+                                                </li>
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Adventure</a></li>
+                                                <li><a href="#">Sports</a></li>
+                                                <li><a href="#">Strategy</a></li>
+                                                <li><a href="#">Role-playing Game</a></li>
+                                                <li><a href="#">Action Adventure</a></li>
+                                                <li><a href="#">Stealth</a></li>
+                                                <li><a href="#">Shooter</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="categories__top--col4">
+                                            <img src="./assets/img/banner-1.jpg" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="categories__top--navItem"><a href="#"
+                                        class="categories__top--navlink">Nindendo</a></li>
+                                <li class="categories__top--navItem"><a href="#" class="categories__top--navlink">PC
+                                        Gaming</a></li>
+                                <li class="categories__top--navItem"><a href="#" class="categories__top--navlink">Phone
+                                        &
+                                        Tablet</a></li>
+                                <li class="categories__top--navItem"><a href="#"
+                                        class="categories__top--navlink">Pre-Owned</a></li>
+                                <li class="categories__top--navItem"><a href="#"
+                                        class="categories__top--navlink">Deals</a>
+                                </li>
+                                <li class="categories__top--navItem"><a href="#" class="categories__top--navlink">Coming
+                                        soon</a></li>
+                                <li class="categories__top--navItem"><a href="#"
+                                        class="categories__top--navlink">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-8 col-lg-6 categories__top--center">
+                            <div class="categories__top--card">
+                                <div class="categories__top--image">
+                                    <img src="./assets/img/banner-1-1.jpg" alt="">
+                                </div>
+                                <div class="categories__top--text">
+                                    <h5>PRE-ORDER NOW</h5>
+                                    <h3>BORDERLANDS 3</h3>
+                                    <button class="btn-orange">Pre-Order Now<i
+                                            class="fa fa-long-arrow-alt-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3 categories__top--right">
+                            <div class="row" id="direction-item">
+                                <div class="col-sm-12 categories__top--item">
+                                    <div class="categories__top--card">
+                                        <div class="categories__top--image">
+                                            <img src="./assets/img/banner-2-1.jpg" alt="">
+                                        </div>
+                                        <div class="categories__top--text">
+                                            <h5>WEEKEND OFFER</h5>
+                                            <img src="./assets/img/banner-2-title.png" alt="">
+                                            <p>SAVE <span>$19.99</span></p>
+                                            <button class="btn-orange">Buy Now<i
+                                                    class="fa fa-long-arrow-alt-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 row pe-0">
+                                    <div class="col-6 col-md-12 pe-0 categories__top--item">
+                                        <div class="categories__top--card card-bottom ">
+                                            <div class="categories__top--image">
+                                                <img src="./assets/img/banner-3.jpg" alt="">
+                                            </div>
+                                            <div class="categories__top--text text-bottom">
+                                                <img src="./assets/img/banner-3-title.png" alt="">
+                                                <br>
+                                                <button class="btn-orange">Buy Now<i
+                                                        class="fa fa-long-arrow-alt-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-12 categories__top--item card-mobile d-md-none pe-0">
+                                        <div class="categories__top--card card-bottom">
+                                            <div class="categories__top--image">
+                                                <img src="./assets/img/banner-4.jpg" alt="">
+                                            </div>
+                                            <div class="categories__top--text text-bottom reverse">
+                                                <h5>WEEKEND SALE</h5>
+                                                <img src="./assets/img/banner-4-title.png" alt="">
+                                                <p>25% OFF</p>
+                                                <button class="btn-orange">Buy Now<i
+                                                        class="fa fa-long-arrow-alt-right"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="categories__bot my-3">
+                    <div class="row">
+                        <div class="col-md-3 categories__bot--left">
+                            <div class="categories__bot--card">
+                                <div class="categories__bot--image">
+                                    <img src="./assets/img/banner-4.jpg" class="bot-image" alt="">
+                                </div>
+                                <div class="categories__bot--text">
+                                    <p>WEEKEND SALE</p>
+                                    <img src="./assets/img/banner-4-title.png" alt="">
+                                    <h5>25% OFF</h5>
+                                    <button class="btn-orange">Buy Now<i
+                                            class="fa fa-long-arrow-alt-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="categories__bot--right">
+                                <div class="categories__bot--card">
+                                    <div class="categories__bot--image">
+                                        <img src="./assets/img/banner-5.jpg" class="bot-image" alt="">
+                                    </div>
+                                    <div class="categories__bot--text">
+                                        <p>AMAZING VALUE</p>
+                                        <img src="./assets/img/banner-5-title.png" alt="">
+                                        <br>
+                                        <button class="btn-orange">Pre-Order Now<i
+                                                class="fa fa-long-arrow-alt-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row categories__bot--listIcon">
+                        <div class="col-12 col-md-6 col-lg-3 categories__bot--itemIcon">
+                            <div class="categories__bot--icon">
+                                <i class="fa fa-rocket"></i>
+                            </div>
+                            <div class="categories__bot--textIcon">
+                                <h4>Free Shipping</h4>
+                                <p>Order 50$ or more</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 categories__bot--itemIcon">
+                            <div class="categories__bot--icon">
+                                <i class="fa fa-undo-alt"></i>
+                            </div>
+                            <div class="categories__bot--textIcon">
+                                <h4>Free Returns</h4>
+                                <p>Within 30 days</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 categories__bot--itemIcon">
+                            <div class="categories__bot--icon">
+                                <i class="fa fa-user-circle"></i>
+                            </div>
+                            <div class="categories__bot--textIcon">
+                                <h4>Get 20% Off 1 Item</h4>
+                                <p>When you sign up</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 categories__bot--itemIcon last">
+                            <div class="categories__bot--icon">
+                                <i class="fa fa-life-ring"></i>
+                            </div>
+                            <div class="categories__bot--textIcon">
+                                <h4>We Support</h4>
+                                <p>24/7 amazing services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product__info">
+                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item show" role="presentation" id="show">
+                        <button class="nav-link active product__info--btn" id="home-tab" data-bs-toggle="tab"
+                            data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                            aria-selected="true">Now Trending</button>
+                    </li>
+                    <li class="nav-item" role="presentation" id="show1">
+                        <button class="nav-link product__info--btn" id="profile-tab" data-bs-toggle="tab"
+                            data-bs-target="#profile" type="button" role="tab" aria-controls="profile"
+                            aria-selected="false">New Release</button>
+                    </li>
+                    <li class="nav-item" role="presentation" id="show2">
+                        <button class="nav-link product__info--btn" id="contact-tab" data-bs-toggle="tab"
+                            data-bs-target="#contact" type="button" role="tab" aria-controls="contact"
+                            aria-selected="false">Best-Rate</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="product__info--list container">
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                        <span class="product__info--sale">Sale</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Shooter</a></h5>
+                                    <h3><a href="#">Call of Duty WWII – Gold Edition</a></h3>
+                                    <span class="product__info--price">
+                                        <ins>$24.00</ins><del>Was $59.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-2.jpg" alt=""></a>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">PC Gaming Shooter</a></h5>
+                                    <h3><a href="#">World War Z</a></h3>
+                                    <span class="product__info--price">
+                                        <ins class="ins-custom">$24.00</ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-3-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Shooter</a></h5>
+                                    <h3><a href="#">Borderlands: The Handsome Collection</a></h3>
+                                    <span class="product__info--price">
+                                        <ins class="ins-custom">$59.00</ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-4-1.jpg" alt=""></a>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Action,Adventure</a></h5>
+                                    <h3><a href="#">The Witcher 3: Wild Hunt</a></h3>
+                                    <span class="product__info--price">
+                                        <ins class="ins-custom">$39.99</ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-5-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                        <span class="product__info--sale">Sale</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Action,Adventure</a></h5>
+                                    <h3><a href="#">GTA Online: Criminal Enterprise Starter Pack</a></h3>
+                                    <span class="product__info--price">
+                                        <ins>$19.99</ins><del>Was $24.99</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                        <span class="product__info--sale">Sale</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Shooter</a></h5>
+                                    <h3><a href="#">Call of Duty WWII – Gold Edition</a></h3>
+                                    <span class="product__info--price">
+                                        <ins>$24.00</ins><del>Was $59.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="product__info--list container">
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                        <span class="product__info--sale">Sale</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Shooter</a></h5>
+                                    <h3><a href="#">Call of Duty WWII – Gold Edition</a></h3>
+                                    <span class="product__info--price">
+                                        <ins>$24.00</ins><del>Was $59.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-2.jpg" alt=""></a>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">PC Gaming Shooter</a></h5>
+                                    <h3><a href="#">World War Z</a></h3>
+                                    <span class="product__info--price">
+                                        <ins class="ins-custom">$24.00</ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-3-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Shooter</a></h5>
+                                    <h3><a href="#">Borderlands: The Handsome Collection</a></h3>
+                                    <span class="product__info--price">
+                                        <ins class="ins-custom">$59.00</ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-4-1.jpg" alt=""></a>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Action,Adventure</a></h5>
+                                    <h3><a href="#">The Witcher 3: Wild Hunt</a></h3>
+                                    <span class="product__info--price">
+                                        <ins class="ins-custom">$39.99</ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-5-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                        <span class="product__info--sale">Sale</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Action,Adventure</a></h5>
+                                    <h3><a href="#">GTA Online: Criminal Enterprise Starter Pack</a></h3>
+                                    <span class="product__info--price">
+                                        <ins>$19.99</ins><del>Was $24.99</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                        <span class="product__info--sale">Sale</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Shooter</a></h5>
+                                    <h3><a href="#">Call of Duty WWII – Gold Edition</a></h3>
+                                    <span class="product__info--price">
+                                        <ins>$24.00</ins><del>Was $59.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="product__info--list container">
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                        <span class="product__info--sale">Sale</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Shooter</a></h5>
+                                    <h3><a href="#">Call of Duty WWII – Gold Edition</a></h3>
+                                    <span class="product__info--price">
+                                        <ins>$24.00</ins><del>Was $59.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-2.jpg" alt=""></a>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">PC Gaming Shooter</a></h5>
+                                    <h3><a href="#">World War Z</a></h3>
+                                    <span class="product__info--price">
+                                        <ins class="ins-custom">$24.00</ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-3-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Shooter</a></h5>
+                                    <h3><a href="#">Borderlands: The Handsome Collection</a></h3>
+                                    <span class="product__info--price">
+                                        <ins class="ins-custom">$59.00</ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-4-1.jpg" alt=""></a>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Action,Adventure</a></h5>
+                                    <h3><a href="#">The Witcher 3: Wild Hunt</a></h3>
+                                    <span class="product__info--price">
+                                        <ins class="ins-custom">$39.99</ins>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-5-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                        <span class="product__info--sale">Sale</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Action,Adventure</a></h5>
+                                    <h3><a href="#">GTA Online: Criminal Enterprise Starter Pack</a></h3>
+                                    <span class="product__info--price">
+                                        <ins>$19.99</ins><del>Was $24.99</del>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="product__info--item">
+                                <div class="product__info--image">
+                                    <a href="#"><img src="./assets/img/product-1.jpg" alt=""></a>
+                                    <div class="product__info--deals">
+                                        <span class="product__info--hot">Top</span>
+                                        <span class="product__info--sale">Sale</span>
+                                    </div>
+                                    <div class="product__info--overlay">
+                                        <div class="product__info--icon">
+                                            <div class="product__info--wish">
+                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                            </div>
+                                            <div class="product__info--view">
+                                                <a href="#"><i class="fa fa-search"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="product__info--cart">
+                                            <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product__info--text">
+                                    <h5><a href="#">Shooter</a></h5>
+                                    <h3><a href="#">Call of Duty WWII – Gold Edition</a></h3>
+                                    <span class="product__info--price">
+                                        <ins>$24.00</ins><del>Was $59.00</del>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="carousel__banner container">
+                <div class="carousel__banner--list row">
+                    <div class="col-6 col-md-6 col-lg-4 carousel__banner--item">
+                        <img src="./assets/img/banner-6.jpg" alt="">
+                        <div class="carousel__banner--text right">
+                            <h4>weekend offer</h4>
+                            <img src="./assets/img/banner-6-title.png" alt="">
+                            <p>save 19.99$</p>
+                            <button class="btn-orange">
+                                buy now <i class="fa fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 carousel__banner--item">
+                        <img src="./assets/img/banner-7.jpg" alt="">
+                        <div class="carousel__banner--text left">
+                            <h4>Amazing Deal on an</h4>
+                            <img src="./assets/img/banner-7-title.png" alt="">
+                            <h3>Console</h3>
+                            <p>save 19.99$</p>
+                            <button class="btn-orange">
+                                buy now <i class="fa fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 carousel__banner--item">
+                        <img src="./assets/img/banner-8.jpg" alt="">
+                        <div class="carousel__banner--text left custom">
+                            <h4>save 29.99$</h4>
+                            <img src="./assets/img/banner-8-title.png" class="carousel__banner--image" alt="">
+                            <br>
+                            <button class="btn-orange">
+                                buy now <i class="fa fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 carousel__banner--item">
+                        <img src="./assets/img/banner-7.jpg" alt="">
+                        <div class="carousel__banner--text left">
+                            <h4>Amazing Deal on an</h4>
+                            <img src="./assets/img/banner-7-title.png" alt="">
+                            <h3>Console</h3>
+                            <p>save 19.99$</p>
+                            <button class="btn-orange">
+                                buy now <i class="fa fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 carousel__banner--item">
+                        <img src="./assets/img/banner-6.jpg" alt="">
+                        <div class="carousel__banner--text right">
+                            <h4>weekend offer</h4>
+                            <img src="./assets/img/banner-6-title.png" alt="">
+                            <p>save 19.99$</p>
+                            <button class="btn-orange">
+                                buy now <i class="fa fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6 col-lg-4 carousel__banner--item">
+                        <img src="./assets/img/banner-8.jpg" alt="">
+                        <div class="carousel__banner--text left custom">
+                            <h4>save 29.99$</h4>
+                            <img src="./assets/img/banner-8-title.png" class="carousel__banner--image" alt="">
+                            <br>
+                            <button class="btn-orange">
+                                buy now <i class="fa fa-long-arrow-alt-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product container">
+                <div class="product__title">
+                    <div class="product__title--left">
+                        <h1>Games Coming Soon
+                        </h1>
+                    </div>
+                    <div class="product__title--right">
+                        <a href="#">view more products&nbsp;<i class="fa fa-long-arrow-alt-right"></i></a>
+                    </div>
+                </div>
+                <div class="product__content row">
+                    <div class="col-lg-5 col-xl-5 product__banner--list">
+                        <div class="product__banner--item">
+                            <img src="./assets/img/banner-11.jpg" alt="">
+                            <div class="product__banner--text center">
+                                <h4>out 14 may 2021</h4>
+                                <img src="./assets/img/banner-11-title.png" alt="">
+                                <h3>Main Game & Kombat Pack</h3>
+                                <img src="./assets/img/banner-11-subtitle.png" alt="">
+                                <h2>$99.99</h2>
+                                <button class="btn-orange">
+                                    Pre-Order Now
+                                    <i class="fa fa-long-arrow-alt-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__banner--item">
+                            <img src="./assets/img/banner-9.jpg" alt="">
+                            <div class="product__banner--text center">
+                                <h4>out 14 may 2021</h4>
+                                <img src="./assets/img/banner-9-title.png" alt="">
+                                <img src="./assets/img/banner-11-subtitle.png" alt="">
+                                <h2>$29.99</h2>
+                                <button class="btn-orange">
+                                    Pre-Order Now
+                                    <i class="fa fa-long-arrow-alt-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product__banner--item">
+                            <img src="./assets/img/banner-10.jpg" alt="">
+                            <div class="product__banner--text left">
+                                <h4>out 14 may 2021</h4>
+                                <img src="./assets/img/banner-10-title.png" alt="">
+                                <h2>$79.99</h2>
+                                <button class="btn-orange">
+                                    Pre-Order Now
+                                    <i class="fa fa-long-arrow-alt-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-7 product__list row">
+                        <div class="col-6 col-md-4 col-lg-4 product__item">
+                            <div class="product__item--image">
+                                <a href="#"><img src="./assets/img/product-6-1.jpg" alt=""></a>
+                                <div class="product__item--deals">
+                                    <span class="product__item--hot">Top</span>
+                                </div>
+                                <div class="product__item--overlay">
+                                    <div class="product__item--icon">
+                                        <div class="product__item--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__item--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item--text">
+                                <h5><a href="#">Shooter</a></h5>
+                                <h3><a href="#">Tom Clancy’s Ghost Recon Wildlands</a></h3>
+                                <span class="product__item--price">
+                                    <ins>$49.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 product__item">
+                            <div class="product__item--image">
+                                <a href="#"><img src="./assets/img/product-7.jpg" alt=""></a>
+                                <div class="product__item--overlay">
+                                    <div class="product__item--icon">
+                                        <div class="product__item--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__item--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item--text">
+                                <h5><a href="#">Sport</a></h5>
+                                <h3><a href="#">NBA 2K19 450,000 VC</a></h3>
+                                <span class="product__item--price">
+                                    <ins>$74.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 product__item">
+                            <div class="product__item--image">
+                                <a href="#"><img src="./assets/img/product-8.jpg" alt=""></a>
+                                <div class="product__item--deals">
+                                    <span class="product__item--hot">Top</span>
+                                </div>
+                                <div class="product__item--overlay">
+                                    <div class="product__item--icon">
+                                        <div class="product__item--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__item--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item--text">
+                                <h5><a href="#">Shooter</a></h5>
+                                <h3><a href="#">STAR WARS Battlefront II</a></h3>
+                                <span class="product__item--price">
+                                    <ins>$24.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 product__item">
+                            <div class="product__item--image">
+                                <a href="#"><img src="./assets/img/product-9.jpg" alt=""></a>
+                                <div class="product__item--deals">
+                                    <span class="product__item--hot">Top</span>
+                                </div>
+                                <div class="product__item--overlay">
+                                    <div class="product__item--icon">
+                                        <div class="product__item--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__item--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item--text">
+                                <h5><a href="#">Shooter</a></h5>
+                                <h3><a href="#">Call of Duty: Black Ops 4 Spectre Rising Edition</a></h3>
+                                <span class="product__item--price">
+                                    <ins>$39.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 product__item">
+                            <div class="product__item--image">
+                                <a href="#"><img src="./assets/img/product-10.jpg" alt=""></a>
+                                <div class="product__item--overlay">
+                                    <div class="product__item--icon">
+                                        <div class="product__item--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__item--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item--text">
+                                <h5><a href="#">Role-Playing</a></h5>
+                                <h3><a href="#">Diablo III: Eternal Collection</a></h3>
+                                <span class="product__item--price">
+                                    <ins>$19.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg-4 product__item">
+                            <div class="product__item--image">
+                                <a href="#"><img src="./assets/img/product-11.jpg" alt=""></a>
+                                <div class="product__item--overlay">
+                                    <div class="product__item--icon">
+                                        <div class="product__item--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__item--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__item--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__item--text">
+                                <h5><a href="#">Role-Playing</a></h5>
+                                <h3><a href="#">Tom Clancy’s The Division 2</a></h3>
+                                <span class="product__item--price">
+                                    <ins>$24.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product__gear container">
+                <div class="product__gear--top">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 product__gear--topText">
+                            <h3>JOIN OUR NEWSLETTER</h3>
+                            <p>Subcribe to get information about products and coupons</p>
+                        </div>
+                        <div class="col-12 col-lg-6 product__gear--topSubmit">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Enter your Email address"
+                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <button class="btn btn-warning">
+                                    subscribe
+                                    <i class="fa fa-long-arrow-alt-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__gear--bot">
+                    <div class="product__gear--title">
+                        <div class="product__gear--left">
+                            <h1>Games Coming Soon
+                            </h1>
+                        </div>
+                        <div class="product__gear--right">
+                            <a href="#">view more products&nbsp;<i class="fa fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="product__gear--list">
+                        <div class="product__gear--item">
+                            <div class="product__gear--image">
+                                <a href="#"><img src="./assets/img/product-15.jpg" alt=""></a>
+                                <div class="product__gear--deals">
+                                    <span class="product__gear--hot">Top</span>
+                                </div>
+                                <div class="product__gear--overlay">
+                                    <div class="product__gear--icon">
+                                        <div class="product__gear--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__gear--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__gear--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__gear--text">
+                                <h3><a href="#">HyperX – Cloud Alpha Wired Stereo Gaming Headset</a></h3>
+                                <span class="product__gear--price">
+                                    <ins>$49.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__gear--item">
+                            <div class="product__gear--image">
+                                <a href="#"><img src="./assets/img/product-16.jpg" alt=""></a>
+                                <div class="product__gear--overlay">
+                                    <div class="product__gear--icon">
+                                        <div class="product__gear--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__gear--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__gear--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__gear--text">
+                                <h3><a href="#">Logitech – G502 HERO Wired Optical Gaming Mouse Pack</a></h3>
+                                <span class="product__gear--price">
+                                    <ins>$59.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__gear--item">
+                            <div class="product__gear--image">
+                                <a href="#"><img src="./assets/img/product-12.jpg" alt=""></a>
+                                <div class="product__gear--deals">
+                                    <span class="product__gear--hot">Top</span>
+                                </div>
+                                <div class="product__gear--overlay">
+                                    <div class="product__gear--icon">
+                                        <div class="product__gear--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__gear--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__gear--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__gear--text">
+                                <h3><a href="#">Microsoft – Xbox Elite Wireless Controller</a></h3>
+                                <span class="product__gear--price">
+                                    <ins>$149.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__gear--item">
+                            <div class="product__gear--image">
+                                <a href="#"><img src="./assets/img/product-14.jpg" alt=""></a>
+                                <div class="product__gear--overlay">
+                                    <div class="product__gear--icon">
+                                        <div class="product__gear--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__gear--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__gear--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__gear--text">
+                                <h3><a href="#">Nintendo – Switch 32GB Console</a></h3>
+                                <span class="product__gear--price">
+                                    <ins>$149.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product__gear--item">
+                            <div class="product__gear--image">
+                                <a href="#"><img src="./assets/img/product-13.jpg" alt=""></a>
+                                <div class="product__gear--deals">
+                                    <span class="product__gear--hot">Top</span>
+                                </div>
+                                <div class="product__gear--overlay">
+                                    <div class="product__gear--icon">
+                                        <div class="product__gear--wish">
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                        </div>
+                                        <div class="product__gear--view">
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product__gear--cart">
+                                        <a href="#"><i class="fa fa-cart-plus"></i>Add to cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__gear--text">
+                                <h3><a href="#">Sony – PlayStation 4 1TB Console – Black</a></h3>
+                                <span class="product__gear--price">
+                                    <ins>$299.99</ins>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog">
+                <div class="blog__content container">
+                    <div class="blog__title">
+                        <div class="blog__title--left">
+                            <h1>From Our Blog
+                            </h1>
+                        </div>
+                        <div class="blog__title--right">
+                            <a href="#">view more products&nbsp;<i class="fa fa-long-arrow-alt-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog__list row">
+                        <div class="col-3 blog__item">
+                            <figure>
+                                <a href="#"><img src="./assets/img/post-1.jpg" alt=""></a>
+                            </figure>
+                            <div class="blog__item--text">
+                                <span><a href="#">March 29, 2020, </a> <a href="#">0 Comments</a></span>
+                                <h3><a href="#">Morbi in sem quis dui placerat mauris sit ornare.</a></h3>
+                            </div>
+                        </div>
+                        <div class="col-3 blog__item">
+                            <figure>
+                                <a href="#"><img src="./assets/img/post-2.jpg" alt=""></a>
+                            </figure>
+                            <div class="blog__item--text">
+                                <span><a href="#">March 29, 2020, </a> <a href="#">0 Comments</a></span>
+                                <h3><a href="#">Morbi in sem quis dui placerat mauris sit ornare.</a></h3>
+                            </div>
+                        </div>
+                        <div class="col-3 blog__item">
+                            <figure>
+                                <a href="#"><img src="./assets/img/post-3.jpg" alt=""></a>
+                            </figure>
+                            <div class="blog__item--text">
+                                <span><a href="#">March 29, 2020, </a> <a href="#">0 Comments</a></span>
+                                <h3><a href="#">Morbi in sem quis dui placerat mauris sit ornare.</a></h3>
+                            </div>
+                        </div>
+                        <div class="col-3 blog__item last">
+                            <figure>
+                                <a href="#"><img src="./assets/img/post-4.jpg" alt=""></a>
+                            </figure>
+                            <div class="blog__item--text">
+                                <span><a href="#">March 29, 2020, </a> <a href="#">0 Comments</a></span>
+                                <h3><a href="#">Morbi in sem quis dui placerat mauris sit ornare.</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer__content container">
+                    <div class="footer__top row">
+                        <div class="col-12 col-sm-6 col-lg-3 footer__top--item">
+                            <a href="#"><img src="./assets/img/logo.png" alt=""></a>
+                            <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu vulputate magna
+                                eros eu erat.</p>
+                            <div class="footer__top--social">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 footer__top--item footer__top--navlink">
+                            <h3>Useful Links</h3>
+                            <ul>
+                                <li><a href="#">About Molla</a></li>
+                                <li><a href="#">How to shop on Molla</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Log in</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 footer__top--item footer__top--navlink">
+                            <h3>Customer Service</h3>
+                            <ul>
+                                <li><a href="#">Payment Methods</a></li>
+                                <li><a href="#">Money-back guarantee!</a></li>
+                                <li><a href="#">Returns</a></li>
+                                <li><a href="#">Shipping</a></li>
+                                <li><a href="#">Terms and conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-3 footer__top--item footer__top--navlink">
+                            <h3>My Account</h3>
+                            <ul>
+                                <li><a href="#">Sign In</a></li>
+                                <li><a href="#">View Cart</a></li>
+                                <li><a href="#">My Wishlist</a></li>
+                                <li><a href="#">Track My Order</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__bot">
+                        <div class="footer__bot--left">
+                            <p>Copyright © 2021 Molla Store. All Rights Reserved.</p>
+                        </div>
+                        <div class="footer__bot--right">
+                            <img src="./assets/img/payments.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="menu__mobile" id="menu-mobile">
+        <div class="menu__mobile--top">
+            <span class="menu__mobile--close" id="menu__mobile--close">
+                <i class="fa fa-times"></i>
+            </span>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Seach...">
+                <button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="menu__mobile--bot">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">MAIN MENU</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">CATEGORIES</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <ul class="submenu">
+                        <li class="submenu--item" onclick="clickSubmenu(0)"><a href="#" class="submenu--navlink">Home<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - furniture store<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">03 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">04 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">05 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">06 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">07 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">08 - furniture store<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">10 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">11 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">11 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">12 - furniture store<span
+                                            class="childmenu--active">New</span></a></li>
+                                <li class="childmenu--item"><a href="#">12 - furniture store</a></li>
+                                <li class="childmenu--item"><a href="#">13 - furniture store</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(1)"><a href="#" class="submenu--navlink">Shop<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - Shopping<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">03 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">04 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">05 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">06 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">07 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">08 - Shopping<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">10 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">12 - Shopping<span
+                                            class="childmenu--active">New</span></a></li>
+                                <li class="childmenu--item"><a href="#">12 - Shopping</a></li>
+                                <li class="childmenu--item"><a href="#">13 - Shopping</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(2)"><a href="#"
+                                class="submenu--navlink">Product<i class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - Product<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">03 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">04 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">05 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">06 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">07 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">08 - Product<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">10 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">12 - Product<span
+                                            class="childmenu--active">New</span></a></li>
+                                <li class="childmenu--item"><a href="#">12 - Product</a></li>
+                                <li class="childmenu--item"><a href="#">13 - Product</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(3)"><a href="#" class="submenu--navlink">Pages<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - Page<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">03 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">04 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">05 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">06 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">07 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">08 - Page<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">10 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">12 - Page<span
+                                            class="childmenu--active">New</span></a></li>
+                                <li class="childmenu--item"><a href="#">12 - Page</a></li>
+                                <li class="childmenu--item"><a href="#">13 - Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(4)"><a href="#"
+                                class="submenu--navlink">Element<i class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - Element<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">03 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">04 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">05 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">06 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">07 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">08 - Element<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">10 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">12 - Element<span
+                                            class="childmenu--active">New</span></a></li>
+                                <li class="childmenu--item"><a href="#">12 - Element</a></li>
+                                <li class="childmenu--item"><a href="#">13 - Element</a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(5)"><a href="#" class="submenu--navlink">Buy
+                                Molla<i class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">01 - Buy Molla<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">02 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">03 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">04 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">05 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">06 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">07 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">08 - Buy Molla<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">09 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">10 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">11 - Buy Molla</a></li>
+                                <li class="childmenu--item"><a href="#">12 - Buy Molla<span
+                                            class="childmenu--active">New</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                    <ul class="submenu">
+                        <li class="submenu--item" onclick="clickSubmenu(6)"><a href="#"
+                                class="submenu--navlink">playstation<i class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">Game Software<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item" onclick="clickSubmenu(7)"><a href="#" class="submenu--navlink">Xbox<i
+                                    class="fa fa-angle-down"></i></a>
+                            <ul class="childmenu">
+                                <li class="childmenu--item"><a href="#">Game Software<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                                <li class="childmenu--item"><a href="#">Game Console & Accessories<span
+                                            class="childmenu--popular">Popular</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">nindendo</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">pc gaming</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">phone & tablet</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">pre-owned</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">deals</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">coming soon</a>
+                        <li class="submenu--item"><a href="#" class="submenu--navlink">accessories</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <button class="scrollTop" id="scrollTop"><i class="fa fa-arrow-up"></i></button>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <!-- Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- JS -->
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/categories.js"></script>
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/banner.js"></script>
+    <script src="./assets/js/product.js"></script>
+    <script src="./assets/js/gear.js"></script>
+    <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/header.js"></script>
+</body>
+
+</html>

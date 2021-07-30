@@ -1,0 +1,169 @@
+.menu__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: $color-default;
+    z-index: 99;
+    padding: $pd-2;
+    opacity: 0;
+    overflow-y: auto;
+    visibility: hidden;
+    transition: all .3s;
+    transform: translateX(-300px);
+    .menu__mobile--top {
+        .menu__mobile--close {
+            float: right;
+            margin-bottom: $mg-1;
+            color: $color-white;
+            cursor: pointer;
+        }
+        .input-group {
+            .form-control {
+                border-radius: 0;
+                border-right: none;
+                border: 1px solid rgba($color-text,0.6);
+                color: $color-text;
+                background-color: $color-default;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .btn-outline-secondary {
+                background-color: $color-price;
+                color: $color-white;
+                border: none;
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    .menu__mobile--bot {
+        margin-top: $mg-1;
+        .nav-tabs {
+            border-bottom: 1px solid rgba($color-white,0.2);
+            .nav-link {
+                width: 50%;
+                @include styleText($fs-0 - 2,$color-white,0,0,$fw-2);
+                background-color: $color-default;
+                border: none;
+                padding: $pd-0;
+            }
+            .active {
+                position: relative;
+                border: none;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 1%;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: $color-price;
+                }
+            }
+        }
+        .tab-content {
+            .tab-pane {
+                .submenu {
+                    list-style: none;
+                    padding: $pd-1 0;
+                    .submenu--item {
+                        position: relative;
+                        padding: $pd-1 0;
+                        cursor: pointer;
+                        .submenu--navlink {
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            @include styleText($fs-0 - 2,$color-white,0,0,$fw-2);
+                            transition: all .4s;
+                        }
+                        i {
+                            float: right;
+                            padding-top: 5px;
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 1px;
+                            background-color: rgba($color-text,0.4);
+                        }
+                        &:hover .submenu--navlink {
+                            color: $color-price;
+                        }
+                        .childmenu {
+                            list-style: none;
+                            padding: $pd-1;
+                            display: none;
+                            .childmenu--item {
+                                padding: $pd-0 0;
+                                a {
+                                    text-decoration: none;
+                                    @include styleText($fs-0 - 1,$color-text,0,0,$fw-1);
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: space-between;
+                                    transition: all .4s;
+                                    .childmenu--popular {
+                                        padding: ($pd-0 - 2) $pd-1;
+                                        background-color: $color-price;
+                                        margin-left: $mg-1 + 8;
+                                        @include styleText($fs-0 - 3,$color-white,0,0,$fw-2);
+                                    }
+                                    .childmenu--active {
+                                        padding: ($pd-0 - 2) $pd-2 - 1;
+                                        background-color: #EF837B;
+                                        margin-left: $mg-1 + 8;
+                                        @include styleText($fs-0 - 3,$color-white,0,0,$fw-2);
+                                    }
+                                }
+                                &:hover a {
+                                    color: $color-price;
+                                }
+                            }
+                        }
+                        .childmenu__show {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color-default,0.3);
+    display: none;
+}
+
+@include responsive('large')
+{
+    .menu__mobile--show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+@include responsive('small')
+{
+    .menu__mobile {
+        width: 260px;
+    }
+}
+
+@media screen and(max-width: 500px) {
+    .menu__mobile {
+        width: 220px;
+    }
+}
