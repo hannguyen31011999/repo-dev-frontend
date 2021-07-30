@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Lật Hình</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row mb-5">
+            <div class="col-12 col-sm-4">
+                <h3>Luật chơi: được lật 4 lần nếu quá 4 lần không tìm được cặp hình giống nhau thì bạn đã thua</h3>
+            </div>
+            <div class="col-12 col-sm-4 mb-2">
+                <input type="text" class="form-control" id="dodai" placeholder="Nhập số dòng bạn muốn chơi">
+            </div>
+            <div class="col-12 col-sm-4">
+                <button class="btn btn-primary" onclick="startGame()">Bắt đầu
+                    chơi</button>
+            </div>
+        </div>
+        <div class="row list">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

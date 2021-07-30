@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container .item {
+    position: relative;
+}
+
+.item .card__item img {
+    width: 100%;
+}
+
+.item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+}
+
+
+.overlay .overlay__item {
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay .overlay__item h4 {
+    color: #fff;
+    font-size: 15px;
+}
