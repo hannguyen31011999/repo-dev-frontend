@@ -1,0 +1,226 @@
+/* width */
+
+
+
+header.container-fluid {
+    padding: 0;
+    ::-webkit-scrollbar {
+        width: 4px;
+    }
+      /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(177, 174, 174); 
+    }
+      
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(196, 193, 193);
+        opacity: 0.5;
+    }
+}
+
+header{
+    background-color: $bg-color;
+    height: 60px;
+    position: relative;
+    .header__content {
+        padding: 0 $pd-1;
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 0 15px rgba(168, 165, 165, 0.6);
+        z-index: 999;
+        background-color: $bg-color;
+    }
+    // menu desktop with breakpoint < 767px
+
+    // hide menu
+    .header__menu {
+        opacity: 0;
+        // visibility: hidden;
+        overflow-x: hidden;
+        z-index: 999;
+    }
+    // show menu
+    .header__menu.show {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        opacity: 1;
+        visibility: visible;
+        transition: all 0.3s;
+        overflow-y: hidden;
+        .header__menu--overlay {
+            width: 30%;
+            height: 100%;
+            z-index: 9;
+        }
+        .header__menu--content {
+            width: 70%;
+            height: 100%;
+            background-color: $bg-color;
+            padding-left: $pd-1;
+            padding-top: $pd-0 + 5;
+            z-index: 9;
+            .header__menu--active {
+                a {
+                    text-decoration: none;
+                    @include styleText($fs-0 - 1,$f-color-default,0,0,$fw-bold-1);
+                    transition: all .3s;
+                    &:hover {
+                        color: $color-a-hover;
+                    }
+                }
+                img {
+                    height: 36px;
+                    width: 36px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                }
+                i {
+                    float: right;
+                    display: block;
+                    padding: $pd-0;
+                    font-size: $fs-0 - 2;
+                }
+            }
+            ul {
+                list-style: none;
+                li {
+                    margin-top: $mg-2 + 5;
+                    a {
+                        text-decoration: none;
+                        @include styleText($fs-0 + 3,$f-color-default,0,0,$fw-normal);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// menu desktop with breakpoint > 767px
+.navbar {
+    padding: 0;
+    .navbar-brand {
+        img {
+            height: 50px;
+            width: 50px;
+        }
+    }
+    .collapse {
+        .navbar-nav {
+            width: 100%;
+            .header__center {
+                width: 58%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                .nav-item {
+                    .nav-link {
+                        transition: all .5s;
+                        @include styleText($fs-0 - 1,$f-color-default,0,0,$fw-bold-1);
+                        &:hover {
+                            color: $color-a-hover;
+                        }
+                    }
+                }
+            }
+            .header__right {
+                width: 42%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-right: $mg-1;
+                .nav-item {
+                    .nav-link {
+                        @include styleText($fs-0 - 1,$color-p,0,0,$fw-normal);
+                        img {
+                            height: 30px;
+                            width: 30px;
+                            border-radius: 50%;
+                            margin-right: 4px;
+                        }
+                        .location {
+                            height: 16px;
+                            width: 16px;
+                            opacity: 0.5;
+                            margin-right: 0;
+                        }
+                    }
+                    .dropdown-toggle {
+                        img {
+                            height: 16px;
+                            width: 16px;
+                        }
+                    }
+                    .dropdown-menu {
+                        max-height: 200px;
+                        overflow-y: scroll;
+                        .dropdown-item {
+                            @include styleText($fs-0 - 1,$color-p,0,0,$fw-normal);
+                            transition: all .2s;
+                            &:hover {
+                                background-color: #60c5ef;
+                                color: $bg-color;
+                            }
+                        }
+                    }
+                }
+                .bar {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 20%;
+                        right: -2%;
+                        width: 1px;
+                        height: 28px;
+                        background-color: $color-p;
+                        opacity: 0.5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-content {
+    overflow-y: scroll;
+    max-height: 400px;
+    ul {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 0;
+        padding:$pd-0;
+        li {
+            position: relative;
+            margin-bottom: $mg-2;
+            a {
+                text-decoration: none;
+                @include styleText($fs-0,$f-color-default,0,0,$fw-normal);
+            }
+            .active {
+                color: $color-a-hover;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -50%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: rgb(211, 205, 205);
+                opacity: 0.5;
+            }
+        }
+    }
+}

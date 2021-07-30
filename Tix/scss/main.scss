@@ -1,0 +1,29 @@
+// font google
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+// utils
+@import './ultils/variable';
+@import './ultils/mixin';
+
+// base
+@import './base/customize';
+@import './base/reset';
+
+
+// components
+
+
+// layouts
+@import './layouts/header';
+@import './layouts/footer';
+
+// page home
+@import './pages/home/carousel';
+@import './pages/home/product';
+@import './pages/home/complex';
+@import './pages/home/blog';
+@import './pages/home/introduce';
+
+
+// page detail
+@import './pages/detail/product';

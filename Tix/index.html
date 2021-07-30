@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIX - Đặt Vé Nhanh Nhất / Trang chủ</title>
+    <!-- logo -->
+    <link rel="shortcut icon" href="./img/web-logo.png" type="image/x-icon">
+    <!-- Bootstrap 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="header__content">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/web-logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" id="showMenu" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <div class="header__center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Lịch chiếu
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cụm rạp
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Tin tức
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ứng dụng
+                                </a>
+                            </li>
+                        </div>
+                        <div class="header__right">
+                            <li class="nav-item bar">
+                                <a class="nav-link" href="#">
+                                    <img src="./img/avatar.png" alt="">
+                                    Đăng nhập
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="location" src="./img/location-header.png" alt="">
+                                    Hồ Chí Minh
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+                                    <a class="dropdown-item" href="#">Hà Nội</a>
+                                    <a class="dropdown-item" href="#">Hải Phòng</a>
+                                    <a class="dropdown-item" href="#">Đà nẵng</a>
+                                    <a class="dropdown-item" href="#">Biên Hòa</a>
+                                    <a class="dropdown-item" href="#">Nha Trang</a>
+                                    <a class="dropdown-item" href="#">Bình Dương</a>
+                                    <a class="dropdown-item" href="#">Phan Thiết</a>
+                                    <a class="dropdown-item" href="#">Hạ Long</a>
+                                    <a class="dropdown-item" href="#">Cần Thơ</a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--overlay">
+            </div>
+            <div class="header__menu--content">
+                <div class="header__menu--active">
+                    <img src="./img/avatar.png" alt="">
+                    <a href="">
+                        Đăng Nhập
+                    </a>
+                    <i class="fa fa-arrow-right" id="closeMenu"></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            Lịch Chiếu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Cụm Rạp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Tin Tức
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Ứng Dụng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="chooseOption" data-toggle="modal" data-target=".bd-example-modal-lg">
+                            Hồ Chí Minh
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">Hồ Chí Minh</a>
+                        </li>
+                        <li>
+                            <a href="#">Hà Nội</a>
+                        </li>
+                        <li>
+                            <a href="#">Hải Phòng</a>
+                        </li>
+                        <li>
+                            <a href="#">Đà nẵng</a>
+                        </li>
+                        <li>
+                            <a href="#">Biên Hòa</a>
+                        </li>
+                        <li>
+                            <a href="#">Nha Trang</a>
+                        </li>
+                        <li>
+                            <a href="#">Bình Dương</a>
+                        </li>
+                        <li>
+                            <a href="#">Phan Thiết</a>
+                        </li>
+                        <li>
+                            <a href="#">Hạ Long</a>
+                        </li>
+                        <li>
+                            <a href="#">Cần Thơ</a>
+                        </li>
+                        <li>
+                            <a href="#">Vũng Tàu</a>
+                        </li>
+                        <li>
+                            <a href="#">Huế</a>
+                        </li>
+                        <li>
+                            <a href="#">Quy Nhơn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="carousel container-fluid">
+        <div class="carousel__content">
+            <div class="carousel__item">
+                <a href="">
+                    <img src="./img/trang-ti-16194117174325.jpg" alt="">
+                </a>
+                <button data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/l2XBzUZidig"
+                    href="javascript:;">
+                    <img src="./img/play-video.png" alt="">
+                </button>
+            </div>
+            <div class="carousel__item">
+                <a href="">
+                    <img src="./img/lat-mat-48h-16177782153424.png" alt="">
+                </a>
+                <button data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/kBY2k3G6LsM"
+                    href="javascript:;">
+                    <img src="./img/play-video.png" alt="">
+                </button>
+            </div>
+            <div class="carousel__item">
+                <a href="">
+                    <img src="./img/ban-tay-diet-quy-evil-expeller-16177781815781.png" alt="">
+                </a>
+                <button data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/uqJ9u7GSaYM"
+                    href="javascript:;">
+                    <img src="./img/play-video.png" alt="">
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="products__content">
+            <div class="container">
+                <div class="products__top">
+                    <div class="products__homeTool--list">
+                        <span class="chooseFilm">Phim</span>
+                        <i class="fa fa-angle-down"></i>
+                        <ul class="products__submenu">
+                            <li>
+                                <a href="#">Trạng Tí Phiêu Lưu Ký</a>
+                            </li>
+                            <li>
+                                <a href="#">Lật Mặt: 48h</a>
+                            </li>
+                            <li>
+                                <a href="#">Thiên Thần Hộ Mệnh - The Guardian (C18)</a>
+                            </li>
+                            <li>
+                                <a href="#">Detective Conan: Scarlet Bullet - Thám Tử Lừng Danh Conan: Viên Đạn Đỏ -
+                                    C13</a>
+                            </li>
+                            <li>
+                                <a href="#">Người Nhân Bản - Seobok (C16)</a>
+                            </li>
+                            <li>
+                                <a href="#">Bàn Tay Diệt Quỷ - Evil Expeller (C16)</a>
+                            </li>
+                            <li>
+                                <a href="#">Kẻ Vô Danh - Nobody - C18</a>
+                            </li>
+                            <li>
+                                <a href="#">Hùng Thần Trắng - Great White - C18</a>
+                            </li>
+                            <li>
+                                <a href="#">Chiến Binh Cuối Cùng: Cuội Nguồn Của Quỷ - The Last Warrior: Root Of Evil -
+                                    C13</a>
+                            </li>
+                            <li>
+                                <a href="#">Ong Nhí Phiêu Lưu Ký: Giải Cứu Công Chúa Kiến - Maya The Bee 3: The Golden
+                                    Orb -
+                                    P</a>
+                            </li>
+                            <li>
+                                <a href="#">Nhân Đôi Tình Yêu - Double Party - C13</a>
+                            </li>
+                            <li>
+                                <a href="#">Trùm Cuối Siêu Đẳng - Boss Level - C18</a>
+                            </li>
+                            <li>
+                                <a href="#">The Hypnosis - Con Lắc Tà Thuật - C18</a>
+                            </li>
+                            <li>
+                                <a href="#">Godzilla vs. Kong</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="products__homeTool--item theater">
+                        <span class="chooseItem">Rạp</span>
+                        <i class="fa fa-angle-down"></i>
+                        <ul class="products__theater--submenu">
+                            <li>
+                                <a href="#">Vui lòng chọn phim</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="products__homeTool--item date">
+                        <span class="chooseItem">Ngày xem</span>
+                        <i class="fa fa-angle-down"></i>
+                        <ul class="products__date--submenu">
+                            <li>
+                                <a href="#">Vui lòng chọn phim và rạp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="products__homeTool--item showtime">
+                        <span class="chooseItem">Suất chiếu</span>
+                        <i class="fa fa-angle-down"></i>
+                        <ul class="products__showtime--submenu">
+                            <li>
+                                <a href="#">Vui lòng chọn phim, rạp và ngày xem</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="products__homeTool--btn">
+                        <button type="button" class="btn btn-dark">mua vé ngay</button>
+                    </div>
+                </div>
+                <div class="products__bot">
+                    <ul class="nav nav-tabs justify-content-center align-items-center" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true">Đang Chiếu</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false">Sắp Chiếu</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row desktop presentFilms">
+                                <div class="col-sm-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/trang-ti-phim.jpg" alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>6.3</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/l2XBzUZidig"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Trạng Tí Phiêu Lưu Ký
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/lat-mat-48h-16176188609123_215x318.png" alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>7.8</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn data-fancybox data-type="
+                                                    data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/ykBfss-8H4Y"
+                                                    href="javascript:;">
+                                                    <img src=" ./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C18
+                                        </span>
+                                        <span class="text">
+                                            Lật Mặt 48h
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/thien-than-ho-menh-16157907251398_215x318.jpg" alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>7.5</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/1H-2FeFOM08"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C18
+                                        </span>
+                                        <span class="text">
+                                            Thiên Thần Hộ Mệnh - The Guardian (C18)
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>124 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/detective-conan-scarlet-bullet-tham-tu-lung-danh-conan-vien-dan-do-p-16185623740090_215x318.png"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>8.8</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/kOh1OTokLCk"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C13
+                                        </span>
+                                        <span class="text">
+                                            Detective Conan: Scarlet Bullet - Thám Tử Lừn...
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>110 phút - 6.4 IMDb</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/nguoi-nhan-ban-seobok-c18-16170933054901_215x318.jpg"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>7.5</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/JNZv1SgHv68"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C16
+                                        </span>
+                                        <span class="text">
+                                            Người Nhân Bản - Seobok (C16)
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>114 phút - 6.2 IMDb</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/ban-tay-diet-quy-evil-expeller-c16-16167437811994_215x318.png"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>8.8</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/uqJ9u7GSaYM"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C16
+                                        </span>
+                                        <span class="text">
+                                            Bàn Tay Diệt Quỷ - Evil Expeller (C16)
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>129 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/ke-vo-danh-nobody-c18-16177813592209_215x318.png"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>8.5</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/_qVn8CswIB0"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C18
+                                        </span>
+                                        <span class="text">
+                                            Kẻ Vô Danh - Nobody - C18
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>92 phút - 7.4 IMDb</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/hung-than-trang-great-white-c13-16199525115620_215x318.png"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>5.5</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/yHSNsUnLaaA"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C18
+                                        </span>
+                                        <span class="text">
+                                            Hùng Thần Trắng - Great White - C18
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút - 3.9 IMDb</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/chien-binh-cuoi-cung-cuoi-nguon-cua-quy-the-last-warrior-root-of-evil-c13-16199511224567_215x318.png"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>5.5</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/e-TTjPlJvMc"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C13
+                                        </span>
+                                        <span class="text">
+                                            Chiến Binh Cuối Cùng: Cuội Nguồn Của Quỷ - The...
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>122 phút - 5.9 IMDb</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/ong-nhi-phieu-luu-ky-giai-cuu-cong-chua-kien-maya-the-bee-3-the-golden-orb-p-16177793756407_215x318.png"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>8.8</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/RVzlfJ2vWLY"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Ong Nhí Phiêu Lưu Ký: Giải Cứu Công Chúa Kiến...
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>88 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/nhan-doi-tinh-yeu-double-party-c13-16188292910862_215x318.png"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>8.8</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/-tC6Rzbi4PA"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C13
+                                        </span>
+                                        <span class="text">
+                                            Nhân Đôi Tình Yêu - Double Party - C13
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>107 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/trum-cuoi-sieu-dang-bosslevel-c18-16188999396703_215x318.png"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>7.6</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/mLBRFOpv_js"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C18
+                                        </span>
+                                        <span class="text">
+                                            Trùm Cuối Siêu Đẳng - Boss Level - C18
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút - 6.9 IMDb</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/the-hypnosis-con-lac-ta-thuat-c18-16185613453118_215x318.png"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>5.5</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/kvPlRDgxwxQ"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C18
+                                        </span>
+                                        <span class="text">
+                                            The Hypnosis - Con Lắc Tà Thuật - C18
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>110 phút - 4.8 IMDb</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films/godzilla-vs-kong-16150074733397_215x318.jpg" alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>8.3</p>
+                                            <p class="star">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.png" alt="">
+                                                <img src="./img/star1.2.png" alt="">
+                                            </p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/odM92ap8_c0"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C13
+                                        </span>
+                                        <span class="text">
+                                            Godzilla vs. Kong
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút - 6.4 IMDb</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row desktop futureFilms">
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/biet-doi-san-ma-chuyen-kiep-ghostbusters-afterlife-15759470166331_215x318.jpg"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/3eLJpPHZLkg"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Biệt Đội Săn Ma Chuyển Kiếp - Ghostbusters Afterlife
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/em-va-trinh-15813267048692_215x318.jpg" alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Em và Trịnh
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>0 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/fast-furious-9-15803709020861_215x318.jpg"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/SrpgXe_mbFE"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Fast & Furious 9
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút - 5.2 IMDb</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/ta-nang-phan-dung-15862384755700_215x318.jpg"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/mkhX-fjsDJw"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Tà Năng Phan Dũng
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/1990-c16-16170969832613_215x318.jpg" alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/KLWOBI6uQ9s"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon active">
+                                            C16
+                                        </span>
+                                        <span class="text">
+                                            1990 (C16)
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>120 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/shang-chi-and-the-legend-of-the-ten-rings-15668741464229_215x318.jpg"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/giWIr7U1deA"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Shang-Chi and the Legend of the Ten Rings
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>110 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/dua-be-i-16188328093041_215x318.png" alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/0r6t3xZ7RhA"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Đứa Bé - I
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>114 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/john-wick-chapter-4-15827770304921_215x318.jpg"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/56pvThSsoSE"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            John Wick: Chapter 4
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>110 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/the-matrix-4-15827771560629_215x318.jpg" alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/PkhXLgu-mYM"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            The Matrix 4
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/cruella-16182123467884_215x318.png" alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Cruella
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>0 phút - 7.4 IMDb</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/chu-ngua-bat-kham-spirit-p-16171851912283_215x318.png"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Chú ngựa bất kham- Spirit - P
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>0 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/am-anh-kinh-hoang-3-the-conjuring-3-c18-15742352934530_215x318.jpg"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/tbs3XRt0hhI"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Ám Ảnh Kinh Hoàng 3 - The Conjuring The Devil Ma
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút - 6.4 IMDb</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/jurassic-world-dominion-15827788277771_215x318.jpg"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            Jurassic World: Dominion
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>0 phút</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-3 products__item">
+                                    <div class="products__thumbnail">
+                                        <div class="products__image">
+                                            <img src="./img/films_late/in-the-heights-15779380081932_215x318.jpg"
+                                                alt="">
+                                        </div>
+                                        <span class="products__review">
+                                            <p>02/04</p>
+                                        </span>
+                                        <a href="detail.html">
+                                            <div class="products__overlay">
+                                                <button class="products__overlay--btn" data-fancybox data-type="iframe"
+                                                    data-src="https://www.youtube.com/embed/u5pTICZ2oeg"
+                                                    href="javascript:;">
+                                                    <img src="./img/play-video.png" alt="">
+                                                </button>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="products__title">
+                                        <span class="icon">
+                                            P
+                                        </span>
+                                        <span class="text">
+                                            In the Heights
+                                        </span>
+                                    </div>
+                                    <div class="products__time">
+                                        <span>100 phút - 7.8 IMDb</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="complex">
+        <div class="complex__content container">
+            <div class="row">
+                <div class="col-lg-1 complex__left">
+                    <ul class="complex__list--producer">
+                        <li class="active">
+                            <a href="">
+                                <img src="./img/bhd.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/cinestar.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/bt.jpg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/dongdacinema.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/megags.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/dcine.png" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./img/galaxycine.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 complex__center">
+                    <ul class="complex__list--products">
+                        <li class="active">
+                            <div class="complex__image">
+                                <img src="./img/bhd-star-bitexco-16105952137769.png" alt="">
+                            </div>
+                            <div class="complex__info mr-auto">
+                                <p><span>BHD Star</span> - Bitexco</p>
+                                <span>L3-Bitexco Icon 68, 2 Hải Triều, Q.1</span>
+                                <h5><a href="#">[chi tiết]</a></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="complex__image">
+                                <img src="./img/bhd-star-vincom-thao-dien-16105955634183.png" alt="">
+                            </div>
+                            <div class="complex__info mr-auto">
+                                <p><span>BHD Star</span> - Vincom Thảo Điền</p>
+                                <span>L5-Megamall, 159 XL Hà Nội, Q.2</span>
+                                <h5><a href="#">[chi tiết]</a></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="complex__image">
+                                <img src="./img/bhd-star-vincom-3-2-16105957596860.png" alt="">
+                            </div>
+                            <div class="complex__info mr-auto">
+                                <p><span>BHD Star</span> - Vincom 3/2</p>
+                                <span>L5-Vincom 3/2, 3C Đường 3/2, Q.10</span>
+                                <h5><a href="#">[chi tiết]</a></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="complex__image">
+                                <img src="./img/bhd-star-pham-hung-16105959230642.png" alt="">
+                            </div>
+                            <div class="complex__info mr-auto">
+                                <p><span>BHD Star</span> - Phạm Hùng</p>
+                                <span>L4-Satra Phạm Hùng, C6/27 Phạm Hùng, Bình Chánh</span>
+                                <h5><a href="#">[chi tiết]</a></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="complex__image">
+                                <img src="./img/bhd-star-vincom-quang-trung-16105960645760.png" alt="">
+                            </div>
+                            <div class="complex__info mr-auto">
+                                <p><span>BHD Star</span> - Quang Trung</p>
+                                <span>B1-Vincom QT, 190 Quang Trung, Gò Vấp</span>
+                                <h5><a href="#">[chi tiết]</a></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="complex__image">
+                                <img src="./img/bhd-star-vincom-le-van-viet-16105962051265.png" alt="">
+                            </div>
+                            <div class="complex__info mr-auto">
+                                <p><span>BHD Star</span> - Lê Văn Việt</p>
+                                <span>L4-Vincom Plaza, 50 Lê Văn Việt, Q.9</span>
+                                <h5><a href="#">[chi tiết]</a></h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-7 complex__right">
+                    <p>Không có suất chiếu</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="blog">
+        <div class="blog__content container">
+            <ul class="nav nav-tabs justify-content-center align-items-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#showFilm" role="tab"
+                        aria-controls="home" aria-selected="true">Điện Ảnh</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#showReview" role="tab"
+                        aria-controls="profile" aria-selected="false">Review</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#showPromotion" role="tab"
+                        aria-controls="contact" aria-selected="false">Khuyến Mãi</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="showFilm" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row blog__top">
+                        <div class="col-sm-6 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/lat-mat.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt: 48H
+                                        đậm chất </a>
+                                </h3>
+                                <p>
+                                    Trước thềm khởi chiếu 16.04 này, Lý Hải bất ngờ tung clip rượt đuổi gay cấn thót tim
+                                    fans hâm mộ
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>128</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>63</span></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/mortal-kombat.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">[MORTAL KOMBAT: CUỘC CHIẾN SINH TỬ] - GỌI TÊN NHỮNG PHIM ĐIỆN ẢNH NỔI
+                                        TIẾNG ĐƯỢC CHUYỂN THỂ TỪ CÁC TỰA...</a>
+                                </h3>
+                                <p>
+                                    Bên cạnh những kịch bản gốc mới mẻ và đầy bất ngờ, Hollywood cũng không thiếu những
+                                    tác phẩm đình đám được chuyển thể từ tiểu thuyết, phim hoạt hình, hay thậm chí là cả
+                                    trò chơi điện tử.
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>38</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>18</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row blog__bot">
+                        <div class="col-12 col-sm-4 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/promising-young-woman.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">PROMISING YOUNG WOMAN | Bông hồng nước Anh Carey Mulligan và màn trả
+                                        thù...</a>
+                                </h3>
+                                <p>
+                                    Đề cử giải Oscar danh giá vừa gọi tên Carey Mulligan ở hạng mục nữ chính xuất sắc
+                                    nhất cho vai diễn "đẫm máu" nhất sự nghiệp của cô trong phim
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>125</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>50</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/vua-dep-lai-vua-tai-nang.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">VỪA ĐẸP LẠI VỪA TÀI NĂNG, DÀN SAO NAM CỦA PHIM “BÀN TAY DIỆT QUỶ”...</a>
+                                </h3>
+                                <p>
+                                    Quy tụ 3 nam tài tử vừa điển trai, vừa được đánh giá cao về năng lực diễn xuất là
+                                    Park Seo Joon, Woo Do Hwan và Choi Woo Sik, tác phẩm kinh dị – hành
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>999</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>500</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 blog__item--list">
+                            <div class="row">
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/khai-truong-rap-xin-gia-ngon-chuan-xi-tai-sai-gon-16115477671555.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>Khai trương rạp xịn giá ngon, chuẩn xì-tai Sài Gòn</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh-16056939435004.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>“Bóc tem” tổ hợp giải trí mới toanh của giới Hà Thành</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu-16043751284117.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>Tiệc Trăng Máu chính thức cán mốc 100 tỷ chỉ sau 2 tuần công chiếu </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/ngo-thanh-van-chinh-thuc-khoi-dong-cuoc-thi-thiet-ke-trang-phuc-cho-sieu-anh-hung-dau-tien-cua-viet-nam-vinaman-16041584850247.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>NGÔ THANH VÂN CHÍNH THỨC KHỞI ĐỘNG CUỘC THI THIẾT KẾ...</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__btn text-center mt-5">
+                        <button>xem thêm</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="showReview" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row blog__top">
+                        <div class="col-sm-6 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/review-tan-tich-quy-am-relic-ba-the-he-va-moi-lien-ket-15965255784224.png"
+                                        alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối liên kết</a>
+                                </h3>
+                                <p>
+                                    Điểm nhấn của phim kinh dị năm 2020 chính là Tàn Tích Quỷ Ám
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>128</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>63</span></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/review-dinh-thu-oan.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">Review: Dinh Thự Oan Khuất (Ghost Of War)</a>
+                                </h3>
+                                <p>
+                                    Tuy là một bộ phim có chất lượng tốt, nhưng có vẻ Dinh Thự Oan Khuất vẫn chưa đủ để
+                                    đem khán giả trở lại phòng vé!
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>38</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>18</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row blog__bot">
+                        <div class="col-12 col-sm-4 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/blackkklansman-coc-nuoc-lanh.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">‘BlacKkKlansman’ - cốc nước lạnh để người Mỹ thức tỉnh</a>
+                                </h3>
+                                <p>
+                                    Tác phẩm nhận đề cử Phim truyện xuất sắc tại Oscar 2019 của đạo diễn Spike Lee là
+                                    một lát cắt nữa về nạn phân biệt chủng tộc - nỗi đau gây nhức.
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>125</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>50</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/american-sniper-chinh-nghia.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">American Sniper - Chính nghĩa hay phi nghĩa?</a>
+                                </h3>
+                                <p>
+                                    American Sniper khắc họa một tay súng bắn tỉa “huyền thoại” của Hải quân Mỹ với 4
+                                    lần tham chiến ở Trung Đông. Câu chuyện phim chậm rãi đưa người
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>999</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>500</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 blog__item--list">
+                            <div class="row">
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/blog/review-spider-man-into-the-spider-vesre-15886520889426.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>Review: Spider-Man: Into The Spider-Vesre </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh-16056939435004.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>“Bóc tem” tổ hợp giải trí mới toanh của giới Hà Thành</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu-16043751284117.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>Tiệc Trăng Máu chính thức cán mốc 100 tỷ chỉ sau 2 tuần công chiếu </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/ngo-thanh-van-chinh-thuc-khoi-dong-cuoc-thi-thiet-ke-trang-phuc-cho-sieu-anh-hung-dau-tien-cua-viet-nam-vinaman-16041584850247.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>NGÔ THANH VÂN CHÍNH THỨC KHỞI ĐỘNG CUỘC THI THIẾT KẾ...</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__btn text-center mt-5">
+                        <button>xem thêm</button>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="showPromotion" role="tabpanel" aria-labelledby="contact-tab">
+                    <div class="row blog__top">
+                        <div class="col-sm-6 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/bhd-59k-ve-ca-tuan-16190002421777.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">BHD 59K/VÉ CẢ TUẦN !!!</a>
+                                </h3>
+                                <p>
+                                    Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá 59k/vé khi mua vé trên
+                                    TIX hoặc Mục Vé Phim trên ZaloPay.
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>128</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>63</span></span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/tix-1k-ve-ngai-chi-gia-ve-16045662877511.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">TIX 1K/VÉ NGẠI CHI GIÁ VÉ</a>
+                                </h3>
+                                <p>
+                                    Đồng giá 1k/vé cả tuần tất cả các rạp trên TIX + Nhận thêm 02 voucher thanh toán
+                                    ZaloPay thả ga
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>38</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>18</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row blog__bot">
+                        <div class="col-12 col-sm-4 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/dong-gia-1k-ve-khi-mua-ve-qua-tix-16010092946804.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX </a>
+                                </h3>
+                                <p>
+                                    ĐỒNG GIÁ 1K/VÉ KHI MUA VÉ QUA TIX Hành trình tìm Ròm và Phúc chỉ với 1k cả tuần +
+                                    nhận thêm 02 voucher khi đặt vé qua TIX.
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>125</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>50</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 blog__item">
+                            <div class="blog__image">
+                                <a href="#">
+                                    <img src="./img/blog/bhd-star-ve-chi-59-000d-ca-tuan-15937622264546.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__text">
+                                <h3>
+                                    <a href="#">BHD STAR VÉ CHỈ 59.000Đ CẢ TUẦN!</a>
+                                </h3>
+                                <p>
+                                    Tận hưởng Ưu Đãi lên đến 3 VÉ BHD Star mỗi tuần chỉ với giá 59k/vé khi mua vé trên
+                                    TIX và thanh toán bằng ZaloPay hoặc Mục Vé Phim trên ZaloPay.
+                                </p>
+                            </div>
+                            <div class="blog__icon">
+                                <span class="blog__icon--like"><img src="./img/like.png" alt=""><span>999</span></span>
+                                <span class="blog__icon--comment"><img src="./img/comment.png"
+                                        alt=""><span>500</span></span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 blog__item--list">
+                            <div class="row">
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/khai-truong-rap-xin-gia-ngon-chuan-xi-tai-sai-gon-16115477671555.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>Beta Cineplex trở lại với hàng loạt ưu đãi lớn</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh-16056939435004.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>[123Phim] Thứ 6 Không Đen Tối - Ưu đãi huỷ diệt 11k/vé Anh...
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu-16043751284117.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>[123Phim] NHẬP MÃ 'PSM30K' - Giảm ngay 30k khi đặt vé Pháp...</p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 blog__item--miniPost">
+                                    <div class="blog__item--image">
+                                        <a href="#"><img
+                                                src="./img/ngo-thanh-van-chinh-thuc-khoi-dong-cuoc-thi-thiet-ke-trang-phuc-cho-sieu-anh-hung-dau-tien-cua-viet-nam-vinaman-16041584850247.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="blog__item--title">
+                                        <a href="#">
+                                            <p>[Mega GS] Một đoá hoa thay ngàn lời yêu</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog__btn text-center mt-5">
+                        <button>xem thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="introduce">
+        <div class="introduce__content container">
+            <div class="row">
+                <div class="col-12 col-md-6 introduce__left">
+                    <div class="introduce__text">
+                        <h1>Ứng dụng tiện lợi dành cho người yêu điện ảnh</h1>
+                        <h4>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</h4>
+                        <button class="introduce__btn">App miễn phí - Tải về ngay!</button>
+                        <p>TIX có hai phiên bản <a href="#">iOS</a> & <a href="#">Android</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 introduce__right">
+                    <img src="./img/mobile.png" alt="">
+                    <div class="introduce__carouse">
+                        <img src="./img/slide1.jpg" alt="">
+                        <img src="./img/slide2.jpg" alt="">
+                        <img src="./img/slide3.jpg" alt="">
+                        <img src="./img/slide4.jpg" alt="">
+                        <img src="./img/slide5.jpg" alt="">
+                        <img src="./img/slide6.jpg" alt="">
+                        <img src="./img/slide7.jpg" alt="">
+                        <img src="./img/slide8.jpg" alt="">
+                        <img src="./img/slide9.jpg" alt="">
+                        <img src="./img/slide10.jpg" alt="">
+                        <img src="./img/slide11.jpg" alt="">
+                        <img src="./img/slide12.jpg" alt="">
+                        <img src="./img/slide13.jpg" alt="">
+                        <img src="./img/slide14.jpg" alt="">
+                        <img src="./img/slide15.jpg" alt="">
+                        <img src="./img/slide16.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__content container">
+            <div class="row footer__top">
+                <div class="col-lg-4 col-md-6 footer__left">
+                    <h5 class="footer__title">tix</h5>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 footer__top--left">
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Brand Guidelines</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 footer__top--right">
+                            <ul>
+                                <li><a href="#">Thỏa thuận sử dụng</a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 footer__center">
+                    <h5 class="footer__title">đối tác</h5>
+                    <div class="row">
+                        <div class="footer__list--image col-12">
+                            <a href=""><img src="./img/cgv.png" alt=""></a>
+                            <a href=""><img src="./img/bhd.png" alt=""></a>
+                            <a href=""><img src="./img/galaxycine.png" alt=""></a>
+                            <a href=""><img src="./img/cinestar.png" alt=""></a>
+                            <a href=""><img src="./img/404b8c4b80d77732e7426cdb7e24be20.png" alt=""></a>
+                        </div>
+                        <div class="footer__list--image col-12">
+                            <a href=""><img src="./img/megags.png" alt=""></a>
+                            <a href=""><img src="./img/77807d96b5048f1d79f45d9d7d3f6a3a.png" alt=""></a>
+                            <a href=""><img src="./img/9b240f96a233bb43203ee514a21a6004.png" alt=""></a>
+                            <a href=""><img src="./img/TOUCH.png" alt=""></a>
+                            <a href=""><img src="./img/cnx.jpg" alt=""></a>
+                        </div>
+                        <div class="footer__list--image col-12">
+                            <a href=""><img src="./img/STARLIGHT.png" alt=""></a>
+                            <a href=""><img src="./img/dcine.png" alt=""></a>
+                            <a href=""><img src="./img/zalopay_icon.png" alt=""></a>
+                            <a href=""><img src="./img/payoo.jpg" alt=""></a>
+                            <a href=""><img src="./img/VCB.png" alt=""></a>
+                        </div>
+                        <div class="footer__list--image col-12">
+                            <a href=""><img src="./img/AGRIBANK.png" alt=""></a>
+                            <a href=""><img src="./img/VIETTINBANK.png" alt=""></a>
+                            <a href=""><img src="./img/IVB.png" alt=""></a>
+                            <a href=""><img src="./img/123go.png" alt=""></a>
+                            <a href=""><img src="./img/laban.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 footer__right">
+                    <div class="row">
+                        <div class="col-lg-6 footer__app">
+                            <h5 class="footer__title">mobile app</h5>
+                            <div class="row">
+                                <div class="footer__list--icon col-12">
+                                    <a href=""><img src="./img/apple-logo.png" alt=""></a>
+                                    <a href=""><img src="./img/android-logo.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 footer__social">
+                            <h5 class="footer__title ml-3">social</h5>
+                            <div class="row">
+                                <div class="footer__list--social col-12">
+                                    <a href=""><img src="./img/facebook-logo.png" alt=""></a>
+                                    <a href=""><img src="./img/zalo-logo.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer__bot">
+                <div class="col-12 col-lg-1 mb-3">
+                    <img src="./img/zion-logo.jpg" alt="">
+                </div>
+                <div class="col-12 col-lg-9 footer__info mb-3">
+                    <h5 class="footer__title">TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h5>
+                    <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
+                    <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,</p>
+                    <p>đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí
+                        Minh cấp.</p>
+                    <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+                    <p>Email: <a href="">support@tix.vn</a></p>
+                </div>
+                <div class="col-12 col-lg-2 mb-3">
+                    <a href=""><img class="image" src="./img/d1e6bd560daa9e20131ea8a0f62e87f8.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 4.6 -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!-- Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Fancybox  -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- JS -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/carousel.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/introduce.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

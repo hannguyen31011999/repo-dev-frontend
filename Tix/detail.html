@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIX - Đặt Vé Nhanh Nhất / Trang chi tiết</title>
+    <!-- logo -->
+    <link rel="shortcut icon" href="./img/web-logo.png" type="image/x-icon">
+    <!-- Bootstrap 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="header__content">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./img/web-logo.png" alt="">
+                </a>
+                <button class="navbar-toggler" id="showMenu" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <div class="header__center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Lịch chiếu
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Cụm rạp
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Tin tức
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Ứng dụng
+                                </a>
+                            </li>
+                        </div>
+                        <div class="header__right">
+                            <li class="nav-item bar">
+                                <a class="nav-link" href="#">
+                                    <img src="./img/avatar.png" alt="">
+                                    Đăng nhập
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img class="location" src="./img/location-header.png" alt="">
+                                    Hồ Chí Minh
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+                                    <a class="dropdown-item" href="#">Hà Nội</a>
+                                    <a class="dropdown-item" href="#">Hải Phòng</a>
+                                    <a class="dropdown-item" href="#">Đà nẵng</a>
+                                    <a class="dropdown-item" href="#">Biên Hòa</a>
+                                    <a class="dropdown-item" href="#">Nha Trang</a>
+                                    <a class="dropdown-item" href="#">Bình Dương</a>
+                                    <a class="dropdown-item" href="#">Phan Thiết</a>
+                                    <a class="dropdown-item" href="#">Hạ Long</a>
+                                    <a class="dropdown-item" href="#">Cần Thơ</a>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="header__menu">
+            <div class="header__menu--overlay">
+            </div>
+            <div class="header__menu--content">
+                <div class="header__menu--active">
+                    <img src="./img/avatar.png" alt="">
+                    <a href="">
+                        Đăng Nhập
+                    </a>
+                    <i class="fa fa-arrow-right" id="closeMenu"></i>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            Lịch Chiếu
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Cụm Rạp
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Tin Tức
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Ứng Dụng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="chooseOption" data-toggle="modal" data-target=".bd-example-modal-lg">
+                            Hồ Chí Minh
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <ul>
+                        <li>
+                            <a class="active" href="#">Hồ Chí Minh</a>
+                        </li>
+                        <li>
+                            <a href="#">Hà Nội</a>
+                        </li>
+                        <li>
+                            <a href="#">Hải Phòng</a>
+                        </li>
+                        <li>
+                            <a href="#">Đà nẵng</a>
+                        </li>
+                        <li>
+                            <a href="#">Biên Hòa</a>
+                        </li>
+                        <li>
+                            <a href="#">Nha Trang</a>
+                        </li>
+                        <li>
+                            <a href="#">Bình Dương</a>
+                        </li>
+                        <li>
+                            <a href="#">Phan Thiết</a>
+                        </li>
+                        <li>
+                            <a href="#">Hạ Long</a>
+                        </li>
+                        <li>
+                            <a href="#">Cần Thơ</a>
+                        </li>
+                        <li>
+                            <a href="#">Vũng Tàu</a>
+                        </li>
+                        <li>
+                            <a href="#">Huế</a>
+                        </li>
+                        <li>
+                            <a href="#">Quy Nhơn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="product">
+        <div class="product__content">
+            <div class="product__overlay">
+                <img src="./img/lat-mat-48h-16177782153424.png" class="product__overlay--image" alt="">
+                <div class="product__overlay--blur"></div>
+                <button class="product__overlay--btn" data-fancybox data-type="iframe"
+                    data-src="https://www.youtube.com/embed/ykBfss-8H4Y" href="javascript:;"><img
+                        src="./img/play-video.png" alt=""></button>
+            </div>
+            <div class="product__main container">
+                <div class="product__mainInfo row">
+                    <div class="col-12 col-sm-4 product__left">
+                        <img src="./img/films/lat-mat-48h-16176188609123_215x318.png" alt="">
+                        <div class="product__mainInfo--overlay">
+                            <a href="#">
+                                <button data-fancybox data-type="iframe"
+                                    data-src="https://www.youtube.com/embed/ykBfss-8H4Y" href="javascript:;"><img
+                                        src="./img/play-video.png" alt=""></button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 product__center">
+                        <p>16.04.2021</p>
+                        <div class="product__title">
+                            <span class="active">c18</span>
+                            <span>Lật Mặt: 48h</span>
+                        </div>
+                        <p>100 phút - 0 IMDb - 2D/Digital</p>
+                    </div>
+                    <div class="col-12 col-sm-2 product__right">
+                        <div class="product__process">
+                            <h4>7.8</h4>
+                            <div class="product__process--bar">
+                            </div>
+                        </div>
+                        <div class="product__star">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.png" alt="">
+                            <img src="./img/star1.2.png" alt="">
+                            <h5>320 người đánh giá</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product__review container">
+            <ul class="nav nav-tabs align-items-center justify-content-center" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab"
+                        aria-controls="info" aria-selected="true">Thông Tin</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="comment-tab" data-toggle="tab" href="#comment" role="tab"
+                        aria-controls="comment" aria-selected="false">Đánh Giá</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 review__tab--left">
+                            <div class="review__tab--text">
+                                <p>Ngày công chiếu</p>
+                                <p>16.04.2021</p>
+                            </div>
+                            <div class="review__tab--text">
+                                <p>Đạo diễn</p>
+                                <p>Lý Hải</p>
+                            </div>
+                            <div class="review__tab--text">
+                                <p>Diễn viên</p>
+                                <p>Tiết Cương, Huỳnh Đông, Mạc Văn Khoa, Ốc Thanh Vân</p>
+                            </div>
+                            <div class="review__tab--text">
+                                <p>Thể Loại</p>
+                                <p></p>
+                            </div>
+                            <div class="review__tab--text">
+                                <p>Định dạng</p>
+                                <p>2D/Digital</p>
+                            </div>
+                            <div class="review__tab--text">
+                                <p>Quốc Gia SX</p>
+                                <p>Việt Nam</p>
+                            </div>
+                            <div class="review__tab--text">
+                                <p>Tin liên quan</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 review__tab--right">
+                            <div class="review__tab--text">
+                                <p>Nội dung</p>
+                                <p>Lật Mặt 5: 48H kể về Hiền - một cựu vận động viên võ thuật sau khi giải nghệ vì chấn
+                                    thương đã cùng vợ và con gái về quê thăm gia đình Lâm. Họ bị cuốn vào một cuộc rượt
+                                    đuổi với tay phản diện A Dìn. Để bảo vệ cho gia đình nhỏ, Hiền phải đưa vợ con chạy
+                                    trốn khắp miền Tây sông nước với sự trợ giúp của người bạn thật thà và hài hước.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 review__tab--post">
+                            <img src="./img/lat-mat-48h-16177782153424.png" alt="">
+                            <a href="#">Ấn định chắc nịch ngày khởi chiếu 16.04, Lý Hải tung clip Lật Mặt:
+                                48H..</a>
+                            <div class="review__tab--postIcon">
+                                <span class="like"><img src="./img/like.png" alt="">0</span>
+                                <span class="comment"><img src="./img/comment.png" alt="">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade container" id="comment" role="tabpanel" aria-labelledby="comment-tab">
+                    <div class="row">
+                        <div class="col-12 review__tab--comment">
+                            <div class="review__tab--commentLeft">
+                                <img src="./img/avatar.png" alt="">
+                                <p>Bạn nghĩ gì về phim này?</p>
+                            </div>
+                            <div class="review__tab--commentRight">
+                                <img src="./img/star1.png" alt="">
+                                <img src="./img/star1.png" alt="">
+                                <img src="./img/star1.png" alt="">
+                                <img src="./img/star1.png" alt="">
+                                <img src="./img/star1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 review__tab--listComment">
+                            <div class="review__tab--itemComment">
+                                <div class="row review__tab--itemTop">
+                                    <div class="col-6 review__tab--itemLeft">
+                                        <div class="review__tab--itemLeft--icon">
+                                            <img src="./img/avatar.png" alt="">
+                                        </div>
+                                        <div class="review__tab--itemLeft--text">
+                                            <h6>Phương</h6>
+                                            <p>24 ngày trước</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 review__tab--itemRight">
+                                        <div class="review__tab--itemRight--point">
+                                            <p>10</p>
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__tab--itemCenter">
+                                    <p>Phải nói rằng là quá hay</p>
+                                </div>
+                                <hr>
+                                <div class="review__tab--itemBot">
+                                    <img src="./img/like.png" alt="">
+                                    <span>10 Thích</span>
+                                </div>
+                            </div>
+                            <div class="review__tab--itemComment">
+                                <div class="row review__tab--itemTop">
+                                    <div class="col-6 review__tab--itemLeft">
+                                        <div class="review__tab--itemLeft--icon">
+                                            <img src="./img/avatar.png" alt="">
+                                        </div>
+                                        <div class="review__tab--itemLeft--text">
+                                            <h6>Long</h6>
+                                            <p>8 ngày trước</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 review__tab--itemRight">
+                                        <div class="review__tab--itemRight--point">
+                                            <p>10</p>
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                            <img src="./img/star1.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__tab--itemCenter">
+                                    <p>Phải nói rằng là quá hay, đỉnh của chóp</p>
+                                </div>
+                                <hr>
+                                <div class="review__tab--itemBot">
+                                    <img src="./img/like.png" alt="">
+                                    <span>68 Thích</span>
+                                </div>
+                            </div>
+                            <div class="review__tab--itemComment reply">
+                                <div class="review__tab--itemCommentParent">
+                                    <div class="review__tab--itemCommentTop">
+                                        <div class="row review__tab--itemTop">
+                                            <div class="col-6 review__tab--itemLeft">
+                                                <div class="review__tab--itemLeft--icon">
+                                                    <img src="./img/avatar.png" alt="">
+                                                </div>
+                                                <div class="review__tab--itemLeft--text">
+                                                    <h6>Tường</h6>
+                                                    <p>12 ngày trước</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 review__tab--itemRight">
+                                                <div class="review__tab--itemRight--point">
+                                                    <p>10</p>
+                                                    <img src="./img/star1.png" alt="">
+                                                    <img src="./img/star1.png" alt="">
+                                                    <img src="./img/star1.png" alt="">
+                                                    <img src="./img/star1.png" alt="">
+                                                    <img src="./img/star1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="review__tab--itemCenter">
+                                            <p>Phim của anh Lý Hải chưa bao giờ làm mình thất vọng</p>
+                                        </div>
+                                        <hr>
+                                        <div class="review__tab--itemReply">
+                                            <div class="review__tab--itemBot--like">
+                                                <img class="like" src="./img/like.png" alt="">
+                                                <span>86 Thích</span>
+                                            </div>
+                                            <div class="review__tab--itemBot--comment">
+                                                <img class="comment" src="./img/comment.png" alt="">
+                                                <span>16 Bình Luận</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="review__tab--itemCommentChild">
+                                    <div class="row review__tab--itemTop">
+                                        <div class="col-12 review__tab--itemLeft">
+                                            <div class="review__tab--itemLeft--icon">
+                                                <img src="./img/avatar.png" alt="">
+                                            </div>
+                                            <div class="review__tab--itemLeft--text">
+                                                <h6>Hân Pro</h6>
+                                                <p>12 ngày trước</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review__tab--itemCenter">
+                                        <p>Phim của anh Lý Hải chưa bao giờ làm mình thất vọng</p>
+                                    </div>
+                                    <div class="review__tab--itemBot">
+                                        <span>68 Thích</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review__btn text-center">
+                        <button class="">Xem Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__content container">
+            <div class="row footer__top">
+                <div class="col-lg-4 col-md-6 footer__left">
+                    <h5 class="footer__title">tix</h5>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 footer__top--left">
+                            <ul>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Brand Guidelines</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 footer__top--right">
+                            <ul>
+                                <li><a href="#">Thỏa thuận sử dụng</a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 footer__center">
+                    <h5 class="footer__title">đối tác</h5>
+                    <div class="row">
+                        <div class="footer__list--image col-12">
+                            <a href=""><img src="./img/cgv.png" alt=""></a>
+                            <a href=""><img src="./img/bhd.png" alt=""></a>
+                            <a href=""><img src="./img/galaxycine.png" alt=""></a>
+                            <a href=""><img src="./img/cinestar.png" alt=""></a>
+                            <a href=""><img src="./img/404b8c4b80d77732e7426cdb7e24be20.png" alt=""></a>
+                        </div>
+                        <div class="footer__list--image col-12">
+                            <a href=""><img src="./img/megags.png" alt=""></a>
+                            <a href=""><img src="./img/77807d96b5048f1d79f45d9d7d3f6a3a.png" alt=""></a>
+                            <a href=""><img src="./img/9b240f96a233bb43203ee514a21a6004.png" alt=""></a>
+                            <a href=""><img src="./img/TOUCH.png" alt=""></a>
+                            <a href=""><img src="./img/cnx.jpg" alt=""></a>
+                        </div>
+                        <div class="footer__list--image col-12">
+                            <a href=""><img src="./img/STARLIGHT.png" alt=""></a>
+                            <a href=""><img src="./img/dcine.png" alt=""></a>
+                            <a href=""><img src="./img/zalopay_icon.png" alt=""></a>
+                            <a href=""><img src="./img/payoo.jpg" alt=""></a>
+                            <a href=""><img src="./img/VCB.png" alt=""></a>
+                        </div>
+                        <div class="footer__list--image col-12">
+                            <a href=""><img src="./img/AGRIBANK.png" alt=""></a>
+                            <a href=""><img src="./img/VIETTINBANK.png" alt=""></a>
+                            <a href=""><img src="./img/IVB.png" alt=""></a>
+                            <a href=""><img src="./img/123go.png" alt=""></a>
+                            <a href=""><img src="./img/laban.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 footer__right">
+                    <div class="row">
+                        <div class="col-lg-6 footer__app">
+                            <h5 class="footer__title">mobile app</h5>
+                            <div class="row">
+                                <div class="footer__list--icon col-12">
+                                    <a href=""><img src="./img/apple-logo.png" alt=""></a>
+                                    <a href=""><img src="./img/android-logo.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-6 footer__social">
+                            <h5 class="footer__title ml-3">social</h5>
+                            <div class="row">
+                                <div class="footer__list--social col-12">
+                                    <a href=""><img src="./img/facebook-logo.png" alt=""></a>
+                                    <a href=""><img src="./img/zalo-logo.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer__bot">
+                <div class="col-12 col-lg-1 mb-3">
+                    <img src="./img/zion-logo.jpg" alt="">
+                </div>
+                <div class="col-12 col-lg-9 footer__info mb-3">
+                    <h5 class="footer__title">TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h5>
+                    <p>Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
+                    <p>Giấy chứng nhận đăng ký kinh doanh số: 0101659783,</p>
+                    <p>đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí
+                        Minh cấp.</p>
+                    <p>Số Điện Thoại (Hotline): 1900 545 436</p>
+                    <p>Email: <a href="">support@tix.vn</a></p>
+                </div>
+                <div class="col-12 col-lg-2 mb-3">
+                    <a href=""><img class="image" src="./img/d1e6bd560daa9e20131ea8a0f62e87f8.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 4.6 -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <!-- Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <!-- Fancybox  -->
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Javascript -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/products.js"></script>
+</body>
+
+</html>

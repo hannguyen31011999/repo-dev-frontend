@@ -1,0 +1,98 @@
+.introduce {
+    background-image: url('../../../img/backapp.jpg');
+    .introduce__content {
+        max-width: 940px;
+        .introduce__left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .introduce__text {
+                h1 {
+                    @include styleText($fs-4 - 5,$bg-color,0,$mg-2,$fw-bold-1);
+                    line-height: 1.6;
+                }
+                h4 {
+                    @include styleText($fs-0 + 2,$bg-color,0,$mg-2 - 5,$fw-normal);
+                    line-height: 1.4;
+                }
+                .introduce__btn {
+                    border: none;
+                    padding: $pd-0  $pd-1;
+                    border-radius: $border-radius-0 - 2;
+                    background-color: $color-a-hover;
+                    @include styleText($fs-0 + 2,$bg-color,0,$mg-1,$fw-bold-1);
+                }
+                p {
+                    @include styleText($fs-0,$bg-color,0,0,$fw-normal);
+                    a {
+                        text-decoration: none;
+                        color: $bg-color;
+                        border-bottom: 1px solid $bg-color;
+                    }
+                }
+            }
+        }
+        .introduce__right {
+            position: relative;
+            padding: $pd-3 + 20  0;
+            img {
+                width: 100%;
+                padding: 0 28%;
+            }
+            .introduce__carouse {
+                position: absolute;
+                top: 83px;
+                left: 0;
+                width: 100%;
+                padding: 1.5% 29.3% 0 29.3%;
+                img {
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .slick-list {
+        border-radius: 20px;
+    }
+}
+
+@include responsive('large')
+{
+    .introduce {
+        .introduce__content {
+            .introduce__left {
+                text-align: center;
+                .introduce__text {
+                    h1 {
+                        @include styleText($fs-1 + 5,$bg-color,0,$mg-2,$fw-bold-1);
+                    }
+                    h4 {
+                        @include styleText($fs-0,$bg-color,0,$mg-2 - 5,$fw-normal);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 413px)
+{
+    .introduce {
+        .introduce__content {
+            .introduce__right {
+                .introduce__carouse {
+                    position: absolute;
+                    top: 80px;
+                    left: 0;
+                    width: 100%;
+                    padding: 1.5% 29.2% 0 29.2%;
+                }
+            }
+        }
+        .slick-list {
+            border-radius: 14px;
+        }
+    }
+}

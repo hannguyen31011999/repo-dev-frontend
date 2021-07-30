@@ -1,0 +1,131 @@
+.container-fluid {
+    padding: 0;
+}
+
+.carousel {
+    overflow: hidden;
+    .carousel__content {
+        position: relative;
+        margin-bottom: 0;
+        .carousel__item {
+            position: relative;
+            width: 100%;
+            a {
+                img {
+                    width: 100%;
+                    height: 551px;
+                    object-fit: fill;
+                }
+            }
+            button {
+                border: none;
+                position: absolute;
+                background-color: rgba(139, 136, 136, 0.1);
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 50%;
+                opacity: 0;
+                transition: all .5s;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+            }
+            &:hover button{
+                opacity: 1;
+            }
+        }
+        .slick-dots {
+            bottom: 10%;
+            li {
+                margin: 0;
+                button {
+                    &::before {
+                        color: $color-a-hover;
+                        font-size: $fs-0 - 1;
+                    }
+                }
+            }
+        }
+        .slick-prev {
+            z-index: 9;
+            left: 4%;
+            top: 42%;
+            transform: translateX(-50%);
+            height: 50px;
+            width: 50px;
+        }
+        .slick-next {
+            z-index: 9;
+            right: 0;
+            top: 42%;
+            transform: translateX(-50%);
+            height: 50px;
+            width: 50px;
+        }
+    }
+}
+
+@include responsive('extra-large')
+{
+    .carousel {
+        .carousel__content {
+            .carousel__item {
+                a {
+                    img {
+                        height: 430px;
+                    }
+                }
+                button {
+                    border: none;
+                    position: absolute;
+                    background-color: rgba(139, 136, 136, 0.1);
+                    top: 60%;
+                    left: 45%;
+                    transform: translateY(-50%);
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+
+@include responsive('large')
+{
+    .carousel {
+        .carousel__content {
+            .carousel__item {
+                a {
+                    img {
+                        height: 430px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include responsive('medium')
+{
+    .carousel {
+        .carousel__content {
+            .carousel__item {
+                a {
+                    img {
+                        height: 245px;
+                    }
+                }
+            }
+            .slick-prev {
+                left: 8%;
+            }
+        }
+    }
+}
+@include responsive('small')
+{
+    .carousel {
+        display: none;
+    }
+}
