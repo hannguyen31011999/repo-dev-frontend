@@ -1,0 +1,13 @@
+.btn-caption {
+    padding: $pd-0 + 2 $pd-2 - 2;
+    border: none;
+    background-color: $bg-yellow;
+    @include styleText($fs-0 -  2,$text-default,0,$mg-0,$fw-3);
+    text-transform: uppercase;
+    border-radius: $bd-radius-0 - 2;
+    cursor: pointer;
+    i {
+        padding-left: $pd-0;
+        @include styleText($fs-0 - 1,$text-default,0,$mg-0,$fw-3);
+    }
+}
