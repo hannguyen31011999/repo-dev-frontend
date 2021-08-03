@@ -27,3 +27,8 @@
 <h3>6.Website Electronics ecommerc</h3>
 <h4>Build by Html,Css,Boostrap 4,JS,Ajax,Laravel</h4>
 <p>Link demo: http://dienthoaiquan9.epizy.com </p>
+
+
+<h3>6.Game xúc xắc</h3>
+<h4>Build by Html,Css,Boostrap 4,React JS,Redux</h4>
+<p>Link demo: https://game-xucxac.herokuapp.com </p>
