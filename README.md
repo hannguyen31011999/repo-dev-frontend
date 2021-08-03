@@ -31,4 +31,8 @@
 
 <h3>6.Game xúc xắc</h3>
 <h4>Build by Html,Css,Boostrap 4,React JS,Redux</h4>
-<p>Link demo: https://game-xucxac.herokuapp.com </p>
+<p>Link demo: https://game-taixiu.herokuapp.com </p>
+
+<h3>7.Game oẳn tù tì</h3>
+<h4>Build by Html,Css,Boostrap 4,React JS,Redux</h4>
+<p>Link demo: https://git.heroku.com/game-ott.git </p>
