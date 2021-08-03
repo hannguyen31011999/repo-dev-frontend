@@ -262,9 +262,9 @@ header .header__control .btn-toggle-play {
     color: #fff;
 }
 
-
+/* game */
 .page-wrapper {
-    height: 660px;
+    height: 100vh;
     overflow: hidden;
     padding: 60px 0;
     font-family: 'Oswald', sans-serif;
@@ -351,3 +351,5 @@ header .header__control .btn-toggle-play {
 .active_tx {
     border: 2px solid red;
 }
+
+

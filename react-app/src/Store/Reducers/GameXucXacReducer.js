@@ -52,9 +52,9 @@ const xucXacReducer = (state = initialState, action) => {
                 const sum = state.image.reduce((total, img) => {
                     return total += img.score;
                 }, 0);
-                if (state.isChoose && sum % 2 === 0) {
+                if (state.isChoose && (sum > 10 || sum < 18)) {
                     diem += 1 + state.score;
-                } else if (!state.isChoose && !(sum % 2 === 0)) {
+                } else if (!state.isChoose && !(sum > 10 || sum < 18)) {
                     diem += 1 + state.score;
                 } else {
                     diem = state.score;

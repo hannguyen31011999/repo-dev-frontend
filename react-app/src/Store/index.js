@@ -1,8 +1,10 @@
 import { createStore, combineReducers } from 'redux';
 import xucXacReducer from './Reducers/GameXucXacReducer';
+import gameOttReducer from './Reducers/GameOttReducer';
 
 const rootReducer = combineReducers({
-    xucXacReducer
+    xucXacReducer,
+    gameOttReducer
 });
 
 const store = createStore(
