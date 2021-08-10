@@ -1,13 +1,15 @@
 // import AudioComponent from './Playlist/AudioComponent';
-import XucXacComponent from './Xucxac/XucXacComponent';
+// import XucXacComponent from './Xucxac/XucXacComponent';
 // import MainGameOtt from './GameOtt/MainGameOtt';
+import MainBMT from "./BookMoviesTickets/MainBMT";
 
 function App() {
   return (
     <div>
       {/* <AudioComponent /> */}
-      <XucXacComponent />
+      {/* <XucXacComponent /> */}
       {/* <MainGameOtt /> */}
+      <MainBMT />
     </div>
   );
 }

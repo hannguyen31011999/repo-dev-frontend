@@ -11,537 +11,808 @@
     <link rel="shortcut icon" href="./assets/img/favicon-32x32-1.png" type="image/x-icon">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Style -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
     <div class="page-wrapper">
-        <header>
-            <div class="header__top container">
-                <div class="header__top--left">
-                    <a href="#" class="header__top--navLink">
-                        <i class="fa fa-phone"></i>
-                        Call: +0123 456 789
-                    </a>
+        <header id="header">
+            <div class="header__top">
+                <div class="header__left">
+                    <a href="#" class="header__info"><i class="fa fa-phone"></i>&nbsp;&nbsp;Call: +0123 456 789</a>
                 </div>
-                <div class="header__top--right">
-                    <ul class="header__top--submenu">
-                        <li class="header__top--navItem dropdown">
-                            <a href="#" class="header__top--navLink">USD <i class="fa fa-angle-down"></i></a>
-                            <ul class="header__top-submenu1">
+                <div class="header__right">
+                    <ul class="header__menu d-none d-lg-block">
+                        <li class="header__navItem">
+                            <a href="#" class="header__navlink">
+                                USD&nbsp;<i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="header__submenu">
                                 <li><a href="#">Usd</a></li>
                                 <li><a href="#">Eur</a></li>
                             </ul>
                         </li>
-                        <li class="header__top--navItem dropdown">
-                            <a href="#" class="header__top--navLink">English <i class="fa fa-angle-down"></i></a>
-                            <ul class="header__top-submenu1">
+                        <li class="header__navItem">
+                            <a href="#" class="header__navlink">
+                                English&nbsp;<i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="header__submenu">
                                 <li><a href="#">English</a></li>
                                 <li><a href="#">French</a></li>
                                 <li><a href="#">Spanish</a></li>
                             </ul>
                         </li>
-                        <li class="header__top--navItem"><a href="#" class="header__top--navLink">Sign in / Sign up</a>
+                        <li class="header__navItem"><a href="#" class="header__navlink">Sign in / Sign up</a></li>
+                    </ul>
+                    <ul class="header__menu large d-lg-none">
+                        <li class="header__navItem">
+                            <a href="#" class="header__navlink">
+                                Link&nbsp;<i class="fa fa-angle-down"></i>
+                            </a>
+                            <ul class="header__submenu">
+                                <li class="header__navlink">
+                                    <a href="#">USD&nbsp;<i class="fa fa-angle-down"></i></a>
+                                    <ul class="header__parentMenu">
+                                        <li class="header__navlink"><a href="#">Usd</a></li>
+                                        <li class="header__navlink"><a href="#">Eur</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__navlink">
+                                    <a href="#">English&nbsp;<i class="fa fa-angle-down"></i></a>
+                                    <ul class="header__parentMenu">
+                                        <li class="header__navlink"><a href="#">English</a></li>
+                                        <li class="header__navlink"><a href="#">French</a></li>
+                                        <li class="header__navlink"><a href="#">Spanish</a></li>
+                                    </ul>
+                                </li>
+                                <li class="header__navlink"><a href="#">Sign in / Sign up</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="header__center container">
-                <div class="row">
-                    <div class="col-3 header__center--logo">
-                        <a href="#">
-                            <img src="./assets/img/logo-1.png" alt="">
-                        </a>
+            <div class="header__center row align-items-center">
+                <div class="col-lg-3 col-6 header__logo">
+                    <div class="header__logo--bar d-lg-none">
+                        <button id="show-menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
                     </div>
-                    <div class="col-6 header__center--form">
-                        <div class="header__center--categories">
-                            <select name="" id="">
-                                <option value="">All Categories</option>
-                                <option value="">Brake System</option>
-                                <option value="">Filters</option>
-                                <option value="">Engine</option>
-                                <option value="">Damping</option>
-                                <option value="">Oil and Fluids</option>
-                                <option value="">Body</option>
-                            </select>
+                    <a href="#"><img src="./assets/img/logo-1.png" alt=""></a>
+                </div>
+                <div class="col-6 header__form d-none d-lg-block">
+                    <form action="">
+                        <div class="input-group">
+                            <div class="header_select">
+                                <select class="form-select" id="categories">
+                                    <option selected>All Categories</option>
+                                    <option value="">Brake System</option>
+                                    <option value="">Filter</option>
+                                    <option value="">Engine</option>
+                                    <option value="">Damping</option>
+                                    <option value="">Oil and Fluid</option>
+                                    <option value="">Body</option>
+                                </select>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Seach propduct ....">
+                            <button class="btn" type="submit">
+                                <i class="fa fa-search"></i>
+                            </button>
                         </div>
-                        <input type="text" class="header__center--seach" placeholder="Seach product ...">
-                        <button class="header__center--btn"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <div class="col-lg-3 col-6 header__icon">
+                    <div class="header__icon--item account">
+                        <i class="fa fa-user"></i>
+                        <p class="header__icon--title">Account</p>
                     </div>
-                    <div class="col-3 header__center--shopIcon">
-                        <div class="header__center--icon">
-                            <a href="#"><i class="fa fa-user"></i><span class="header__center--text">Account</span></a>
-                        </div>
-                        <div class="header__center--icon">
-                            <a href="#"><i class="fa fa-heart"></i><span
-                                    class="header__center--text">Wishlist</span></a>
-                            <span class="header__center--count">0</span>
-                        </div>
-                        <div class="header__center--icon">
-                            <a href="#"><i class="fa fa-shopping-cart"></i><span
-                                    class="header__center--text">Cart</span></a>
-                            <span class="header__center--count cart">0</span>
-                        </div>
+                    <div class="header__icon--item">
+                        <i class="fa fa-heart"></i>
+                        <p class="header__icon--title">Wishlist</p>
+                        <div class="header__count--wishlist"><span>0</span></div>
+                    </div>
+                    <div class="header__icon--item" id="open-cart">
+                        <i class="fa fa-shopping-cart"></i>
+                        <p class="header__icon--title">Cart</p>
+                        <div class="header__count--cart"><span>0</span></div>
                     </div>
                 </div>
             </div>
-            <div class="header__bot container">
-                <div class="row">
-                    <div class="col-3 header__bot--left">
-                        <div class="header__bot--categories">
-                            <a href="" class="header__bot--navItem">
-                                browse categories
+            <div class="header__bot row align-items-center">
+                <div class="header__left col-3">
+                    <div class="header__categories">
+                        <div class="header__categories--text">
+                            <p>Browse Categories</p>
+                        </div>
+                        <div class="header__categories--icon">
+                            <div class="header__categories--bar">
                                 <i class="fa fa-bars"></i>
+                            </div>
+                            <div class="header__categories--close">
                                 <i class="fa fa-times"></i>
-                            </a>
-                            <ul class="header__bot--leftmenu">
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-laptop"></i>
-                                    <a href="#" class="left__Navlink">Electronics</a>
-                                    <i class="fa fa-angle-right"></i>
-                                    <ul class="header__bot--leftmenu1">
-                                        <li class="header__bot--leftItem1">
-                                            <ul class="header__bot--leftmenu2">
-                                                <li class="header__bot--leftItem2">
-                                                    <a href="#" class="left__Navlink1">Laptops & Computers</a>
-                                                    <ul class="header__bot--leftmenu3">
-                                                        <li><a href="#">Desktop Computers</a></li>
-                                                        <li><a href="#">Monitors</a></li>
-                                                        <li><a href="#">Laptops</a></li>
-                                                        <li><a href="#">iPad & Tablets</a></li>
-                                                        <li><a href="#">Hard Drives & Storage</a></li>
-                                                        <li><a href="#">Printers & Supplies</a></li>
-                                                        <li><a href="#">Computer Accessories</a></li>
-                                                    </ul>
+                            </div>
+                        </div>
+                        <ul class="header__menu">
+                            <li class="header__navItem">
+                                <i class="fa fa-desktop"></i>
+                                <a href="#" class="header__navlink">Electronics<i class="fa fa-angle-right"></i></a>
+                                <ul class="header__submenu">
+                                    <li class="header__submenu--item">
+                                        <ul class="header__parentMenu">
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Laptops & Computers</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">Desktop Computers</a></li>
+                                                    <li><a href="#">Monitors</a></li>
+                                                    <li><a href="#">Laptops</a></li>
+                                                    <li><a href="#">iPad & Tablets</a></li>
+                                                    <li><a href="#">Hard Drives & Storage</a></li>
+                                                    <li><a href="#">Printers & Supplies</a></li>
+                                                    <li><a href="#">Computer Accessories</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">TV & Video</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">TVs</a></li>
+                                                    <li><a href="#">Home Audio Speakers</a></li>
+                                                    <li><a href="#">Projectors</a></li>
+                                                    <li><a href="#">Media Streaming Devices</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu--item">
+                                        <ul class="header__parentMenu">
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Cell Phones</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">Carrier Phones</a></li>
+                                                    <li><a href="#">Unlocked Phones</a></li>
+                                                    <li><a href="#">Phone & Cellphone Cases</a></li>
+                                                    <li><a href="#">Cellphone Chargers</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Digital Cameras</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">Digital SLR Cameras</a></li>
+                                                    <li><a href="#">Sports & Action Cameras</a></li>
+                                                    <li><a href="#">Camcorders</a></li>
+                                                    <li><a href="#">Camera Lenses</a></li>
+                                                    <li><a href="#">Photo Printer</a></li>
+                                                    <li><a href="#">Digital Memory Cards</a></li>
+                                                    <li><a href="#">Camera Bags, Backpacks & Cases</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu--item">
+                                        <figure>
+                                            <img src="./assets/img/banner-1.jpg" alt="">
+                                        </figure>
+                                        <div class="header__banner">
+                                            <p>Deals of the Week</p>
+                                            <h2>Save On Smart Phones and Accessories</h2>
+                                            <h4>20% off</h4>
+                                            <button class="btn-caption">
+                                                Shop Now <i class="fa fa-long-arrow-alt-right"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <i class="fa fa-chair"></i>
+                                <a href="#" class="header__navlink">Furnitures<i class="fa fa-angle-right"></i></a>
+                                <ul class="header__submenu">
+                                    <li class="header__submenu--item">
+                                        <ul class="header__parentMenu">
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Bedroom</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">Beds, Frames & Bases</a></li>
+                                                    <li><a href="#">Dressers</a></li>
+                                                    <li><a href="#">Nightstands</a></li>
+                                                    <li><a href="#">Kids’ Beds & Headboards</a></li>
+                                                    <li><a href="#">Armoires</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Living Room</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">Coffee Tables</a></li>
+                                                    <li><a href="#">Chairs</a></li>
+                                                    <li><a href="#">Tables</a></li>
+                                                    <li><a href="#">Futons & Sofa Beds</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu--item">
+                                        <ul class="header__parentMenu">
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Cell Phones</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">Carrier Phones</a></li>
+                                                    <li><a href="#">Unlocked Phones</a></li>
+                                                    <li><a href="#">Phone & Cellphone Cases</a></li>
+                                                    <li><a href="#">Cellphone Chargers</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Digital Cameras</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">Digital SLR Cameras</a></li>
+                                                    <li><a href="#">Sports & Action Cameras</a></li>
+                                                    <li><a href="#">Camcorders</a></li>
+                                                    <li><a href="#">Camera Lenses</a></li>
+                                                    <li><a href="#">Photo Printer</a></li>
+                                                    <li><a href="#">Digital Memory Cards</a></li>
+                                                    <li><a href="#">Camera Bags, Backpacks & Cases</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu--item">
+                                        <figure>
+                                            <img src="./assets/img/banner-2.jpg" alt="">
+                                        </figure>
+                                        <div class="header__banner">
+                                            <p style="color:#DADADA;">Deals of the Week</p>
+                                            <h2 style="color:#fff;">Save On Smart Phones and Accessories</h2>
+                                            <button class="btn-caption">
+                                                Shop Now <i class="fa fa-long-arrow-alt-right"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <i class="fa fa-concierge-bell"></i>
+                                <a href="#" class="header__navlink">Cooking<i class="fa fa-angle-right"></i></a>
+                                <ul class="header__submenu">
+                                    <li class="header__submenu--item">
+                                        <ul class="header__parentMenu">
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Cookware</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">Cookware Sets</a></li>
+                                                    <li><a href="#">Monitors</a></li>
+                                                    <li><a href="#">Pans, Griddles & Woks</a></li>
+                                                    <li><a href="#">Pots</a></li>
+                                                    <li><a href="#">Skillets & Grill Pans</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header__parentMenu--item">
+                                                <img src="./assets/img/cook-1.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu--item">
+                                        <ul class="header__parentMenu">
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Dinnerware & Tabletop</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">Plates</a></li>
+                                                    <li><a href="#">Cups & Mugs</a></li>
+                                                    <li><a href="#">Trays & Platters</a></li>
+                                                    <li><a href="#">Coffee & Tea Serving</a></li>
+                                                    <li><a href="#">Salt & Pepper Shaker</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header__parentMenu--item">
+                                                <img src="./assets/img/cook-2.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu--item">
+                                        <ul class="header__parentMenu">
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Cooking Appliances</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">Microwaves</a></li>
+                                                    <li><a href="#">Coffee Makers</a></li>
+                                                    <li><a href="#">Mixers & Attachements</a></li>
+                                                    <li><a href="#">Slow Cookers</a></li>
+                                                    <li><a href="#">Air Fryers</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="header__parentMenu--item">
+                                                <img src="./assets/img/cook-3.jpg" alt="">
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <i class="fa fa-tshirt"></i>
+                                <a href="#" class="header__navlink">Clothing<i class="fa fa-angle-right"></i></a>
+                                <ul class="header__submenu">
+                                    <li class="header__submenu--item">
+                                        <ul class="header__parentMenu">
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Women</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">New Arrivals</a></li>
+                                                    <li><a href="#">Best Sellers</a></li>
+                                                    <li><a href="#">Trending</a></li>
+                                                    <li><a href="#">Clothing</a></li>
+                                                    <li><a href="#">Shoes</a></li>
+                                                    <li><a href="#">Bags</a></li>
+                                                    <li><a href="#">Accessories</a></li>
+                                                    <li><a href="#">Jewlery & Watches</a></li>
+                                                    <li><a href="#">Sale</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu--item">
+                                        <ul class="header__parentMenu">
+                                            <li class="header__parentMenu--item">
+                                                <a href="#" class="header__menu--title">Men</a>
+                                                <ul class="header__childMenu">
+                                                    <li><a href="#">New Arrivals</a></li>
+                                                    <li><a href="#">Best Sellers</a></li>
+                                                    <li><a href="#">Trending</a></li>
+                                                    <li><a href="#">Clothing</a></li>
+                                                    <li><a href="#">Shoes</a></li>
+                                                    <li><a href="#">Bags</a></li>
+                                                    <li><a href="#">Accessories</a></li>
+                                                    <li><a href="#">Jewlery & Watches</a></li>
+                                                    <li><a href="#">Sale</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__submenu--item">
+                                        <figure>
+                                            <img src="./assets/img/banner-3.jpg" alt="">
+                                        </figure>
+                                        <div class="header__banner right">
+                                            <p>Trending Now</p>
+                                            <h2>New Spring Fashion</h2>
+                                            <h4>20% off</h4>
+                                            <button class="btn-caption">
+                                                Shop Now <i class="fa fa-long-arrow-alt-right"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <i class="fa fa-blender"></i>
+                                <a href="#" class="header__navlink">Home Appliances</i></a>
+                            </li>
+                            <li class="header__navItem">
+                                <i class="fa fa-heartbeat"></i>
+                                <a href="#" class="header__navlink">Healthy & Beauty</i></a>
+                            </li>
+                            <li class="header__navItem">
+                                <i class="fa fa-shoe-prints"></i>
+                                <a href="#" class="header__navlink">Shoes & Boots</a>
+                            </li>
+                            <li class="header__navItem">
+                                <i class="fa fa-map-signs"></i>
+                                <a href="#" class="header__navlink">Travel & Outdoor</a>
+                            </li>
+                            <li class="header__navItem">
+                                <i class="fa fa-mobile-alt"></i>
+                                <a href="#" class="header__navlink">Smart Phones</a>
+                            </li>
+                            <li class="header__navItem">
+                                <i class="fa fa-tv"></i>
+                                <a href="#" class="header__navlink">TV & Audio</a>
+                            </li>
+                            <li class="header__navItem">
+                                <i class="fa fa-shopping-bag"></i>
+                                <a href="#" class="header__navlink">Gift Ideas</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__center col-6">
+                    <ul class="header__menu">
+                        <li class="active">
+                            <a href="#" class="header__navlink">Home<i class="fa fa-angle-down"></i></a>
+                            <div class="header__pages">
+                                <div class="header__page--item">
+                                    <figure><img src="./assets/img/1.jpg" alt=""></figure>
+                                    <figcaption><a href="#">35 - kids store</a></figcaption>
+                                    <div class="header__submenu--caption"></div>
+                                </div>
+                                <div class="header__page--item">
+                                    <figure><img src="./assets/img/2.jpg" alt=""></figure>
+                                    <figcaption><a href="#">35 - kids store</a></figcaption>
+                                    <div class="header__submenu--caption"></div>
+                                </div>
+                                <div class="header__page--item">
+                                    <figure><img src="./assets/img/3.jpg" alt=""></figure>
+                                    <figcaption><a href="#">35 - kids store</a></figcaption>
+                                    <div class="header__submenu--caption"></div>
+                                </div>
+                                <div class="header__page--item">
+                                    <figure><img src="./assets/img/4.jpg" alt=""></figure>
+                                    <figcaption><a href="#">35 - kids store</a></figcaption>
+                                    <div class="header__submenu--caption"></div>
+                                </div>
+                                <div class="header__page--item">
+                                    <figure><img src="./assets/img/5.jpg" alt=""></figure>
+                                    <figcaption><a href="#">35 - kids store</a></figcaption>
+                                    <div class="header__submenu--caption"></div>
+                                </div>
+                                <div class="header__page--item">
+                                    <figure><img src="./assets/img/6.jpg" alt=""></figure>
+                                    <figcaption><a href="#">35 - kids store</a></figcaption>
+                                    <div class="header__submenu--caption"></div>
+                                </div>
+                                <div class="header__page--item">
+                                    <figure><img src="./assets/img/7.jpg" alt=""></figure>
+                                    <figcaption><a href="#">35 - kids store</a></figcaption>
+                                    <div class="header__submenu--caption"></div>
+                                </div>
+                                <div class="header__page--item">
+                                    <figure><img src="./assets/img/8.jpg" alt=""></figure>
+                                    <figcaption><a href="#">35 - kids store</a></figcaption>
+                                    <div class="header__submenu--caption"></div>
+                                </div>
+                                <div class="header__page--item">
+                                    <figure><img src="./assets/img/9.jpg" alt=""></figure>
+                                    <figcaption><a href="#">35 - kids store</a></figcaption>
+                                    <div class="header__submenu--caption"></div>
+                                </div>
+                                <div class="header__page--item">
+                                    <figure><img src="./assets/img/10.jpg" alt=""></figure>
+                                    <figcaption><a href="#">35 - kids store</a></figcaption>
+                                    <div class="header__submenu--caption"></div>
+                                </div>
+                                <button class="header__page--btn">View all demos
+                                    <i class="fa fa-long-arrow-alt-right"></i>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="header_navItem">
+                            <a href="#" class="header__navlink">Shop<i class="fa fa-angle-down"></i></a>
+                            <ul class="header__submenu">
+                                <li class="header__submenu--item">
+                                    <ul class="header__parentMenu">
+                                        <li class="header__parentMenu--item">
+                                            <ul class="header__childMenu">
+                                                <a href="" class="header__childMenu--title">Shop Layouts</a>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop List</a>
                                                 </li>
-                                                <li class="header__bot--leftItem2">
-                                                    <a href="#" class="left__Navlink1">TV & Video</a>
-                                                    <ul class="header__bot--leftmenu3">
-                                                        <li><a href="#">TVs</a></li>
-                                                        <li><a href="#">Home Audio Speakers</a></li>
-                                                        <li><a href="#">Projectors</a></li>
-                                                        <li><a href="#">Media Streaming Devices</a></li>
-                                                    </ul>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 2
+                                                        Columns</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 3
+                                                        Columns</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 4
+                                                        Columns</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 5
+                                                        Columns</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 6
+                                                        Columns</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">
+                                                        Shop Market
+                                                        <div class="sale new short"><span>New</span>
+                                                        </div>
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="header__bot--leftItem1">
-                                            <ul class="header__bot--leftmenu2">
-                                                <li class="header__bot--leftItem2">
-                                                    <a href="#" class="left__Navlink1">Cell Phones</a>
-                                                    <ul class="header__bot--leftmenu3">
-                                                        <li><a href="#">Carrier Phones</a></li>
-                                                        <li><a href="#">Unlocked Phones</a></li>
-                                                        <li><a href="#">Phone & Cellphone Cases</a></li>
-                                                        <li><a href="#">Cellphone Chargers</a></li>
-                                                    </ul>
+                                        <li class="header__parentMenu--item">
+                                            <ul class="header__childMenu">
+                                                <a href="" class="header__childMenu--title">Shop With Sidebar</a>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">With Left Sidebar</a>
                                                 </li>
-                                                <li class="header__bot--leftItem2">
-                                                    <a href="#" class="left__Navlink1">Digital Cameras</a>
-                                                    <ul class="header__bot--leftmenu3">
-                                                        <li><a href="#">Digital SLR Cameras</a></li>
-                                                        <li><a href="#">Sports & Action Cameras</a></li>
-                                                        <li><a href="#">Camcorders</a></li>
-                                                        <li><a href="#">Camera Lenses</a></li>
-                                                        <li><a href="#">Photo Printer</a></li>
-                                                        <li><a href="#">Digital Memory Cards</a></li>
-                                                        <li><a href="#">Camera Bags, Backpacks & Cases</a></li>
-                                                    </ul>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">With Right Sidebar</a>
                                                 </li>
                                             </ul>
-                                        </li>
-                                        <li class="header__bot--leftItem1">
-                                            <figure>
-                                                <img src="./assets/img/banner-1.jpg" alt="">
-                                            </figure>
-                                            <div class="header__bot--leftCaption">
-                                                <h4>Deals of the Week</h4>
-                                                <h3>Save On Smart Phones
-                                                    and Accessories</h3>
-                                                <h2>20% off</h2>
-                                                <button class="header__bot--leftButton btn-caption">
-                                                    shop now
-                                                    <i class="fa fa-long-arrow-alt-right"></i>
-                                                </button>
-                                            </div>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-chair"></i>
-                                    <a href="#" class="left__Navlink">Furnitures</a>
-                                    <i class="fa fa-angle-right"></i>
-                                    <ul class="header__bot--leftmenu1">
-                                        <li class="header__bot--leftItem1">
-                                            <ul class="header__bot--leftmenu2">
-                                                <li class="header__bot--leftItem2">
-                                                    <a href="#" class="left__Navlink1">Bedroom</a>
-                                                    <ul class="header__bot--leftmenu3">
-                                                        <li><a href="#">Beds, Frames & Bases</a></li>
-                                                        <li><a href="#">Dressers</a></li>
-                                                        <li><a href="#">Nightstands</a></li>
-                                                        <li><a href="#">Kids’ Beds & Headboards</a></li>
-                                                        <li><a href="#">Armoires</a></li>
-                                                    </ul>
+                                <li class="header__submenu--item">
+                                    <ul class="header__parentMenu">
+                                        <li class="header__parentMenu--item">
+                                            <ul class="header__childMenu">
+                                                <a href="" class="header__childMenu--title">Shop Variations</a>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">
+                                                        Shop Catalog Mode
+                                                        <div class="sale hot"><span>New</span>
+                                                        </div>
+                                                    </a>
                                                 </li>
-                                                <li class="header__bot--leftItem2">
-                                                    <a href="#" class="left__Navlink1">Living Room</a>
-                                                    <ul class="header__bot--leftmenu3">
-                                                        <li><a href="#">Coffee Tables</a></li>
-                                                        <li><a href="#">Chairs</a></li>
-                                                        <li><a href="#">Tables</a></li>
-                                                        <li><a href="#">Futons & Sofa Beds</a></li>
-                                                        <li><a href="#">Cabinets & Chests</a></li>
-                                                    </ul>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">
+                                                        With Toggle Sidebar
+                                                        <div class="sale new"><span>New</span>
+                                                        </div>
+                                                    </a>
                                                 </li>
-                                            </ul>
-                                        </li>
-                                        <li class="header__bot--leftItem1">
-                                            <ul class="header__bot--leftmenu2">
-                                                <li class="header__bot--leftItem2">
-                                                    <a href="#" class="left__Navlink1">Office</a>
-                                                    <ul class="header__bot--leftmenu3">
-                                                        <li><a href="#">Office Chairs</a></li>
-                                                        <li><a href="#">Desks</a></li>
-                                                        <li><a href="#">Bookcases</a></li>
-                                                        <li><a href="#">Cellphone Chargers</a></li>
-                                                        <li><a href="#">File Cabinets</a></li>
-                                                    </ul>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 3
+                                                    </a>
                                                 </li>
-                                                <li class="header__bot--leftItem2">
-                                                    <a href="#" class="left__Navlink1">Kitchen & Dining</a>
-                                                    <ul class="header__bot--leftmenu3">
-                                                        <li><a href="#">Dining Sets</a></li>
-                                                        <li><a href="#">Kitchen Storage Cabinets</a></li>
-                                                        <li><a href="#">Bakers Racks</a></li>
-                                                        <li><a href="#">Dining Chairs</a></li>
-                                                        <li><a href="#">Dining Room Tables</a></li>
-                                                    </ul>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 4
+                                                    </a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 5
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </li>
-                                        <li class="header__bot--leftItem1">
-                                            <figure>
-                                                <img src="./assets/img/banner-2.jpg" alt="">
-                                            </figure>
-                                            <div class="header__bot--leftCaption">
-                                                <h4>Hottest Deals</h4>
-                                                <h3>Save Up To 30% On Clearance</h3>
-                                                <button class="header__bot--leftButton btn-caption">
-                                                    shop now
-                                                    <i class="fa fa-long-arrow-alt-right"></i>
-                                                </button>
-                                            </div>
+                                        <li class="header__parentMenu--item">
+                                            <ul class="header__childMenu">
+                                                <a href="" class="header__childMenu--title">Shop Pages</a>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Cart</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Checkout</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Wishlist</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">My Account</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-cookie"></i>
-                                    <a href="#" class="left__Navlink">Cooking</a>
-                                </li>
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-tshirt"></i>
-                                    <a href="#" class="left__Navlink">Clothing</a>
-                                </li>
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-blender"></i>
-                                    <a href="#" class="left__Navlink">Home Appliances</a>
-                                </li>
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-heartbeat"></i>
-                                    <a href="#" class="left__Navlink">Healthy & Beauty</a>
-                                </li>
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-shoe-prints"></i>
-                                    <a href="#" class="left__Navlink">Shoes & Boots</a>
-                                </li>
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-map"></i>
-                                    <a href="#" class="left__Navlink">Travel & Outdoor</a>
-                                </li>
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-mobile-alt"></i>
-                                    <a href="#" class="left__Navlink">Smart Phones</a>
-                                </li>
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-tv"></i>
-                                    <a href="#" class="left__Navlink">TV & Audio</a>
-                                </li>
-                                <li class="header__bot--leftItem">
-                                    <i class="fa fa-shopping-bag"></i>
-                                    <a href="#" class="left__Navlink">Gift Ideas</a>
+                                <li class="header__submenu--item">
+                                    <figure>
+                                        <img src="./assets/img/menu-img-1.jpg" alt="">
+                                    </figure>
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-                    <div class="col-6 header__bot--center">
-                        <div class="submenu">
-                            <li class="nav-item active">
-                                <a href="#" class="nav-link">Home <i class="fa fa-angle-down"></i></a>
-                                <div class="multi-page">
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/1.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">kid store</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/2.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">bycycle store</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/6.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">medical store 1</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/4.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">medical store 2</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/5.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">kid store</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/6.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">kid store</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/1.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">kid store</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/2.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">bycycle store</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/6.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">medical store 1</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/4.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">medical store 2</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/5.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">kid store</p>
-                                    </div>
-                                    <div class="page-item">
-                                        <figure>
-                                            <img src="./assets/img/6.jpg" alt="">
-                                        </figure>
-                                        <p class="page-title">kid store</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Shop <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item">
-                                        <ul class="parent-menu">
-                                            <li class="dropdown-item">
-                                                <ul class="child-menu">
-                                                    <a class="child-navitem" href="#">shop layout</a>
-                                                    <li><a href="#" class="child-navlink">Shop List</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 1</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 2</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 3</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 4</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 5</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 6</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <ul class="child-menu">
-                                                    <a class="child-navitem" href="#">shop layout</a>
-                                                    <li><a href="#" class="child-navlink">Shop List</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 1</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <ul class="parent-menu">
-                                            <li class="dropdown-item">
-                                                <ul class="child-menu">
-                                                    <a class="child-navitem" href="#">shop layout</a>
-                                                    <li><a href="#" class="child-navlink">Shop List</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 1</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 2</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 3</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 4</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 5</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 6</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <ul class="child-menu">
-                                                    <a class="child-navitem" href="#">shop layout</a>
-                                                    <li><a href="#" class="child-navlink">Shop List</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 1</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-item">
+                        </li>
+                        <li class="header_navItem">
+                            <a href="#" class="header__navlink">Product<i class="fa fa-angle-down"></i></a>
+                            <ul class="header__submenu">
+                                <li class="header__submenu--item">
+                                    <ul class="header__parentMenu">
+                                        <li class="header__parentMenu--item">
+                                            <ul class="header__childMenu">
+                                                <a href="" class="header__childMenu--title">Shop Layouts</a>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop List</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 2
+                                                        Columns</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 3
+                                                        Columns</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 4
+                                                        Columns</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 5
+                                                        Columns</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 6
+                                                        Columns</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">
+                                                        Shop Market
+                                                        <div class="sale new short"><span>New</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__parentMenu--item">
+                                            <ul class="header__childMenu">
+                                                <a href="" class="header__childMenu--title">Shop With Sidebar</a>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">With Left Sidebar</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">With Right Sidebar</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <ul class="header__parentMenu">
+                                        <li class="header__parentMenu--item">
+                                            <ul class="header__childMenu">
+                                                <a href="" class="header__childMenu--title">Shop Variations</a>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">
+                                                        Shop Catalog Mode
+                                                        <div class="sale hot"><span>New</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">
+                                                        With Toggle Sidebar
+                                                        <div class="sale new"><span>New</span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 3
+                                                    </a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 4
+                                                    </a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Shop Grid 5
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="header__parentMenu--item">
+                                            <ul class="header__childMenu">
+                                                <a href="" class="header__childMenu--title">Shop Pages</a>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Cart</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Checkout</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">Wishlist</a>
+                                                </li>
+                                                <li class="header__childMenu--item">
+                                                    <a href="" class="header__childMenu--navlink">My Account</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <figure>
                                         <img src="./assets/img/menu-img-1.jpg" alt="">
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Product <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item">
-                                        <ul class="parent-menu">
-                                            <li class="dropdown-item">
-                                                <ul class="child-menu">
-                                                    <a class="child-navitem" href="#">shop layout</a>
-                                                    <li><a href="#" class="child-navlink">Shop List</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 1</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 2</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 3</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 4</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 5</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 6</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <ul class="child-menu">
-                                                    <a class="child-navitem" href="#">shop layout</a>
-                                                    <li><a href="#" class="child-navlink">Shop List</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 1</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <ul class="parent-menu">
-                                            <li class="dropdown-item">
-                                                <ul class="child-menu">
-                                                    <a class="child-navitem" href="#">shop layout</a>
-                                                    <li><a href="#" class="child-navlink">Shop List</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 1</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 2</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 3</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 4</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 5</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 6</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="dropdown-item">
-                                                <ul class="child-menu">
-                                                    <a class="child-navitem" href="#">shop layout</a>
-                                                    <li><a href="#" class="child-navlink">Shop List</a></li>
-                                                    <li><a href="#" class="child-navlink">Shop Grid 1</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <img src="./assets/img/menu-img-2.jpg" alt="">
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Page <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu menu-custom">
-                                    <li class="dropdown-item">
-                                        <a href="#">About</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Contact</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Blog</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Login</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Error 404</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Coming Soon</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Element <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu menu-custom">
-                                    <li class="dropdown-item">
-                                        <a href="#">Element 1</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Element 2</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Element 3</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Element 4</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Element 5</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Element 6</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Buy Molla <i class="fa fa-angle-down"></i></a>
-                                <ul class="dropdown-menu menu-custom">
-                                    <li class="dropdown-item">
-                                        <a href="#">Molla 1</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Molla 2</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Molla 3</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Molla 4</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Molla 5</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#">Molla 6</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </div>
-                    </div>
-                    <div class="col-3 header__bot--right">
+                                    </figure>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header_navItem">
+                            <a href="#" class="header__navlink">Pages<i class="fa fa-angle-down"></i></a>
+                            <ul class="header__submenu short-menu">
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">About</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Contact</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Blog</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Login</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Error 404</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Coming soon</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header_navItem">
+                            <a href="#" class="header__navlink">Elements<i class="fa fa-angle-down"></i></a>
+                            <ul class="header__submenu short-menu">
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Elements 1</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Elements 2</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Elements 3</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Elements 4</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Elements 5</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Elements 6</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Elements 7</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Elements 8</a>
+                                </li>
+                                <li class="header__submenu--item">
+                                    <a href="" class="header__submenu--navlink">Elements 9</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header_navItem">
+                            <a href="#" class="header__navlink">
+                                Buy Molla!
+                                <div class="sale hot short-navlink"><span>New</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__right col-3">
+                    <div class="header__right--text">
                         <i class="fab fa-medapps"></i>
-                        <p>Clearance Up to <span>30% Off</span></p>
+                        <span>Clearance Up to <span class="header__right--sale">30% Off</span></span>
                     </div>
                 </div>
             </div>
         </header>
         <div class="main"></div>
     </div>
+    <div class="menu-mobile" id="menu-mobile">
+        <div class="menu-main" id="menu-main">
+            <div class="menu-header">
+                <div class="menu-close">
+                    <a href="" id="menu-close"><i class="fa fa-times"></i></a>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Seach product ....">
+                    <div class="input-group-append">
+                        <button class="btn menu-btn" type="button"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-body mb-5"></div>
+            <div class="menu-footer">
+                <div class="menu-icon">
+                    <div class="icon-item"><i class="fab fa-facebook-f"></i></div>
+                    <div class="icon-item"><i class="fab fa-twitter"></i></div>
+                    <div class="icon-item"><i class="fab fa-instagram"></i></div>
+                    <div class="icon-item"><i class="fab fa-pinterest"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-overlay" id="menu-overlay"></div>
+    </div>
+    <div class="cart-mobile" id="cart-mobile">
+        <div class="cart-overlay" id="cart-overlay"></div>
+        <div class="cart-main" id="cart-main">
+            <div class="cart-header">
+                <h2 class="cart-title">Shopping Cart</h2>
+                <div class="cart-close">
+                    <a href="" id="close-cart">Close<i class="fa fa-times"></i></a>
+                </div>
+            </div>
+            <div class="cart-body">
+                <h4 class="cart-title">No products in the cart.</h4>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/header.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,104 @@
+.menu-mobile {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    transition: $tran-2;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-250px);
+    .menu-main {
+        width: 263px;
+        height: 100vh;
+        background-color: $bg-default;
+    }
+    .menu-overlay {
+        width: calc(100% - 263px);
+        height: 100vh;
+        background-color: rgba($text-default,0.2);
+    }
+}
+.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.menu-main {
+    padding: $pd-2;
+    .menu-header {
+        margin-bottom: $mg-1;
+        .menu-close {
+            padding: $pd-2 0;
+            text-align: right;
+            a {
+                i {
+                    font-weight: normal;
+                    color: $text-gray;
+                    transition: $tran-2;
+                }
+                &:hover i {
+                    color: $bg-yellow;
+                }
+            }
+        }
+        .input-group {
+            .menu-btn {
+                background-color: $bg-yellow;
+                border: 1px solid $bg-yellow;
+                border-radius: 0;
+                transition: $tran-2;
+                i {
+                    @include styleText($fs-default,$bg-default,0,0,$fw-normal);
+                }
+                &:hover {
+                    background-color: $bg-red;
+                }
+            }
+            .form-control {
+                font-size: $fs-default + 1;
+                &:focus {
+                    box-shadow: none;
+                    border-color: $bg-yellow;
+                    color: $text-gray;
+                }
+            }
+        }
+    }
+    .menu-footer {
+        .menu-icon {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .icon-item {
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 42px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid rgba($text-gray,0.2);
+                margin-left: $mg-1;
+                transition: $tran-2;
+                &:nth-of-type(1) {
+                    margin-left: 0;
+                }
+                i {
+                    @include styleText($fs-default,rgba($text-gray,0.5),0,0,$fw-normal);
+                    transition: $tran-2;
+                }
+                &:hover i {
+                    color: $bg-yellow;
+                }
+                &:hover {
+                    border-color: $bg-yellow;
+                }
+            }
+        }
+    }
+}
