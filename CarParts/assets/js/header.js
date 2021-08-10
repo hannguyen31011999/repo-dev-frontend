@@ -23,6 +23,68 @@ document.getElementById('menu-close').addEventListener('click', function (e) {
     header.style.transform = 'translateX(0)';
 });
 
+
+
+document.getElementById('nav-home-tab').addEventListener('click', function (event) {
+    let query = document.querySelectorAll('.tab-pane .header__navItem .fa-angle-down');
+    let menu = document.querySelectorAll('.tab-pane .header__submenu');
+    if (this.contains(event.target)) {
+        query.forEach((item, index) => {
+            if (item.getAttribute('isCheck')) {
+                vitri = index;
+                item.removeAttribute('isCheck');
+                item.classList.remove('rotote');
+                menu[index].classList.remove('active');
+            }
+        });
+        document.getElementById('nav-profile-tab').classList.remove('navs-active');
+        this.classList.add('navs-active');
+    }
+});
+
+document.getElementById('nav-profile-tab').addEventListener('click', function (event) {
+    let query = document.querySelectorAll('.tab-pane .header__navItem .fa-angle-down');
+    let menu = document.querySelectorAll('.tab-pane .header__submenu');
+    if (this.contains(event.target)) {
+        query.forEach((item, index) => {
+            if (item.getAttribute('isCheck')) {
+                item.removeAttribute('isCheck');
+                item.classList.remove('rotote');
+                menu[index].classList.remove('active');
+            }
+        });
+        document.getElementById('nav-home-tab').classList.remove('navs-active');
+        document.getElementById('nav-home-tab').classList.remove('nav-first');
+        this.classList.add('navs-active');
+    }
+});
+const openMenu = (_this) => {
+    let query = document.querySelectorAll('.tab-pane .header__navItem .fa-angle-down');
+    let menu = document.querySelectorAll('.tab-pane .header__submenu');
+    let vitri = -1;
+    menu.forEach(item => {
+        item.classList.remove('active');
+    });
+    if (_this.classList.contains('rotote')) {
+        query.forEach((item, index) => {
+            if (item.getAttribute('isCheck')) {
+                vitri = index;
+            }
+        });
+        _this.removeAttribute('isCheck');
+        _this.classList.remove('rotote');
+        menu[vitri].classList.remove('active');
+    } else {
+        _this.setAttribute('isCheck', true);
+        query.forEach((item, index) => {
+            if (item.getAttribute('isCheck')) {
+                vitri = index;
+            }
+        });
+        _this.classList.add('rotote');
+        menu[vitri].classList.add('active');
+    }
+}
 // cart
 document.getElementById('open-cart').addEventListener('click', function (e) {
     document.getElementById('cart-mobile').classList.add('cart-active');

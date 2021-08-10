@@ -775,17 +775,229 @@
     <div class="menu-mobile" id="menu-mobile">
         <div class="menu-main" id="menu-main">
             <div class="menu-header">
-                <div class="menu-close">
-                    <a href="" id="menu-close"><i class="fa fa-times"></i></a>
-                </div>
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Seach product ....">
-                    <div class="input-group-append">
-                        <button class="btn menu-btn" type="button"><i class="fa fa-search"></i></button>
+                <div class="menu-content">
+                    <div class="menu-close">
+                        <a href="" id="menu-close"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Seach product ....">
+                        <div class="input-group-append">
+                            <button class="btn menu-btn" type="button"><i class="fa fa-search"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="menu-body mb-5"></div>
+            <div class="menu-body mb-5">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active nav-first" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Main Menu</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Category</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <ul class="header__menu">
+                            <li class="header__navItem">
+                                <a href="#" class="header__navlink">
+                                    Home<i class="fa fa-angle-down" onclick="openMenu(this)"></i>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li><a href="">35 - kids store
+                                            <div class="sale hot"><span>Hot</span>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="">36 - bicycle store
+                                            <div class="sale hot"><span>Hot</span>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="">37 - medical store 1
+                                            <div class="sale new"><span>New</span>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="">38 - medical store 2</a></li>
+                                    <li><a href="">39 - medical store 3</a></li>
+                                    <li><a href="">40 - medical store 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="#" class="header__navlink">
+                                    Shop
+                                    <i class="fa fa-angle-down" onclick="openMenu(this)"></i>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li><a href="">Shop Layout</a></li>
+                                    <li><a href="">Shop With Sidebar</a></li>
+                                    <li><a href="">Shop Variantion</a></li>
+                                    <li><a href="">Shop Pages</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="#" class="header__navlink">Product
+                                    <i class="fa fa-angle-down" onclick="openMenu(this)"></i>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li><a href="">Product 35</a></li>
+                                    <li><a href="">Product 36</a></li>
+                                    <li><a href="">Product 37</a></li>
+                                    <li><a href="">Product 38</a></li>
+                                    <li><a href="">Product 39</a></li>
+                                    <li><a href="">Product 40</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="#" class="header__navlink">Pages<i class="fa fa-angle-down"
+                                        onclick="openMenu(this)"></i></a>
+                                <ul class="header__submenu">
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Contact</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Login</a></li>
+                                    <li><a href="">Error 404</a></li>
+                                    <li><a href="">Coming soon</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="#" class="header__navlink">Elements<i class="fa fa-angle-down"
+                                        onclick="openMenu(this)"></i></a>
+                                <ul class="header__submenu">
+                                    <li><a href="">Elements 1</a></li>
+                                    <li><a href="">Elements 2</a></li>
+                                    <li><a href="">Elements 3</a></li>
+                                    <li><a href="">Elements 4</a></li>
+                                    <li><a href="">Elements 5</a></li>
+                                    <li><a href="">Elements 6</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="" class="header__navlink">Buy Molla!
+                                    <div class="sale hot"><span>Hot</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <ul class="header__menu">
+                            <li class="header__navItem">
+                                <a href="#" class="header__navlink">
+                                    <i class="fa fa-laptop"></i>
+                                    Electronics
+                                    <i class="fa fa-angle-down" onclick="openMenu(this)"></i>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li><a href="">35 - kids store
+                                            <div class="sale hot"><span>Hot</span>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="">36 - bicycle store
+                                            <div class="sale hot"><span>Hot</span>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="">37 - medical store 1
+                                            <div class="sale new"><span>New</span>
+                                            </div>
+                                        </a></li>
+                                    <li><a href="">38 - medical store 2</a></li>
+                                    <li><a href="">39 - medical store 3</a></li>
+                                    <li><a href="">40 - medical store 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="#" class="header__navlink">
+                                    <i class="fa fa-couch"></i>
+                                    Furnitures
+                                    <i class="fa fa-angle-down" onclick="openMenu(this)"></i>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li><a href="">Shop Layout</a></li>
+                                    <li><a href="">Shop With Sidebar</a></li>
+                                    <li><a href="">Shop Variantion</a></li>
+                                    <li><a href="">Shop Pages</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="#" class="header__navlink">
+                                    <i class="fa fa-concierge-bell"></i>
+                                    Cook
+                                    <i class="fa fa-angle-down" onclick="openMenu(this)"></i>
+                                </a>
+                                <ul class="header__submenu">
+                                    <li><a href="">Product 35</a></li>
+                                    <li><a href="">Product 36</a></li>
+                                    <li><a href="">Product 37</a></li>
+                                    <li><a href="">Product 38</a></li>
+                                    <li><a href="">Product 39</a></li>
+                                    <li><a href="">Product 40</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="#" class="header__navlink">
+                                    <i class="fa fa-tshirt"></i>
+                                    Clothing<i class="fa fa-angle-down" onclick="openMenu(this)"></i></a>
+                                <ul class="header__submenu">
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Contact</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">Login</a></li>
+                                    <li><a href="">Error 404</a></li>
+                                    <li><a href="">Coming soon</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="" class="header__navlink">
+                                    <i class="fa fa-blender"></i>
+                                    Home Appliances
+                                </a>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="" class="header__navlink">
+                                    <i class="fa fa-heartbeat"></i>
+                                    Healthy & Beauty
+                                </a>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="" class="header__navlink">
+                                    <i class="fa fa-shoe-prints"></i>
+                                    Shoes & Boots
+                                </a>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="" class="header__navlink">
+                                    <i class="fa fa-map-signs"></i>
+                                    Travel & Outdoor
+                                </a>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="" class="header__navlink">
+                                    <i class="fa fa-mobile-alt"></i>
+                                    Smart Phones
+                                </a>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="" class="header__navlink">
+                                    <i class="fa fa-tv"></i>
+                                    TV & Audio
+                                </a>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="" class="header__navlink">
+                                    <i class="fa fa-tv"></i>
+                                    TV & Audio
+                                </a>
+                            </li>
+                            <li class="header__navItem">
+                                <a href="" class="header__navlink">
+                                    <i class="fa fa-shopping-bag"></i>
+                                    Gift Ideas
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="menu-footer">
                 <div class="menu-icon">
                     <div class="icon-item"><i class="fab fa-facebook-f"></i></div>
