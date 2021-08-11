@@ -1,6 +1,6 @@
 header{
     padding: 0 $pd-2;
-    height: 100vh;
+    // height: 100vh;
     background-color: $bg-blue;
     transition: $tran-2;
 }
@@ -267,7 +267,7 @@ header {
                     margin-right: $mg-1;
                 }
                 @media screen and (max-width:499px) {
-                    margin-right: $mg-0;
+                    margin-right: $mg-0 + 5;
                 }
             }
             @media screen and (max-width:499px) {
@@ -281,7 +281,7 @@ header {
 
 // header__bot left
 .header__bot {
-    padding: $pd-0 0;
+    padding: 0 0;
     .header__left {
         display: flex;
         justify-content: flex-start;
@@ -508,8 +508,8 @@ header {
             display: flex;
             .header_navItem {
                 position: relative;
-                width: calc(90% / 5);
-                text-align: center;
+                width: calc(100% / 6);
+                text-align: left;
                 .header__navlink {
                     text-decoration: none;
                     @include styleText($fs-0,$bg-default,0,0,$fw-2);
@@ -536,7 +536,7 @@ header {
                 .header__submenu {
                     position: absolute;
                     top: 200%;
-                    left: 0;
+                    left: -30%;
                     list-style: none;
                     width: 684px;
                     background-color: $bg-default;
@@ -588,6 +588,75 @@ header {
                         }
                     }
                 }
+                .active {
+                    left: -30%;
+                    flex-wrap: wrap;
+                    width: 894px;
+                    padding: $pd-2 0;
+                    overflow-y: auto;
+                    max-height: 400px;
+                    .header__submenu--item {
+                        width: 25%;
+                        padding: 0 $pd-1;
+                        cursor: pointer;
+                        margin-bottom: $mg-1;
+                        figure {
+                            max-height: 140px;
+                            overflow: hidden;
+                            border: 1px solid rgba($text-gray,0.2);
+                            img {
+                                width: 100%;
+                                transform: translateY(0);
+                                transition: all 1.5s;
+                            }
+                            &:hover img {
+                                transform: translateY(-360px);
+                            }
+                        }
+                        figcaption {
+                            text-align: center;
+                            padding: $pd-0 0;
+                            a {
+                                text-decoration: none;
+                                @include styleText($fs-default + 1,$text-gray,0,0,$fw-normal);
+                            }
+                        }
+                    }
+                    .header__submenu--btn {
+                        width: 100%;
+                        text-align: center;
+                        button {
+                            padding: $pd-1 $pd-2;
+                            border: 1px solid $bg-yellow;
+                            background-color: $bg-default;
+                            transition: $tran-2;
+                            @include styleText($fs-0,$bg-yellow,0,0,$fw-1);
+                            text-transform: uppercase;
+                            .fa-long-arrow-alt-right {
+                                padding-left: $pd-1;
+                                @include styleText($fs-default,$bg-yellow,0,0,$fw-1);
+                                transition: $tran-2;
+                            }
+                            &:hover {
+                                background-color: $bg-yellow;
+                                color: $bg-default;
+                            }
+                            &:hover .fa-long-arrow-alt-right {
+                                color: $bg-default;
+                            }
+                        }
+                    }
+                    @include responsive('extra-large'){
+                        & {
+                            width: 794px;
+                        }
+                    }
+                    @media screen and(max-width:1070px) {
+                        & {
+                            width: 724px;
+                        }
+                    }
+                }
                 .short-menu {
                     display: block;
                     max-width: 218px;
@@ -615,9 +684,9 @@ header {
                     content: "";
                     position: absolute;
                     bottom: -100%;
-                    left: 15%;
+                    left: -10%;
                     width: 0;
-                    height: 2px;
+                    height: 3px;
                     background-color: $bg-yellow;
                     opacity: 0;
                     transition: $tran-2;
@@ -627,104 +696,6 @@ header {
                     width: 80%;
                 }
                 
-            }
-            .active {
-                position: relative;
-                width: 10%;
-                .header__navlink {
-                    position: relative;
-                    text-decoration: none;
-                    @include styleText($fs-0,$bg-default,0,0,$fw-2);
-                    .fa-angle-down {
-                        padding-left: $pd-0;
-                        @include styleText($fs-default,$bg-default,0,0,$fw-normal);
-                    }
-                    @include responsive('extra-large') {
-                        .fa-angle-down {
-                            display: none;
-                        }
-                    }
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        bottom: -75%;
-                        left: -10%;
-                        width: 120%;
-                        height: 2px;
-                        background-color: $bg-yellow;
-                    }
-                }
-                .header__pages {
-                    position: absolute;
-                    top: 200%;
-                    left: -10%;
-                    min-width: 894px;
-                    background-color: $bg-default;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    padding: $pd-2 0;
-                    z-index: $z-index-5;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: $tran-2;
-                    .header__page--item {
-                        width: 20%;
-                        padding: 0 $pd-1;
-                        cursor: pointer;
-                        margin-bottom: $mg-1;
-                        figure {
-                            max-height: 140px;
-                            overflow: hidden;
-                            border: 1px solid rgba($text-gray,0.2);
-                            img {
-                                width: 100%;
-                                transform: translateY(0);
-                                transition: all 1.5s;
-                            }
-                            &:hover img {
-                                transform: translateY(-260px);
-                            }
-                        }
-                        figcaption {
-                            text-align: center;
-                            a {
-                                text-decoration: none;
-                                @include styleText($fs-default + 1,$text-gray,0,0,$fw-normal);
-                            }
-                        }
-                    }
-                    .header__page--btn {
-                        padding: $pd-1 $pd-2;
-                        border: 1px solid $bg-yellow;
-                        background-color: $bg-default;
-                        transition: $tran-2;
-                        @include styleText($fs-0,$bg-yellow,0,0,$fw-1);
-                        text-transform: uppercase;
-                        .fa-long-arrow-alt-right {
-                            padding-left: $pd-1;
-                            @include styleText($fs-default,$bg-yellow,0,0,$fw-1);
-                            transition: $tran-2;
-                        }
-                        &:hover {
-                            background-color: $bg-yellow;
-                            color: $bg-default;
-                        }
-                        &:hover .fa-long-arrow-alt-right {
-                            color: $bg-default;
-                        }
-                    }
-                    @include responsive('extra-large') {
-                        & {
-                            min-width: 694px;
-                        }
-                    }
-                }
-                &:hover .header__pages {
-                    opacity: 1;
-                    visibility: visible;
-                }
             }
         }
         

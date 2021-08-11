@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: $z-index-3;
     height: 100vh;
     width: 100%;
     transition: $tran-2;
@@ -167,8 +168,10 @@
                     transition: $tran-2;
                 }
                 .fa {
-                    @include styleText($fs-0,rgba($text-default,0.5),0,0,$fw-normal);
-                    padding-right: $pd-1;
+                    color: rgba($text-default,0.5);
+                    font-weight: normal;
+                    width: 25px;
+                    height: 10px;
                 }
                 .rotote {
                     transform: rotateX(180deg);
