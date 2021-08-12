@@ -10,7 +10,12 @@
             }
             p {
                 @include styleText($fs-0,rgba($text-gray,0.6),0,0,$fw-2);
-                margin: $mg-0 0 0 0;
+                margin: $mg-0 - 5 0 0 0;
+            }
+            @media screen and(max-width:499px) {
+                h2 {
+                    font-size: $fs-1;
+                }
             }
         }
     }
@@ -81,6 +86,14 @@
                             }
                         }
                     }
+                    @media screen and (max-width:360px) {
+                        & {
+                            min-height: 20px;
+                            a {
+                                font-size: $fs-0 - 5;
+                            }
+                        }
+                    }
                 }
                 .categories__menu {
                     list-style: none;
@@ -114,6 +127,11 @@
                             {
                                 & {
                                     font-size: $fs-0 - 1;
+                                }
+                            }
+                            @media screen and (max-width:499px) {
+                                & {
+                                    font-size: $fs-0 - 3;
                                 }
                             }
                         }
@@ -155,6 +173,11 @@
                         {
                             & {
                                 font-size: $fs-0 - 1;
+                            }
+                        }
+                        @media screen and(max-width:499px) {
+                            & {
+                                font-size: $fs-0 - 3;
                             }
                         }
                     }

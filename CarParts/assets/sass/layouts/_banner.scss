@@ -9,7 +9,7 @@
         bottom: 0;
         width: 0;
         li {
-            margin: $mg-1 $mg-1 0 0;
+            // margin: $mg-1 $mg-1 0 0;
             button {
                 &::before {
                     content: "";
@@ -190,8 +190,7 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                inset: 0px;
-                background-color: rgba($text-gray,0.1);
+                inset: 0 51% 0px 50%;
                 transition: $tran-3;
             }
             &::after {
@@ -199,15 +198,16 @@
                 position: absolute;
                 bottom: 0;
                 right: 0;
-                inset: 0px;
-                background-color: rgba($text-gray,0.1);
+                inset: 50% 0px;
                 transition: $tran-3;
             }
             &:hover::before {
-                inset: 0 51% 0px 50%;
+                inset: 0px;
+                background-color: rgba($bg-default,0.05);
             }
             &:hover::after {
-                inset: 50% 0px;
+                inset: 0px;
+                background-color: rgba($bg-default,0.05);
             }
         }
     }
@@ -241,10 +241,15 @@
 }
 
 .banner__bot {
-    background-color: $bg-default;
-    padding: $pd-2 + 5 0;
-    .banner__box {
-        padding: 0 $pd-1 + 5;
+    .banner__bot--content {
+        padding: 0 $pd-1 + 2;
+        .slick-list {
+            padding: 0;
+        }
+        .banner__box {
+            padding: $pd-2 + 10 0;
+            background-color: $bg-default;
+        }
     }
     .banner__box--item {
         display: flex;
@@ -270,10 +275,10 @@
             @media screen and (max-width:490px) {
                 & {
                     h4 {
-                        font-size: $fs-0 - 3;
+                        font-size: $fs-0;
                     }
                     p {
-                        font-size: $fs-0 - 5;
+                        font-size: $fs-0 - 3;
                     }
                 }
             }

@@ -1,0 +1,273 @@
+.product {
+    padding: $pd-3 0;
+    @media screen and (max-width:440px) {
+        & {
+            padding: $pd-2 0;
+        }
+    }
+    .product__content {
+        padding: 0 $pd-2;
+        .product__title {
+            text-align: center;
+            margin-bottom: $mg-2;
+            h2 {
+                @include styleText($fs-2 + 3,$text-default,0,0,$fw-4);
+            }
+            p {
+                @include styleText($fs-0,rgba($text-gray,0.6),0,0,$fw-2);
+                margin: $mg-0 - 5 0 0 0;
+            }
+            @media screen and (max-width:440px) {
+                & {
+                    h2 {
+                        font-size: $fs-1;
+                    }
+                    p {
+                        font-size: $fs-0;
+                    }
+                }
+            }
+        }
+        .product__list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-right: -$mg-1;
+            .product__item {
+                width: calc(100% / 5 - 20px);
+                margin-right: $mg-1;
+                margin-bottom: $mg-1;
+                .product__item--content {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    padding: $pd-2;
+                    background-color: $bg-default;
+                    border: 1px solid rgba($text-gray,0.1);
+                    border-radius: $bd-radius-0 - 2 $bd-radius-0 - 2 0 0;
+                    .product__name {
+                        flex-shrink: 0;
+                        h4 {
+                            display:-webkit-box;
+                            -webkit-line-clamp:2;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            word-break: break-word;
+                            a {
+                                text-decoration: none;
+                                transition: $tran-2;
+                                @include styleText($fs-0 + 1,$text-default,0,0,$fw-4);
+                                &:hover {
+                                    color: $bg-yellow;
+                                }
+                            }
+                        }
+                    }
+                    figure {
+                        flex-shrink: 0;
+                        margin-bottom: 0;
+                        img {
+                            width: 100%;
+                            transition: $tran-1;
+                            transform: scale(0.9);
+                            
+                        }
+                        &:hover img {
+                            transform: scale(1);
+                        }
+                    }
+                    .product__text {
+                        margin-bottom: $mg-1;
+                        flex: 1;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        .product__price {
+                            width: 100%;
+                            .product__price--promotion {
+                                border: none;
+                                display: inline-block;
+                                @include styleText($fs-1 - 2,$bg-red,0,0,$fw-3);
+                            }
+                            .product__price--unit {
+                                @include styleText($fs-0 - 1,$text-gray,0,0,$fw-3);
+                                opacity: 0.5;
+                            }
+                            @media screen and (max-width:440px) {
+                                .product__price--promotion {
+                                    font-size: $fs-0 - 2;
+                                }
+                                .product__price--unit {
+                                    font-size: $fs-default - 2;
+                                }
+                            }
+                        }
+                        .product__star {
+                            width: 100%;
+                            display: flex;
+                            margin-top: $mg-0;
+                            img {
+                                width: 12px;
+                                height: 12px;
+                                margin-right: $mg-0 - 5;
+                                @media screen and (max-width:440px) {
+                                    & {
+                                        width: 8px;
+                                        height: 8px;
+                                    }
+                                }
+                            }
+                        }
+                        .product__sale {
+                            margin-top: $mg-0;
+                            width: 100%;
+                            .product__label {
+                                background-color: $bg-yellow;
+                                padding: $pd-0 - 3 $pd-0;
+                                border-radius: $bd-radius-0 - 4;
+                                @include styleText($fs-default,$text-default,0,0,$fw-2);
+                            }
+                        }
+                    }
+                    .product__action {
+                        position: absolute;
+                        bottom: -5%;
+                        left: 0;
+                        width: 100%;
+                        padding: $pd-1 $pd-2;
+                        display: flex;
+                        background-color: $bg-default;
+                        opacity: 0;
+                        visibility: hidden;
+                        border-radius: 0 0 $bd-radius-0 - 2;
+                        border-bottom: 1px solid rgba($text-gray,0.1);
+                        .product__cart {
+                            width: 50%;
+                            button {
+                                width: 100%;
+                                padding: $pd-1 0;
+                                border: none;
+                                text-transform: uppercase;
+                                background-color: $bg-yellow;
+                                border-radius: $bd-radius-0 - 4;
+                                transition: $tran-2;
+                                @include styleText($fs-0,$text-default,0,0,$fw-4);
+                                .fa {
+                                    padding-left: $pd-1;
+                                    transition: $tran-2;
+                                    @include styleText($fs-0 - 2,$text-default,0,0,$fw-2);
+                                }
+                                &:hover {
+                                    background-color: $bg-red;
+                                    color: $bg-default;
+                                }
+                                &:hover .fa {
+                                    color: $bg-default;
+                                }
+                                @media screen and (max-width:440px) {
+                                    & {
+                                        font-size: $fs-default;
+                                        .fa {
+                                            padding-left: $pd-0;
+                                            font-size: $fs-default - 2;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .product__icon {
+                            width: calc(50% / 2 - 10px);
+                            margin: 0 $mg-0 - 5;
+                            button {
+                                width: 100%;
+                                padding: $pd-1 0;
+                                border: none;
+                                text-transform: uppercase;
+                                @include styleText($fs-0,$text-default,0,0,$fw-4);
+                                background-color: transparent;
+                                border-radius: $bd-radius-0 - 4;
+                                transition: $tran-2;
+                                .fa {
+                                    @include styleText($fs-0 - 2,$text-default,0,0,$fw-2);
+                                }
+                                &:hover {
+                                    background-color: $bg-yellow;
+                                }
+                                @media screen and (max-width:440px) {
+                                    & {
+                                        font-size: $fs-default;
+                                        .fa {
+                                            padding-left: $pd-0;
+                                            font-size: $fs-default - 2;
+                                        }
+                                    }
+                                    &:hover {
+                                        background-color: transparent;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        box-shadow: 0px 5px 8px 0px rgba($text-default,0.15);
+                    }
+                    &:hover .product__action {
+                        box-shadow: 0px 5px 8px 0px rgba($text-default,0.15);
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.product__list {
+    .slick-dots {
+        bottom: -15%;
+        left: 0;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            button {
+                &::before {
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    line-height: 30px;
+                    border: 1px solid $bg-blue;
+                    transition: $tran-1;
+                }
+                &:focus::before{
+                    background-color: $text-gray;
+                }
+                &:hover::before {
+                    background-color: $text-gray;
+                }
+            }
+        }
+        .slick-active {
+            button {
+                &::before {
+                    content: "";
+                    width: 21px;
+                    height: 7px;
+                    border-radius: 20px;
+                    line-height: 30px;
+                    border: 1px solid rgba($text-blue-h,0.5);
+                    background-color: $text-gray;
+                }
+                &:hover::before {
+                    background-color: $text-gray;
+                }
+            }
+        }
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+}

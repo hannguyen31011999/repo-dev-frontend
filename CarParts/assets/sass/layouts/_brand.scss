@@ -1,0 +1,226 @@
+.brand {
+    margin-top: $mg-3;
+    @include responsive('small') {
+        margin-top: $mg-2;
+    }
+    .brand__content {
+        padding: 0 $pd-2;
+        .brand__title {
+            text-align: center;
+            margin-bottom: $mg-2;
+            h2 {
+                @include styleText($fs-2 + 3,$text-default,0,0,$fw-4);
+            }
+            p {
+                @include styleText($fs-0,rgba($text-gray,0.6),0,0,$fw-2);
+                margin: $mg-0 - 5 0 0 0;
+            }
+        }
+        .brand__top {
+            .brand__item {
+                padding: 0 $pd-1;
+                .brand__wiget {
+                    min-height: 100px;
+                    max-height: 120px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid rgba($text-gray,0.15);
+                    background-color: #F7F8FA;
+                    box-shadow: 0px 5px 8px 0px rgba($text-default,0.05);
+                    transition: $tran-2;
+                }
+                &:hover .brand__wiget {
+                    box-shadow: 0px 5px 8px 0px rgba($text-default,0.15);
+                    background-color: $bg-default;
+                }
+            }
+        }
+        .brand__bot {
+            margin-top: $mg-2;
+            .brand__item {
+                padding: 0 $pd-1 0 $pd-1;
+            }
+            .brand__banner {
+                position: relative;
+                figure {
+                    margin-bottom: 0;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .brand__caption {
+                    position: absolute;
+                    top: 50%;
+                    left: 8%;
+                    width: 42%;
+                    z-index: $z-index-1;
+                    transform: translateY(-50%);
+                    .brand__sale {
+                        @include styleText($fs-2 + 10,$bg-default,0,0,$fw-4);
+                    }
+                    .brand__desc {
+                        @include styleText($fs-1,$bg-default,0,0,$fw-3);
+                        margin: $mg-0 - 5 0 $mg-0 0;
+                        line-height: $lh-1;
+                        text-transform: uppercase;
+                    }
+                    .brand__btn {
+                        margin-top: $mg-1;
+                        a {
+                            position: relative;
+                            text-decoration: none;
+                            @include styleText($fs-0,$bg-yellow,0,0,$fw-3);
+                            text-transform: uppercase;
+                            transition: $tran-2;
+                            .fa {
+                                padding-left: $pd-1;
+                                transition: $tran-2;
+                                @include styleText($fs-0 - 2,$bg-yellow,0,0,$fw-3);
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                bottom: -50%;
+                                left: 0;
+                                width: 100%;
+                                height: 2px;
+                                transition: $tran-2;
+                                background-color: $bg-yellow;
+                            }
+                            &:hover {
+                                color: $bg-default;
+                            }
+                            &:hover .fa {
+                                color: $bg-default;
+                            }
+                            &:hover::before {
+                                background-color: $bg-default;
+                            }
+                        }
+                    }
+                    @include responsive('large'){
+                        & {
+                            .brand__sale {
+                                font-size: $fs-2 + 5;
+                            }
+                            .brand__desc {
+                                font-size: $fs-0 + 2;
+                                margin-bottom: 0;
+                            }
+                            .brand__btn {
+                                margin-top: $mg-0;
+                            }
+                        }
+                    }
+                    @include responsive('medium'){
+                        & {
+                            width: 50%;
+                            .brand__sale {
+                                font-size: $fs-2;
+                            }
+                            .brand__desc {
+                                font-size: $fs-0 ;
+                            }
+                        }
+                    }
+                    @include responsive('small'){
+                        & {
+                            .brand__sale {
+                                font-size: $fs-2 + 5;
+                            }
+                            .brand__desc {
+                                font-size: $fs-0 + 2;
+                            }
+                            .brand__btn {
+                                a {
+                                    font-size: $fs-default + 1;
+                                    .fa {
+                                        font-size: $fs-default;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .brand__overlay {
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        width: 120%;
+                        height: 60px;
+                        background: rgba(255, 255, 255, 0.1);
+                        transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) 
+                        translate3d(0, -150%, 0);
+                        transition: 0.5s linear;
+                        backface-visibility: hidden;
+                    }
+                    &:hover::before {
+                        top: 100%;
+                        left: -100%;
+                        transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1,45deg)
+                        translate3d(0, 200%, 0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.brand__bot {
+    position: relative;
+    .slick-dots {
+        bottom: -15%;
+        left: 0;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            button {
+                &::before {
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    line-height: 30px;
+                    border: 1px solid $bg-blue;
+                    transition: $tran-1;
+                }
+                &:focus::before{
+                    background-color: $text-gray;
+                }
+                &:hover::before {
+                    background-color: $text-gray;
+                }
+            }
+        }
+        .slick-active {
+            button {
+                &::before {
+                    content: "";
+                    width: 21px;
+                    height: 7px;
+                    border-radius: 20px;
+                    line-height: 30px;
+                    border: 1px solid rgba($text-blue-h,0.5);
+                    background-color: $text-gray;
+                }
+                &:hover::before {
+                    background-color: $text-gray;
+                }
+            }
+        }
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+}
