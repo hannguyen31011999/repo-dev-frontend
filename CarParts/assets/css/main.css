@@ -59,6 +59,30 @@ html, body {
   transition: all 0.4s;
 }
 
+.scrollTop {
+  position: fixed;
+  bottom: 15%;
+  right: 3%;
+  padding: 17px;
+  border: none;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  border-radius: 4px;
+  opacity: 0;
+}
+
+.scrollTop i {
+  color: #666;
+  font-size: 15px;
+  opacity: 0.6;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.scrollTop:hover {
+  background-color: rgba(102, 102, 102, 0.2);
+}
+
 .sale {
   position: absolute;
   top: -20%;

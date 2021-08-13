@@ -1,6 +1,6 @@
 window.onscroll = function () {
     scrollHeader();
-    // scrollButton();
+    scrollButton();
 };
 
 // menu
@@ -118,14 +118,14 @@ function scrollHeader() {
     }
 }
 
-// function scrollButton() {
-//     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
-//         document.getElementById('scrollTop').style.opacity = "1";
-//     } else {
-//         document.getElementById('scrollTop').style.opacity = "0";
-//     }
-// }
+function scrollButton() {
+    if (document.documentElement.scrollTop > 700) {
+        document.getElementById('scrollTop').style.opacity = "1";
+    } else {
+        document.getElementById('scrollTop').style.opacity = "0";
+    }
+}
 
-// document.getElementById('scrollTop').addEventListener('click', function (e) {
-//     document.documentElement.scrollTop = 0;
-// });
+document.getElementById('scrollTop').addEventListener('click', function (e) {
+    document.documentElement.scrollTop = 0;
+});

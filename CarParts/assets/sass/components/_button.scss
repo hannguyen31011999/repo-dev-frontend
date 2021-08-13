@@ -13,3 +13,23 @@
         transition: $tran-2;
     }
 }
+
+.scrollTop {
+    position: fixed;
+    bottom: 15%;
+    right: 3%;
+    padding: $pd-2 - 3;
+    border: none;
+    transition: all .6s;
+    border-radius: $bd-radius-0 - 2;
+    opacity: 0;
+    i {
+        color: $text-gray;
+        font-size: $fs-0;
+        opacity: 0.6;
+        transition: all .6s;
+    }
+    &:hover {
+        background-color: rgba($text-gray,0.2);
+    }
+}
