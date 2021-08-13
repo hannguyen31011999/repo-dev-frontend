@@ -36,3 +36,8 @@
 <h3>7.Game oẳn tù tì</h3>
 <h4>Build by Html,Css,Boostrap 4,React JS,Redux</h4>
 <p>Link demo: https://git.heroku.com/game-ott.git </p>
+
+<h3>8.Template molla store car part</h3>
+<h4>Build by Html,Css,Vanila Js,Scss,Boostrap 5</h4>
+<p>Responsive device mobile -> tablet -> desktop </p>
+<p>Link demo: http://car-store.surge.sh </p>
