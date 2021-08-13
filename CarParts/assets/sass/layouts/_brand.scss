@@ -15,6 +15,14 @@
                 @include styleText($fs-0,rgba($text-gray,0.6),0,0,$fw-2);
                 margin: $mg-0 - 5 0 0 0;
             }
+            @media screen and(max-width:499px) {
+                h2 {
+                    font-size: $fs-1;
+                }
+                p {
+                    font-size: $fs-default;
+                }
+            }
         }
         .brand__top {
             .brand__item {

@@ -1,0 +1,167 @@
+.review {
+    margin-top: $mg-2;
+    padding: 0 $pd-2;
+    .review__content {
+        position: relative;
+        .review__title {
+            text-align: center;
+            margin-bottom: $mg-2;
+            h2 {
+                @include styleText($fs-2 + 3,$text-default,0,0,$fw-4);
+            }
+            p {
+                @include styleText($fs-0,rgba($text-gray,0.6),0,0,$fw-2);
+                margin: $mg-0 - 5 0 0 0;
+            }
+            @include responsive('small') {
+                & {
+                    margin-bottom: $mg-0;
+                }
+            }
+            @media screen and(max-width:499px) { 
+                & {
+                    h2 {
+                        font-size: $fs-1;
+                    }
+                    p {
+                        font-size: $fs-default;
+                    }
+                }
+            }
+        }
+        .review__list {
+            padding: 0 $pd-1 + 2;
+            .review__item {
+                position: relative;
+                padding: $pd-2 $pd-4 + 30;
+                text-align: center;
+                .review__point {
+                    color: $text-red;
+                    font-weight: $fw-3;
+                    margin-bottom: $mg-0;
+                }
+                .review_star {
+                    margin-bottom: $mg-0;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        height: 18px;
+                        width: 18px;
+                        margin-right: $mg-0 - 5;
+                    }
+                }
+                .review__comment {
+                    @include styleText($fs-0 + 2,$text-gray,0,0,$fw-2);
+                    line-height: $lh-1;
+                    margin-bottom: $mg-1;
+                }
+                .review__name {
+                    margin-bottom: $mg-1;
+                    span {
+                        @include styleText($fs-0,$bg-blue,0,0,$fw-2);
+                    }
+                }
+                .review__image {
+                    display: flex;
+                    justify-content: center;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translateY(-50%);
+                    height: 85%;
+                    width: 1px;
+                    background-color: $text-gray;
+                    opacity: 0.1;
+                }
+                &:nth-of-type(2)::before {
+                    height: 0;
+                    width: 0;
+                }
+                @include responsive('large') {
+                    &::before {
+                        width: 0;
+                        height: 0;
+                    }
+                }
+                @include responsive('small') {
+                    & {
+                        padding: $pd-2 $pd-2 + 10;
+                        .review__comment {
+                            font-size: $fs-0;
+                        }
+                    }
+                }
+                @media screen and(max-width:499px) {
+                    & {
+                        padding: $pd-2 $pd-1;
+                        .review__comment {
+                            font-size: $fs-default;
+                        }
+                    }
+                }
+            }
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: -10%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $text-gray;
+            opacity: 0.1;
+        }
+    }
+}
+
+.review__list {
+    .slick-dots {
+        bottom: -5%;
+        left: 0;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+            button {
+                &::before {
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    line-height: 30px;
+                    border: 1px solid $bg-blue;
+                    transition: $tran-1;
+                }
+                &:focus::before{
+                    background-color: $text-gray;
+                }
+                &:hover::before {
+                    background-color: $text-gray;
+                }
+            }
+        }
+        .slick-active {
+            button {
+                &::before {
+                    content: "";
+                    width: 21px;
+                    height: 7px;
+                    border-radius: 20px;
+                    line-height: 30px;
+                    border: 1px solid rgba($text-blue-h,0.5);
+                    background-color: $text-gray;
+                }
+                &:hover::before {
+                    background-color: $text-gray;
+                }
+            }
+        }
+    }
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
+}

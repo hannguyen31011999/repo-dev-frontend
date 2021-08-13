@@ -1,3 +1,8 @@
+window.onscroll = function () {
+    scrollHeader();
+    // scrollButton();
+};
+
 // menu
 document.getElementById('show-menu').addEventListener('click', function (e) {
     let main = document.getElementById('menu-mobile');
@@ -100,3 +105,27 @@ document.getElementById('cart-overlay').addEventListener('click', function (e) {
         document.getElementById('cart-mobile').classList.remove('cart-active');
     }
 });
+
+function scrollHeader() {
+    if (document.documentElement.scrollTop > 100) {
+        document.getElementById('header__bot').classList.add('header__fixed');
+        document.getElementById('header').classList.add('header__custom');
+        document.getElementById('header').style.transform = null;
+    } else {
+        document.getElementById('header__bot').classList.remove('header__fixed');
+        document.getElementById('header').classList.remove('header__custom');
+        document.getElementById('header').style.transform = null;
+    }
+}
+
+// function scrollButton() {
+//     if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+//         document.getElementById('scrollTop').style.opacity = "1";
+//     } else {
+//         document.getElementById('scrollTop').style.opacity = "0";
+//     }
+// }
+
+// document.getElementById('scrollTop').addEventListener('click', function (e) {
+//     document.documentElement.scrollTop = 0;
+// });

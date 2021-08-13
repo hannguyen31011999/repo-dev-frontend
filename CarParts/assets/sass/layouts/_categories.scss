@@ -4,7 +4,7 @@
         padding: 0 $pd-1;
         .categories__title {
             text-align: center;
-            margin-bottom: $mg-1;
+            margin-bottom: $mg-2;
             h2 {
                 @include styleText($fs-2 + 3,$text-default,0,0,$fw-4);
             }
@@ -15,6 +15,9 @@
             @media screen and(max-width:499px) {
                 h2 {
                     font-size: $fs-1;
+                }
+                p {
+                    font-size: $fs-default;
                 }
             }
         }

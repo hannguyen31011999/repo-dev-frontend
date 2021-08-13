@@ -203,11 +203,11 @@
             }
             &:hover::before {
                 inset: 0px;
-                background-color: rgba($bg-default,0.05);
+                background-color: rgba($bg-default,0.07);
             }
             &:hover::after {
                 inset: 0px;
-                background-color: rgba($bg-default,0.05);
+                background-color: rgba($bg-default,0.07);
             }
         }
     }

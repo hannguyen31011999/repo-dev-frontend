@@ -1,0 +1,191 @@
+.introduce {
+    margin-top: $mg-2;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 40% 50%;
+    height: 100vh;
+    @include responsive('large'){
+        background-position: 55% 50%;
+    }
+    @include responsive('medium'){
+        background-position: 63% 55%;
+    }
+    @include responsive('small'){
+        background-position: 57% 50%;
+    }
+    .introduce__content {
+        padding: 0 $pd-4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        .introduce__left {
+            width: 60%;
+        }
+        .introduce__right {
+            flex: 1;
+            height: 100%;
+            .introduce__text {
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                .introduce__title {
+                    width: 100%;
+                    @include styleText($fs-2 + 5,$text-default,0,0,$fw-4);
+                    margin-bottom: $mg-2;
+                }
+                .introduce__item {
+                    width: 100%;
+                    display: flex;
+                    margin-bottom: $mg-1;
+                    figure {
+                        width: 15%;
+                        margin: 0;
+                    }
+                    .introduce__caption {
+                        flex: 1;
+                        .caption__title {
+                            @include styleText($fs-1,$bg-blue,0,0,$fw-3);
+                            margin-bottom: $mg-1;
+                        }
+                        .caption__text {
+                            @include styleText($fs-0 - 1,$text-gray,0,0,$fw-2);
+                            opacity: 0.8;
+                            line-height: $lh-1;
+                            letter-spacing: .3px;
+                            word-wrap: break-word;
+                        }
+                    }
+                    @include responsive('extra-large'){
+                        & {
+                            figure {
+                                width: 20%;
+                            }
+                        }
+                    }
+                }
+                @include responsive('extra-large')
+                {
+                    .introduce__title {
+                        font-size: $fs-2 + 2;
+                    }
+                }
+                @include responsive('medium'){
+                    .introduce__title {
+                        text-align: center;
+                        margin-bottom: $mg-0;
+                    }
+                    .introduce__item {
+                        flex-wrap: wrap;
+                        text-align: center;
+                        figure {
+                            width: 100%;
+                            margin-bottom: $mg-0;
+                        }
+                        .introduce__caption {
+                            width: 100%;
+                        }
+                    }
+                }
+                @include responsive('small'){
+                    .introduce__title {
+                        font-size: $fs-2;
+                    }
+                }
+            }
+        }
+        @include responsive('large'){
+            & {
+                .introduce__left {
+                    width: 40%;
+                }
+            }
+        }
+        @include responsive('medium'){
+            & {
+                padding: $pd-2 + 10 $pd-4;
+                .introduce__left {
+                    width: 0;
+                }
+            }
+        }
+        @include responsive('small'){
+            & {
+                padding: $pd-2 + 10 $pd-4;
+                .introduce__left {
+                    width: 0;
+                }
+                .introduce__right {
+                    flex: 1;
+                    height: 100%;
+                    .introduce__text {
+                        .introduce__title {
+                            margin-bottom: $mg-0;
+                        }
+                        .introduce__item {
+                            .introduce__caption {
+                                .caption__title {
+                                    margin-bottom: $mg-1;
+                                    font-size: $fs-0 + 2;
+                                }
+                                .caption__text {
+                                    font-size: $fs-default + 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and(max-width:499px) {
+            & {
+                padding: $pd-2 + 10 $pd-3;
+                .introduce__right {
+                    .introduce__text {
+                        .introduce__title {
+                            font-size: $fs-2;
+                            margin-bottom: $mg-1;
+                        }
+                        .introduce__item {
+                            .introduce__caption {
+                                .caption__title {
+                                    margin-bottom: $mg-1;
+                                    font-size: $fs-0 + 2;
+                                }
+                                .caption__text {
+                                    font-size: $fs-default + 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        @media screen and(max-width:360px) {
+            & {
+                padding: $pd-2 + 5 $pd-3;
+                .introduce__right {
+                    .introduce__text {
+                        .introduce__title {
+                            font-size: $fs-1;
+                        }
+                        .introduce__item {
+                            .introduce__caption {
+                                .caption__title {
+                                    margin-bottom: $mg-1;
+                                    font-size: $fs-0;
+                                }
+                                .caption__text {
+                                    font-size: $fs-default;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
