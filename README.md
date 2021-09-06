@@ -41,3 +41,8 @@
 <h4>Build by Html,Css,Vanila Js,Scss,Boostrap 5</h4>
 <p>Responsive device mobile -> tablet -> desktop </p>
 <p>Link demo: http://car-store.surge.sh </p>
+
+<h3>9.Template electronics store</h3>
+<h4>Build by Html,Css,Vanila Js,Scss,Boostrap 5</h4>
+<p>Responsive device mobile -> tablet -> desktop </p>
+<p>Link demo: http://electronics-store.surge.sh </p>
