@@ -1,0 +1,23 @@
+.task {
+    display: flex;
+}
+.btn-task {
+    width: 40%;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+tr {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: #000;
+}
+
+table {
+    border:1px solid #000;
+    color: #000;
+}

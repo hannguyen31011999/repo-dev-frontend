@@ -1880,6 +1880,7 @@ header .header__center .header__icon .header__icon--item .header__count--cart sp
   position: relative;
   height: calc(100% / 2 - 15px);
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .banner__right .banner__item figure {

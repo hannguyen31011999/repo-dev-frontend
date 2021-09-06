@@ -117,15 +117,3 @@ function scrollHeader() {
         document.getElementById('header').style.transform = null;
     }
 }
-
-function scrollButton() {
-    if (document.documentElement.scrollTop > 700) {
-        document.getElementById('scrollTop').style.opacity = "1";
-    } else {
-        document.getElementById('scrollTop').style.opacity = "0";
-    }
-}
-
-document.getElementById('scrollTop').addEventListener('click', function (e) {
-    document.documentElement.scrollTop = 0;
-});
