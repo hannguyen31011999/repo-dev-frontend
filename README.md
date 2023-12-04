@@ -46,3 +46,5 @@
 <h4>Build by Html,Css,Vanila Js,Scss,Boostrap 5</h4>
 <p>Responsive device mobile -> tablet -> desktop </p>
 <p>Link demo: http://electronics-store.surge.sh </p>
+
+https://docs.google.com/document/d/1znsz78XEBtxXS2_YThvBZjCU4280Xllk_oEBUGBdYBo/edit
